@@ -13,4 +13,4 @@ Load only the domain required by the task.
 | Exact Creality Print control, screen, mode, or version | [Creality Print index](creality-print/INDEX.md) | One version-scoped screen file |
 | Preventive work, hardware symptom, or repair | [Maintenance index](maintenance/INDEX.md) | One subsystem file and [trees](maintenance/troubleshooting-trees.md) |
 
-Use source IDs such as `S001` from `sources.md`; do not copy the same source fact into several files. Keep recommendations marked as official limit, manufacturer range, starting point, empirical adjustment, or unvalidated.
+Use source IDs such as `P001`, `C001`, and `M001` from `sources.md`; do not copy the same source fact into several files. Keep recommendations marked as official limit, manufacturer range, starting point, empirical adjustment, or unvalidated.

@@ -5,6 +5,8 @@ description: "Evidence-bounded FDM design, model inspection, material selection,
 
 # K2 3D Printing
 
+Resolve every relative reference and script path from the directory containing this `SKILL.md`.
+
 ## Establish the evidence boundary
 
 1. Identify the physical printer before giving model-specific limits, compatibility, maintenance, or repair steps. Use this order:

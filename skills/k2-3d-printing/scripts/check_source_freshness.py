@@ -219,11 +219,16 @@ def audit(
         url = fields.get("URL")
         link = {"checked": False, "reason": "network check not requested"}
         if check_links and url:
-            if not url.startswith(("https://", "http://")):
+            source_type = fields.get("Source type", "").lower()
+            if "post" in source_type:
+                link = {"checked": False, "reason": "POST-only source; automatic HEAD/GET check skipped"}
+            elif "local artifact" in source_type or url.lower().startswith("n/a"):
+                link = {"checked": False, "reason": "local artifact; remote link check not applicable"}
+            elif not url.startswith(("https://", "http://")):
                 link = {"checked": True, "reachable": False, "status": None, "error": "unsupported URL scheme"}
             else:
                 link = check_url(url, timeout)
-            if not link.get("reachable"):
+            if link.get("checked") and not link.get("reachable"):
                 source_issues.append(
                     {
                         "severity": "error",
