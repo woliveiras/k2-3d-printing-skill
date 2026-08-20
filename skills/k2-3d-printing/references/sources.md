@@ -1584,7 +1584,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Supports: Version-scoped K2-family model/nozzle catalog, absence of `K2C`, raw K2 0.4 fields, and process subgroup labels
 - Limitations/conflicts: Not a live UI observation or a distributed reproducible artifact; re-inspect the target installation. Bundle profiles are not hardware identity, compatibility, safety, or official physical-limit evidence
 - Confidence: High for the recorded snapshot; none for a different installation
-- Review by: Immediately when the target application or version differs
+- Review by: 2026-09-20, or immediately when the target application or version differs
 
 ## C024 — GUI_App.cpp at v7.2.1
 
