@@ -35,16 +35,12 @@ The version-scoped profile catalog contains `Creality K2`, `Creality K2 SE`, `Cr
 
 ## Control-record rule
 
-For any requested control, report:
+For each requested control, report the confirmed fields needed to act:
 
-- exact English label;
-- page and click path;
-- tab/subsection;
-- required edition and user role;
-- `Global` or `Objects` scope;
-- visibility prerequisites;
+- exact English label and click path;
+- relevant version, edition/role, `Global`/`Objects` scope, and visibility prerequisites;
 - unit and default only when visible or source-confirmed for that exact version/profile;
-- effect, risk, interactions, and Preview validation;
+- consequential effect, risk, interaction, and Preview check;
 - evidence ID and observation state.
 
-Use `unconfirmed` instead of filling any missing field from memory.
+Mark any decision-relevant missing field `unconfirmed`; do not fill it from memory.
