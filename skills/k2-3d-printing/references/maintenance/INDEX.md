@@ -26,13 +26,14 @@ Before giving or following a maintenance procedure:
 7. Stop at mains input, power supply, heater wiring, damaged insulation, liquid ingress, smoke, burning odor, repeated thermal/sensor faults, inaccessible electronics, or any instruction/source conflict that can change safety or hardware compatibility. Escalate to Creality support or qualified service.
 8. Validate at the lowest-risk level: visual inspection while off and cool; controlled power-on self-test; model-supported calibration; then a small supervised test print. Never declare repair success before its acceptance test passes.
 
-## Evidence labels
+## Procedure applicability states
 
-- `Official`: directly stated for the exact model/accessory in a cited Creality source.
+- `Exact-model applicable`: the cited official procedure covers the confirmed model/accessory.
 - `Conditional`: official for a named model but physical identity is not yet confirmed.
 - `Conflict`: official sources disagree or differ in scope/date; preserve both.
 - `Unconfirmed`: not established by a model-specific official source; do not perform or fabricate.
-- `Physically validated`: the actual machine passed the stated post-maintenance test; documentation alone cannot establish this.
+
+Use the canonical [claim classes](../evidence-and-authority.md#claim-classes) for evidence. Reserve `Physically validated` for an actual machine that passed the stated post-maintenance test; documentation alone cannot establish it.
 
 ## Authority boundary
 

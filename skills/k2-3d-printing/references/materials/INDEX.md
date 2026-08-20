@@ -16,18 +16,11 @@ Use this directory to decide whether an exact filament can be fed, melted, depos
 | Base-K2 comparison or CFS classification | [Compatibility matrix](compatibility-matrix.md) |
 | Walls, clearances, fits, holes, bridges, overhangs, inserts, splits, or curved shells | [Design for FDM](../design-for-fdm.md) |
 
-## Evidence and classification
+## Claim and compatibility classification
 
-Label every consequential statement:
+Label consequential statements with the canonical [claim classes](../evidence-and-authority.md#claim-classes). Keep claim evidence separate from the material/hardware compatibility states below.
 
-- **Official**: the exact printer/CFS/manual explicitly states it.
-- **Manufacturer range**: the exact filament SKU's TDS, SDS, or product document states it.
-- **Starting point**: a selected value inside all confirmed limits for a named calibration.
-- **Empirical adjustment**: a measured result for a recorded printer, nozzle, plate, filament lot, and test.
-- **Inference**: a conclusion produced by comparing separate sources; show the comparison.
-- **Unvalidated**: no exact official statement or physical test supports it.
-
-Classify material/hardware compatibility separately:
+Classify material/hardware compatibility:
 
 1. **Officially supported**: the exact physical printer source names the material or exact grade.
 2. **Conditional**: official or manufacturer evidence permits it only with a named nozzle, hotend, bed, chamber, surface, dry-feed system, or other condition.

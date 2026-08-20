@@ -38,7 +38,7 @@ Resolve every relative reference and script path from the directory containing t
    - run `python3 scripts/extract_creality_settings.py FILE` to inventory known embedded settings;
    - run `python3 scripts/compare_profiles.py LEFT RIGHT` to preserve typed differences and origins.
 3. Check physical compatibility in this order: confirmed printer limits, installed hotend and nozzle, plate, enclosure/chamber behavior, CFS path, then the exact material TDS/SDS. Read the relevant file under [materials](references/materials/INDEX.md).
-4. Choose the slicing objective and trade-offs from [slicing](references/slicing/INDEX.md). Treat every number as one of: official limit, manufacturer range, documented starting point, empirical adjustment, or unvalidated result.
+4. Choose the slicing objective and trade-offs from [slicing](references/slicing/INDEX.md). Classify consequential claims with the canonical [claim classes](references/evidence-and-authority.md#claim-classes).
 5. Give Creality Print navigation only for an observed or sourced version and mode. Read [Creality Print](references/creality-print/INDEX.md). If a control is hidden, check version, interface mode, `Global` versus `Objects`, selection, prerequisites, search, and scroll state before declaring it absent.
 6. Slice, then inspect Preview layer by layer using [Preview inspection](references/slicing/preview-inspection.md). Consult the active legend before interpreting color.
 7. Calibrate proportionally: first layer; temperature; flow; pressure advance only when officially applicable; maximum volumetric flow; retraction/stringing; bridges/overhangs; dimensional tolerance; then vibration/input shaping only when officially supported.
@@ -81,7 +81,6 @@ Read [design for FDM](references/design-for-fdm.md) when the task changes geomet
 
 1. Lead with the decision or blocker.
 2. State the confirmed physical model and evidence level, or state that hardware identity is unconfirmed.
-3. Label each value as `official`, `manufacturer range`, `starting point`, `empirical adjustment`, or `unvalidated`.
-4. Cite source IDs from `references/sources.md` with applicability and access date for unstable claims.
-5. List Preview checks, stop criteria, validation test, and residual uncertainty.
-6. State which actions require separate authorization.
+3. Cite source IDs from `references/sources.md` with applicability and access date for unstable claims.
+4. List Preview checks, stop criteria, validation test, and residual uncertainty.
+5. State which actions require separate authorization.

@@ -11,4 +11,4 @@ Read only the file needed for the decision.
 | Decide whether a sliced job is ready for a test | [Preview inspection](preview-inspection.md) |
 | Diagnose print symptoms | [Failure diagnosis](failure-diagnosis.md) |
 
-Apply values in this order: confirmed official hardware limits; exact filament TDS range; official profile defaults observed in the named Creality Print version; documented starting points below; then one measured empirical adjustment at a time. Never copy a profile across printer/nozzle/material combinations without revalidation.
+Classify claims using [evidence and authority](../evidence-and-authority.md#claim-classes). Apply values in this order: confirmed official hardware limits; exact filament TDS range; official profile defaults observed in the named Creality Print version; documented starting points; then one measured empirical adjustment at a time. Never copy a profile across printer/nozzle/material combinations without revalidation.
