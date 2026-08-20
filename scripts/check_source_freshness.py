@@ -15,7 +15,7 @@ from typing import Any
 from _common import SCHEMA_VERSION, ToolError, error_envelope, print_json, resolve_input
 
 TOOL_NAME = "check_source_freshness"
-HEADING_RE = re.compile(r"^##\s+(S\d{3})\s+[—-]\s+(.+?)\s*$")
+HEADING_RE = re.compile(r"^##\s+([A-Z][A-Z0-9]{1,15})\s+[—-]\s+(.+?)\s*$")
 FIELD_RE = re.compile(r"^-\s+([^:]+):\s*(.*?)\s*$")
 ISO_DATE_RE = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
 REQUIRED_FIELDS = {

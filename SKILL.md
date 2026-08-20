@@ -1,85 +1,90 @@
 ---
 name: k2-3d-printing
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: "Evidence-bounded FDM design, model inspection, material selection, Creality Print slicing, Preview review, calibration, troubleshooting, maintenance, and safe repair guidance. USE WHEN a task mentions Creality K2C, the Creality K2 family, Creality Print, STL, STEP, 3MF, G-code, FDM slicing, filament, CFS, orientation, supports, calibration, print failure, maintenance, or repair."
 ---
 
-# K2 3d Printing
+# K2 3D Printing
 
-## Overview
+## Establish the evidence boundary
 
-[TODO: 1-2 sentences explaining what this skill enables]
+1. Identify the physical printer before giving model-specific limits, compatibility, maintenance, or repair steps. Use this order:
+   1. physical label and printed model number;
+   2. the printer's `About` screen;
+   3. official purchase document or product page tied to the unit;
+   4. firmware identity shown by the unit;
+   5. Creality Print profile;
+   6. user-supplied photographs or screenshots.
+2. Treat a slicer profile as configuration evidence, never proof of physical hardware. Distinguish K2, K2 Pro, K2 Plus, K2 SE, K1C, and any unverified `K2C` label.
+3. If identity remains uncertain, stop only hardware-specific guidance. State the evidence, retain generic FDM guidance, and ask one objective question for the label or `About` screen.
+4. Read [printer identity](references/printer-identity.md) before any K2-family hardware claim.
 
-## Structuring This Skill
+## Refresh unstable facts
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+1. Browse live primary sources before using `latest`, `current`, `supported`, `compatible`, or `safe`, or before giving firmware, software, temperature, material, part, or maintenance facts.
+2. Prefer model-specific Creality manuals, Wiki pages, service instructions, firmware notes, official parts, the official Creality Print repository, and the exact filament manufacturer's TDS/SDS. Use occupational, electrical, and fire authorities for safety.
+3. Use community material only to discover a hypothesis. Do not promote it to a hardware, material, UI, or safety authority.
+4. Record every material source in [sources](references/sources.md) with publisher, direct URL, source type, date, access timestamp, applicability, supported claims, limitations/conflicts, confidence, and review date.
+5. Explain conflicts. Prefer the most specific and recent primary source, but preserve unresolved uncertainty.
+6. Read [evidence and authority](references/evidence-and-authority.md) before researching, modifying a project, sending a print, or proposing a repair.
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" -> "Reading" -> "Creating" -> "Editing"
-- Structure: ## Overview -> ## Workflow Decision Tree -> ## Step 1 -> ## Step 2...
+## Run the task workflow
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" -> "Merge PDFs" -> "Split PDFs" -> "Extract Text"
-- Structure: ## Overview -> ## Quick Start -> ## Task Category 1 -> ## Task Category 2...
+1. Determine or infer the part's purpose, material, visible faces, desired finish, load and load direction, dimensional accuracy, time budget, installed nozzle, plate, support tolerance, and user experience. Ask only for missing facts that change the decision.
+2. Inspect the source artifact before changing slicing parameters:
+   - read [model inspection](references/model-inspection.md) for STL, STEP, 3MF, and G-code boundaries;
+   - run `python3 scripts/inspect_3mf.py FILE.3mf` for a read-only 3MF structural and limited topology report;
+   - run `python3 scripts/extract_creality_settings.py FILE` to inventory known embedded settings;
+   - run `python3 scripts/compare_profiles.py LEFT RIGHT` to preserve typed differences and origins.
+3. Check physical compatibility in this order: confirmed printer limits, installed hotend and nozzle, plate, enclosure/chamber behavior, CFS path, then the exact material TDS/SDS. Read the relevant file under [materials](references/materials/INDEX.md).
+4. Choose the slicing objective and trade-offs from [slicing](references/slicing/INDEX.md). Treat every number as one of: official limit, manufacturer range, documented starting point, empirical adjustment, or unvalidated result.
+5. Give Creality Print navigation only for an observed or sourced version and mode. Read [Creality Print](references/creality-print/INDEX.md). If a control is hidden, check version, interface mode, `Global` versus `Objects`, selection, prerequisites, search, and scroll state before declaring it absent.
+6. Slice, then inspect Preview layer by layer using [Preview inspection](references/slicing/preview-inspection.md). Consult the active legend before interpreting color.
+7. Calibrate proportionally: first layer; temperature; flow; pressure advance only when officially applicable; maximum volumetric flow; retraction/stringing; bridges/overhangs; dimensional tolerance; then vibration/input shaping only when officially supported.
+8. Diagnose symptoms before changing multiple parameters. Use [failure diagnosis](references/slicing/failure-diagnosis.md) for print faults and [maintenance troubleshooting trees](references/maintenance/troubleshooting-trees.md) for hardware faults.
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" -> "Colors" -> "Typography" -> "Features"
-- Structure: ## Overview -> ## Guidelines -> ## Specifications -> ## Usage...
+## Separate completion states
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" -> numbered capability list
-- Structure: ## Overview -> ## Core Capabilities -> ### 1. Feature -> ### 2. Feature...
+Report exactly one or more of these states without collapsing them:
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+- `Sliced`: toolpath generation completed.
+- `Preview reviewed`: no apparent anomaly was found in the inspected views and legends; list what was not inspected.
+- `Test print recommended`: uncertainty remains in fit, material, supports, surface, strength, or calibration.
+- `Physically validated`: the stated printer, material batch, profile, orientation, and acceptance test were actually printed and measured.
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+Never infer physical success from a completed slice or a structurally valid 3MF.
 
-## [TODO: Replace with the first main section based on chosen structure]
+## Protect safety and authority
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+1. Read [safety](references/safety.md) before material emissions, electrical, hot/moving-part, drying, solvent, domestic, overnight, or unattended-printing guidance.
+2. Do not guarantee unattended printing. Distinguish active heating/motion from a completed print cooling in the machine.
+3. Before maintenance, identify the model and procedure, stop motion, remove filament only as directed, power off, unplug, and cool unless an official step explicitly requires a controlled energized or heated state.
+4. Do not invent torque, lubricant, part number, fastener position, connector, or service procedure. Stop at wiring, mains power, heaters, unknown sensors, inaccessible assemblies, or evidence conflicts and direct the user to official support.
+5. Do not install or update Creality Print, update firmware, control the printer, send or start a print, buy a part, install dependencies, run paid/external-model evaluations, publish, push, or globally install the skill without separate authorization.
+6. Keep scripts read-only by default. Never overwrite an input.
 
-## Resources (optional)
+## Modify 3MF projects only when authorized
 
-Create only the resource directories this skill actually needs. Delete this section if no resources are required.
+1. Record the original path and SHA-256.
+2. Create a clearly named new file; never replace the original.
+3. Change only the authorized fields and preserve unrelated archive members, types, units, and origins.
+4. Re-run 3MF inspection and setting extraction; compare the original and copy.
+5. Report structural validity and the remaining physical-printability boundary.
+6. Do not send the resulting project to a printer without a separate authorization.
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+## Route reference loading
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+- Start at the [reference index](references/INDEX.md).
+- Read [design for FDM](references/design-for-fdm.md) for walls, clearances, fits, holes, bridges, stress, splits, inserts, and curved ergonomic parts.
+- Read [materials](references/materials/INDEX.md) only for the relevant family and then the [compatibility matrix](references/materials/compatibility-matrix.md).
+- Read [slicing](references/slicing/INDEX.md) for decision profiles, orientation, supports, calibration, Preview, and failure diagnosis.
+- Read [Creality Print](references/creality-print/INDEX.md) for version-scoped UI evidence.
+- Read [maintenance](references/maintenance/INDEX.md) for preventive schedules, safe-state procedures, and symptom trees.
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+## Format the answer
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Codex for patching or environment adjustments.
-
-### references/
-Documentation and reference material intended to be loaded into context to inform Codex's process and thinking.
-
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
-
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Codex should reference while working.
-
-### assets/
-Files not intended to be loaded into context, but rather used within the output Codex produces.
-
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
-
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
-
----
-
-**Not every skill requires all three types of resources.**
+1. Lead with the decision or blocker.
+2. State the confirmed physical model and evidence level, or state that hardware identity is unconfirmed.
+3. Label each value as `official`, `manufacturer range`, `starting point`, `empirical adjustment`, or `unvalidated`.
+4. Cite source IDs from `references/sources.md` with applicability and access date for unstable claims.
+5. List Preview checks, stop criteria, validation test, and residual uncertainty.
+6. State which actions require separate authorization.

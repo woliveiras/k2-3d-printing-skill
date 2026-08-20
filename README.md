@@ -1,0 +1,79 @@
+# k2-3d-printing
+
+`k2-3d-printing` is an agent-independent skill for evidence-bounded FDM work with Creality K2-family printers and Creality Print. It covers printer identity, filament and hardware compatibility, STL/STEP/3MF inspection, design for FDM, orientation, supports, slicing trade-offs, calibration, Preview review, failure diagnosis, preventive maintenance, and safe repair boundaries.
+
+The repository contains one self-contained skill at its root. `agents/openai.yaml` is optional interface metadata; the operational contract lives in `SKILL.md` and does not depend on Codex, another skill, a paid service, or a printer connection.
+
+## Installation
+
+After this repository is public, install it with the [skills CLI](https://www.skills.sh/docs/cli):
+
+```bash
+npx skills add woliveiras/k2-3d-printing-skill
+```
+
+The command is documented for review only; repository development and validation do not install the skill. Review `SKILL.md`, scripts, and source policy before installing any third-party skill. To disable skills.sh CLI telemetry during a later authorized install, follow the current CLI documentation.
+
+## What the skill enforces
+
+- Confirm the physical printer before model-specific advice; a slicer profile alone is insufficient.
+- Refresh unstable claims from primary sources and date every source observation.
+- Separate official limits, manufacturer ranges, recommended starting points, empirical adjustments, and unvalidated results.
+- Inspect Preview instead of treating successful slicing as proof of printability.
+- Preserve original 3MF projects and require explicit authorization for copies or edits.
+- Require separate authorization for software/firmware updates, printer control, print submission, purchases, dependency installation, publication, and external-model evaluation.
+- Stop repairs when model-specific parts, torque, wiring, heaters, sensors, or official procedures are not confirmed.
+
+## Repository map
+
+```text
+SKILL.md                       Core workflow and routing
+agents/openai.yaml             Optional UI metadata
+references/                    Indexed evidence and operating guidance
+scripts/inspect_3mf.py         Read-only 3MF package and mesh inspection
+scripts/extract_creality_settings.py
+scripts/compare_profiles.py
+scripts/check_source_freshness.py
+tests/                         Deterministic fixtures, unit tests, and response oracle
+```
+
+## Local scripts
+
+The optional scripts require Python 3.10 or newer and use only the standard library. They write structured JSON to stdout and do not extract archives, modify inputs, send prints, or contact a printer.
+
+```bash
+python3 scripts/inspect_3mf.py project.3mf
+python3 scripts/extract_creality_settings.py project.3mf
+python3 scripts/compare_profiles.py baseline.json candidate.3mf
+python3 scripts/check_source_freshness.py references/sources.md --as-of 2026-08-20
+```
+
+Network link checks are opt-in and must be explicitly authorized:
+
+```bash
+python3 scripts/check_source_freshness.py references/sources.md --check-links
+```
+
+The tools report file evidence only. They do not prove hardware identity, compatibility, support removability, collision freedom, strength, safety, or physical printability.
+
+## Development validation
+
+```bash
+python3 -m compileall -q scripts tests
+python3 -m unittest discover -s tests -v
+python3 -m json.tool tests/evals/cases.json >/dev/null
+python3 /path/to/skill-creator/scripts/quick_validate.py .
+git diff --check
+```
+
+The 14-case deterministic response oracle is deliberately limited: it verifies explicit guardrails and rejects known unsafe or unauthorized response patterns, but it cannot establish factual accuracy or replace real printer/material tests. No provider or external-model evaluation runs by default.
+
+## Research snapshot
+
+The initial research date is 2026-08-20. The locally installed macOS application was observed read-only as Creality Print `7.2.1.5476`; the official GitHub release API also identified `v7.2.1` as the newest non-draft, non-prerelease release on that date. The user's physical printer remains unconfirmed: `K2C` was user-supplied wording, while the official and locally bundled evidence examined so far identifies K2, K2 Pro, K2 Plus, and K2 SE. See `references/printer-identity.md` and `references/sources.md` before drawing a hardware conclusion.
+
+## Contributing
+
+Keep `SKILL.md` concise and imperative. Put detailed knowledge in the existing indexed reference domain, avoid duplicated facts, preserve source IDs, set a review date, and explain conflicts. Add deterministic tests for new parsing or authority behavior. Do not weaken an oracle to make an unsafe fixture pass.
+
+See `CHANGELOG.md` for repository changes.
