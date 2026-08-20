@@ -52,7 +52,7 @@ For an unvalidated pair, use a stepped Z/XY/interface coupon and preserve visibl
 
 ## Family-specific operating rules
 
-Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md). Keep both materials inside their exact ranges during active extrusion, standby, and purge; measure flow separately and let the slower or more feed-sensitive material govern. Preserve `fan on` only for PolyDissolve S1, and keep BVOH/PVA/HIPS cooling **Unvalidated** until exact evidence or a coupon.
+Apply the [shared material card](recommendation-workflow.md#material-parameter-card) and [calibration workflow](../slicing/calibration.md). Keep both materials inside their exact ranges during active extrusion, standby, and purge; measure flow separately and let the slower or more feed-sensitive material govern. Preserve `fan on` only for PolyDissolve S1, and keep BVOH/PVA/HIPS cooling **Unvalidated** until exact evidence or a coupon.
 
 ## Drying, storage, and CFS
 
@@ -99,4 +99,4 @@ Apply the [design guidance for removable supports](../design-for-fdm.md#removabl
 
 ## Family-specific release gate
 
-Apply the [shared release decision](INDEX.md#release-decision). Also validate the exact primary/support pair, interface, purge, removal or dissolution, trapped residue, dimensional effect, ventilation, and disposal.
+Apply the [shared release decision](recommendation-workflow.md#make-the-release-decision). Also validate the exact primary/support pair, interface, purge, removal or dissolution, trapped residue, dimensional effect, ventilation, and disposal.

@@ -36,6 +36,7 @@ REQUIRED_SKILL_FILES = {
     "references/materials/composites.md",
     "references/materials/support-materials.md",
     "references/materials/compatibility-matrix.md",
+    "references/materials/recommendation-workflow.md",
     "references/slicing/INDEX.md",
     "references/slicing/decision-workflow.md",
     "references/slicing/quality-speed-strength.md",

@@ -41,7 +41,7 @@ For HP-ASA, request the actual spool label and current TDS before providing a nu
 
 ## Family-specific operating rules
 
-Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these ABS/ASA-specific constraints:
+Apply the [shared material card](recommendation-workflow.md#material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these ABS/ASA-specific constraints:
 
 - Use a representative flat/long coupon for shrinkage and edge lift and an intended-orientation coupon for layer adhesion; a small cube cannot validate a large enclosed part.
 - Treat brim, mouse ears, orientation, and geometry relief as starting tools, not a warp guarantee; raft changes the bottom surface.
@@ -78,4 +78,4 @@ Apply the [shared material card](INDEX.md#required-material-parameter-card) and 
 
 ## Family-specific release gate
 
-Apply the [shared release decision](INDEX.md#release-decision). Also resolve the HP-ASA source conflict for the physical spool and confirm the exact enclosure/chamber, ventilation, occupancy, warp, and layer-adhesion conditions.
+Apply the [shared release decision](recommendation-workflow.md#make-the-release-decision). Also resolve the HP-ASA source conflict for the physical spool and confirm the exact enclosure/chamber, ventilation, occupancy, warp, and layer-adhesion conditions.

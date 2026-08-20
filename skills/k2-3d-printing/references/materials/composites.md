@@ -89,7 +89,7 @@ The base K2's steel-tipped trimetal 0.4 mm nozzle is official K2 evidence, not p
 
 ## Family-specific operating rules
 
-Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these composite-specific constraints:
+Apply the [shared material card](recommendation-workflow.md#material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these composite-specific constraints:
 
 - Determine maximum volumetric flow with the exact abrasive nozzle; bore and material change flow.
 - Avoid repeated large retractions that can grind or fracture brittle filament.
@@ -122,4 +122,4 @@ Apply the [shared material card](INDEX.md#required-material-parameter-card) and 
 
 ## Family-specific release gate
 
-Apply the [shared release decision](INDEX.md#release-decision). Also confirm filler and tooling requirements and reject any minimum thermal requirement above the confirmed printer limit; do not reframe hardware incompatibility as a slicer adjustment.
+Apply the [shared release decision](recommendation-workflow.md#make-the-release-decision). Also confirm filler and tooling requirements and reject any minimum thermal requirement above the confirmed printer limit; do not reframe hardware incompatibility as a slicer adjustment.

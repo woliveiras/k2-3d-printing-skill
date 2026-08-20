@@ -40,7 +40,7 @@ When the spool label and M009/M010 disagree, pause the numeric recommendation an
 
 ## Family-specific operating rules
 
-Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these PLA-specific constraints:
+Apply the [shared material card](recommendation-workflow.md#material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these PLA-specific constraints:
 
 - If a source says only `fan on`, keep percentage and bridge behavior **Unvalidated** until a cooling/overhang coupon.
 - The 15 mm³/s volumetric-flow value belongs only to PolyLite PLA Pro source M010; do not assign it to Hyper PLA, v6 PLA Pro, Matte, Silk, or Wood.
@@ -77,4 +77,4 @@ For the third case, stop using plain-PLA assumptions and apply the [composite ab
 
 ## Family-specific release gate
 
-Apply the [shared release decision](INDEX.md#release-decision). Also confirm the exact PLA subtype/revision and, for wood-look material, whether it is foamed or particle-filled; apply the composite gate to any real filler.
+Apply the [shared release decision](recommendation-workflow.md#make-the-release-decision). Also confirm the exact PLA subtype/revision and, for wood-look material, whether it is foamed or particle-filled; apply the composite gate to any real filler.

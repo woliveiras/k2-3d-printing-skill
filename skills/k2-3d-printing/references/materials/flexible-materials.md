@@ -38,7 +38,7 @@ These ranges demonstrate that “flexible” does not select one temperature or 
 
 ## Family-specific operating rules
 
-Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these flexible-material constraints:
+Apply the [shared material card](recommendation-workflow.md#material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these flexible-material constraints:
 
 - Excessive first-layer squish deforms flexible filament; validate line continuity and final dimensions instead of copying a PLA Z setting.
 - Preserve `no enclosure` only for PolyFlex TPU95 and Ultrafuse TPU 85A; `fan on` for TPU95 establishes no percentage. [M021, M022]
@@ -73,4 +73,4 @@ Apply the [shared material card](INDEX.md#required-material-parameter-card) and 
 
 ## Family-specific release gate
 
-Apply the [shared release decision](INDEX.md#release-decision). Also confirm the Shore value and scale, officially supported direct path with CFS bypassed, and a measurable finished-part flex or deflection acceptance test.
+Apply the [shared release decision](recommendation-workflow.md#make-the-release-decision). Also confirm the Shore value and scale, officially supported direct path with CFS bypassed, and a measurable finished-part flex or deflection acceptance test.

@@ -55,7 +55,7 @@ The cited examples span 75 °C/6 h for PolyMax PC, 80 °C/at least 40 h for Ultr
 
 ## Family-specific operating rules
 
-Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these PA/PC-specific constraints:
+Apply the [shared material card](recommendation-workflow.md#material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these PA/PC-specific constraints:
 
 - Calibrate and remove the part only with the final dry, plate, and chamber state; do not force highly adhered PA/PC from an unknown surface.
 - Preserve fan off only for the cited CoPA, PA6-CF20, PA12-CF10, and PolyMax PC products.
@@ -91,4 +91,4 @@ Apply the [shared material card](INDEX.md#required-material-parameter-card) and 
 
 ## Family-specific release gate
 
-Apply the [shared release decision](INDEX.md#release-decision). Also distinguish filled from unfilled PA, confirm dry-feed and controlled-chamber requirements, and validate dimensions in the final annealed or moisture-conditioned state.
+Apply the [shared release decision](recommendation-workflow.md#make-the-release-decision). Also distinguish filled from unfilled PA, confirm dry-feed and controlled-chamber requirements, and validate dimensions in the final annealed or moisture-conditioned state.

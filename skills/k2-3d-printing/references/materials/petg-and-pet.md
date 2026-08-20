@@ -31,7 +31,7 @@ The cited sources include no exact unfilled-PET TDS. The K2/CFS family listing c
 
 ## Family-specific operating rules
 
-Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these PETG/PET-specific constraints:
+Apply the [shared material card](recommendation-workflow.md#material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these PETG/PET-specific constraints:
 
 - Confirm whether the exact plate requires adhesive as adhesion aid, release layer, or both; PETG can adhere aggressively, so validate damage-free release on a first-layer coupon.
 - Preserve the product-specific fan conflict: PolyLite PETG 0–20%, the M015 Polymaker PETG formulation 20–60%, and Fiberon PET-CF17 fan off. [M014, M015, M039]
@@ -67,4 +67,4 @@ Apply the [shared material card](INDEX.md#required-material-parameter-card) and 
 
 ## Family-specific release gate
 
-Apply the [shared release decision](INDEX.md#release-decision). Also confirm the exact PETG/PET grade and the exact plate's adhesion or release-layer procedure; do not release a PETG job while damage-free removal remains untested.
+Apply the [shared release decision](recommendation-workflow.md#make-the-release-decision). Also confirm the exact PETG/PET grade and the exact plate's adhesion or release-layer procedure; do not release a PETG job while damage-free removal remains untested.
