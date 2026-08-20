@@ -93,7 +93,7 @@ def parse_sources(path: Path) -> tuple[list[dict[str, Any]], list[dict[str, str]
                 "severity": "error",
                 "source_id": "register",
                 "code": "no_sources",
-                "message": "No source headings matching '## S001 — Title' were found.",
+                "message": "No source headings matching '## ID001 — Title' were found.",
             }
         )
     ids = [entry["id"] for entry in entries]
@@ -111,24 +111,51 @@ def parse_sources(path: Path) -> tuple[list[dict[str, Any]], list[dict[str, str]
 
 def check_url(url: str, timeout: float) -> dict[str, Any]:
     headers = {"User-Agent": "k2-3d-printing-source-audit/1.0"}
+
+    def attempt(request: urllib.request.Request, *, read_one: bool) -> tuple[dict[str, Any] | None, Exception | None]:
+        last_error: Exception | None = None
+        for _ in range(2):
+            try:
+                with urllib.request.urlopen(request, timeout=timeout) as response:
+                    if read_one:
+                        response.read(1)
+                    return (
+                        {
+                            "checked": True,
+                            "reachable": True,
+                            "status": response.status,
+                            "final_url": response.url,
+                        },
+                        None,
+                    )
+            except urllib.error.HTTPError as exc:
+                return None, exc
+            except (urllib.error.URLError, TimeoutError, OSError) as exc:
+                last_error = exc
+        return None, last_error
+
     request = urllib.request.Request(url, method="HEAD", headers=headers)
-    try:
-        with urllib.request.urlopen(request, timeout=timeout) as response:
-            return {"checked": True, "reachable": True, "status": response.status, "final_url": response.url}
-    except urllib.error.HTTPError as exc:
-        if exc.code not in {400, 403, 405, 501}:
-            return {"checked": True, "reachable": False, "status": exc.code, "error": str(exc)}
-    except (urllib.error.URLError, TimeoutError, OSError) as exc:
-        return {"checked": True, "reachable": False, "status": None, "error": str(exc)}
+    result, head_error = attempt(request, read_one=False)
+    if result:
+        return result
+    if isinstance(head_error, urllib.error.HTTPError) and head_error.code not in {400, 401, 403, 405, 429, 501}:
+        return {"checked": True, "reachable": False, "status": head_error.code, "error": str(head_error)}
+
     fallback = urllib.request.Request(url, method="GET", headers={**headers, "Range": "bytes=0-0"})
-    try:
-        with urllib.request.urlopen(fallback, timeout=timeout) as response:
-            response.read(1)
-            return {"checked": True, "reachable": True, "status": response.status, "final_url": response.url}
-    except urllib.error.HTTPError as exc:
-        return {"checked": True, "reachable": False, "status": exc.code, "error": str(exc)}
-    except (urllib.error.URLError, TimeoutError, OSError) as exc:
-        return {"checked": True, "reachable": False, "status": None, "error": str(exc)}
+    result, get_error = attempt(fallback, read_one=True)
+    if result:
+        return result
+    if isinstance(get_error, urllib.error.HTTPError):
+        if get_error.code in {401, 403, 429}:
+            return {
+                "checked": True,
+                "reachable": None,
+                "status": get_error.code,
+                "error": f"access limited by remote server: {get_error}",
+            }
+        return {"checked": True, "reachable": False, "status": get_error.code, "error": str(get_error)}
+    combined = f"HEAD: {head_error}; GET: {get_error}"
+    return {"checked": True, "reachable": False, "status": None, "error": combined}
 
 
 def audit(
@@ -228,13 +255,25 @@ def audit(
                 link = {"checked": True, "reachable": False, "status": None, "error": "unsupported URL scheme"}
             else:
                 link = check_url(url, timeout)
-            if link.get("checked") and not link.get("reachable"):
+            if link.get("checked") and link.get("reachable") is False:
                 source_issues.append(
                     {
                         "severity": "error",
                         "source_id": entry["id"],
                         "code": "link_unreachable",
                         "message": f"Source URL was not reachable: {link.get('error') or link.get('status')}.",
+                    }
+                )
+            elif link.get("checked") and link.get("reachable") is None:
+                source_issues.append(
+                    {
+                        "severity": "warning",
+                        "source_id": entry["id"],
+                        "code": "link_access_limited",
+                        "message": (
+                            "The remote server responded but denied or throttled automated verification; "
+                            "reachability remains unconfirmed."
+                        ),
                     }
                 )
         issues.extend(source_issues)

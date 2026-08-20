@@ -8,15 +8,17 @@ import tempfile
 import unittest
 import zipfile
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPTS = ROOT / "scripts"
+SCRIPTS = ROOT / "skills" / "k2-3d-printing" / "scripts"
 FIXTURES = ROOT / "tests" / "fixtures"
 sys.path.insert(0, str(SCRIPTS))
 
 import compare_profiles  # noqa: E402
 import extract_creality_settings  # noqa: E402
 import inspect_3mf  # noqa: E402
+import check_source_freshness  # noqa: E402
 
 
 def digest(path: Path) -> str:
@@ -156,6 +158,94 @@ class SourceFreshnessTests(unittest.TestCase):
             self.assertTrue(output["ok"])
             self.assertFalse(output["policy"]["network_links_checked"])
             self.assertEqual(before, digest(path))
+
+    def test_network_audit_skips_post_only_and_local_artifact_records(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "sources.md"
+            records = []
+            for source_id, url, source_type in (
+                ("P001", "https://example.com/post-only", "Official JSON endpoint; POST"),
+                ("C001", "N/A — local bundle", "Read-only local artifact observation"),
+            ):
+                records.append(
+                    f"""## {source_id} — Fixture
+- Publisher: Example Publisher
+- URL: {url}
+- Source type: {source_type}
+- Published/revised: 2026-08-01
+- Accessed: 2026-08-20T12:00:00+02:00
+- Applies to: Fixture
+- Supports: Network routing test
+- Limitations/conflicts: Synthetic metadata only
+- Confidence: High
+- Review by: 2027-02-20
+"""
+                )
+            path.write_text("\n".join(records), encoding="utf-8")
+            result = check_source_freshness.audit(
+                path,
+                as_of=check_source_freshness.date.fromisoformat("2026-08-20"),
+                max_age_days=180,
+                check_links=True,
+                timeout=0.01,
+                strict=True,
+            )
+            self.assertTrue(result["ok"])
+            self.assertEqual(result["summary"]["errors"], 0)
+            self.assertTrue(all(not item["link"]["checked"] for item in result["sources"]))
+
+    def test_access_limited_link_is_warning_not_broken_link(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "sources.md"
+            path.write_text(
+                """## M001 — Access-limited fixture
+- Publisher: Example Publisher
+- URL: https://example.com/limited
+- Source type: Official documentation
+- Published/revised: 2026-08-01
+- Accessed: 2026-08-20T12:00:00+02:00
+- Applies to: Fixture
+- Supports: Access-state test
+- Limitations/conflicts: Synthetic metadata only
+- Confidence: High
+- Review by: 2027-02-20
+""",
+                encoding="utf-8",
+            )
+            limited = {
+                "checked": True,
+                "reachable": None,
+                "status": 403,
+                "error": "access limited by remote server",
+            }
+            with mock.patch.object(check_source_freshness, "check_url", return_value=limited):
+                result = check_source_freshness.audit(
+                    path,
+                    as_of=check_source_freshness.date.fromisoformat("2026-08-20"),
+                    max_age_days=180,
+                    check_links=True,
+                    timeout=0.01,
+                    strict=False,
+                )
+            self.assertTrue(result["ok"])
+            self.assertEqual(result["summary"], {"sources": 1, "errors": 0, "warnings": 1})
+            self.assertEqual(result["issues"][0]["code"], "link_access_limited")
+
+    def test_link_check_retries_one_transient_network_error(self) -> None:
+        response = mock.MagicMock()
+        response.__enter__.return_value = response
+        response.status = 200
+        response.url = "https://example.com/source"
+        transient = check_source_freshness.urllib.error.URLError("transient TLS failure")
+        with mock.patch.object(
+            check_source_freshness.urllib.request,
+            "urlopen",
+            side_effect=[transient, response],
+        ) as opener:
+            result = check_source_freshness.check_url("https://example.com/source", 0.01)
+        self.assertEqual(opener.call_count, 2)
+        self.assertTrue(result["reachable"])
+        self.assertEqual(result["status"], 200)
 
 
 if __name__ == "__main__":
