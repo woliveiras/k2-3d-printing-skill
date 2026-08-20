@@ -10,7 +10,7 @@ It helps an AI agent:
 - navigate Creality Print, tune slicing settings, and review Preview;
 - calibrate filaments, diagnose failed prints, and approach maintenance or repairs with verified procedures.
 
-The skill checks evidence before giving model-specific advice. It separates official limits from manufacturer ranges, starting points, empirical adjustments, and untested suggestions. A completed slice is never presented as proof that a print will succeed.
+Before recommending a setting, the skill checks the exact printer and the available sources. It tells you which values come from official documentation, which are manufacturer ranges, and which still need testing. A successful slice is not treated as proof that the print will succeed.
 
 ## Install
 
@@ -24,9 +24,9 @@ The skill is self-contained: no other skill, paid service, or printer connection
 
 It does not edit projects, update software or firmware, control a printer, send a print, or buy parts without separate approval.
 
-## Why it confirms the printer model
+## Why it asks which K2 you own
 
-The K2 family contains different machines with different hardware limits. `K2C` is treated as an unverified label, not proof of a specific Creality model. The skill asks for the physical label or the printer's `About` screen before giving hardware-specific guidance; a slicer profile alone is not enough.
+The K2 family contains different machines with different hardware limits. If all you have is the name `K2C`, the skill will ask you to check the printer's physical label or `About` screen. It will not guess the hardware from a slicer profile.
 
 ## Explore
 
