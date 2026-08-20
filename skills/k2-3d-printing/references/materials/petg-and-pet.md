@@ -22,7 +22,7 @@ Finish, toughness, layer adhesion, stringing, stiffness, and translucency vary b
 | Creality CR-PETG generic chart | 230–250 °C | 60–100 °C | not resolved | 40–80 mm/s | not resolved | Manufacturer chart, not an exact SKU TDS. [M007] |
 | Creality Hyper PETG product page | 190–260 °C | 45 °C | not resolved | 50–300 mm/s | not resolved | Very broad nozzle range and single bed value apply only to that product page. [M013] |
 | Polymaker PolyLite PETG | 230–260 °C | 70–80 °C | 0–20% | 50–100 mm/s; maximum volumetric speed at or below 15 mm³/s | 65 °C for 6 h | Exact product page values. [M014] |
-| Newer Polymaker PETG formulation | 240–260 °C | 60–70 °C | 20–60% | up to 300 mm/s; manufacturer gives 22 or 32 mm³/s only for named hardware contexts | 60 °C for 6 h | Do not copy a hardware-specific flow result to K2. [M015] |
+| Polymaker PETG formulation recorded by M015 | 240–260 °C | 60–70 °C | 20–60% | up to 300 mm/s; manufacturer gives 22 or 32 mm³/s only for named hardware contexts | 60 °C for 6 h | Do not copy a hardware-specific flow result to K2. [M015] |
 | Polymaker Fiberon PET-CF17 | 270–300 °C | 70–80 °C | fan off | 30–300 mm/s | exact page requires dry handling | Hardened nozzle, all-metal hotend, manufacturer says no heated enclosure required; anneal 120 °C for 10 h only under its procedure. Read [composites](composites.md). [M039] |
 
 The three unfilled PETG rows conflict substantially. Preserve each range under its exact product identity; never combine them into “PETG: 190–260 °C, bed 45–100 °C.”
@@ -41,7 +41,7 @@ Apply the [shared material card](INDEX.md#required-material-parameter-card) and 
 
 ## Moisture, storage, CFS, and supports
 
-- Apply only the exact drying instruction: 65 °C/6 h for cited PolyLite PETG and 60 °C/6 h for the cited newer Polymaker PETG. Do not assign either to Creality PETG or plain PET. [M014, M015]
+- Apply only the exact drying instruction: 65 °C/6 h for PolyLite PETG M014 and 60 °C/6 h for the Polymaker PETG formulation in M015. Do not assign either to Creality PETG or plain PET.
 - Verify spool temperature tolerance and dryer accuracy. Store sealed with suitable desiccant and record whether printing occurred from a dry box.
 - Standard CFS officially lists PETG and PET, but wetness, brittleness, spool geometry, and exact product restrictions remain separate.
 - PolyDissolve S1 rates PETG only partially compatible; UltiMaker PVA names PETG adhesion within its 2.85 mm ecosystem. These are pairing hypotheses, not guarantees for another brand or Creality profile. Test interface adhesion, purge, Z/XY gap, and dissolution on a coupon. [M030, M032]

@@ -32,11 +32,11 @@ Treat each row as a selection hypothesis until the exact TDS and an application-
 | Creality CR-Silk generic chart | 190–230 °C | 50–60 °C | not resolved | 40–80 mm/s | not resolved | Manufacturer chart; do not treat a speed as a gloss guarantee. [M007] |
 | Creality CR-Wood generic chart | 190–230 °C | unheated–60 °C | not resolved | 40–100 mm/s | not resolved | Filler size, minimum nozzle, abrasion, and CFS status are absent. [M007] |
 | Polymaker PLA Pro v6.0, 2026-01-30 | 210–230 °C | use the exact v6 document/profile | use exact document/profile | up to 300 mm/s | 55 °C for 6 h when moisture was absorbed | Exact revision evidence. [M009] |
-| Older PolyLite PLA Pro page | 190–220 °C | 30–60 °C | fan on | 30–70 mm/s; 15 mm³/s maximum volumetric speed | use exact revision | Conflicts with v6.0; do not merge ranges. [M010] |
+| PolyLite PLA Pro source M010 | 190–220 °C | 30–60 °C | fan on | 30–70 mm/s; 15 mm³/s maximum volumetric speed | use exact revision | Conflicts with PLA Pro v6.0; do not merge ranges. [M010] |
 | Polymaker PolyWood PLA v2.0, 2026-06-08 | 190–210 °C | 25–60 °C | fan on | 50–100 mm/s | 55 °C for 6 h | Foamed PLA with no wood powder; cannot characterize other “wood” filament. [M011] |
 | BASF Ultrafuse PLA v4.4 | 210–230 °C | 50–70 °C | exact TDS/profile | 40–80 mm/s; 0.4 mm or larger nozzle | drying not necessary as supplied under its documented condition | Demonstrates that automatic drying is not a family-wide rule. [M065] |
 
-When the spool label and an older web page disagree, pause the numeric recommendation and obtain the current exact TDS. Do not average or union the ranges.
+When the spool label and M009/M010 disagree, pause the numeric recommendation and obtain the exact applicable TDS. Do not average or union the ranges.
 
 ## Family-specific operating rules
 

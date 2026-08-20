@@ -51,10 +51,10 @@ PP is a candidate for chemical/fatigue or living-hinge use only when the exact g
 | Exact product | Published minimum/full range | Base-K2 comparison | Classification |
 |---|---|---|---|
 | Creality PPA-CF | nozzle 280–300 °C; bed 90–105 °C; enclosure; dry 80 °C/8–12 h forced air | reaches nozzle maximum; upper bed exceeds 100 °C; not on K2 material list | **Not validated**; standard CFS wiki warns hard/brittle PPA-CF may break. [M041, P024] |
-| BASF Ultrafuse PAHT-CF15 live product page | nozzle 250–270 °C; bed 65–85 °C; 0.6 mm or larger ruby/hardened nozzle; no chamber temperature or drying rule stated | removed older TDS conflicted at 260–280 °C nozzle and 100–120 °C bed | **Not validated** for base K2; require the exact printer, nozzle, spool documentation, drying evidence, and a calibration coupon. [M042] |
+| BASF Ultrafuse PAHT-CF15 page recorded by M042 | nozzle 250–270 °C; bed 65–85 °C; 0.6 mm or larger ruby/hardened nozzle; no chamber temperature or drying rule stated | superseded v3.4 TDS recorded by M042 conflicted at 260–280 °C nozzle and 100–120 °C bed | **Not validated** for base K2; require the exact printer, nozzle, spool documentation, drying evidence, and a calibration coupon. [M042] |
 | Polymaker Fiberon PPS-CF10 | nozzle 310–350 °C; bed 80–90 °C; ambient 25–80 °C; hardened nozzle; brittle clear path | minimum nozzle exceeds 300 °C | **Incompatible** with base K2. Its page explicitly says its flame claim is not UL 94 certification. [M043] |
-| BASF Ultrafuse PPSU live product page | nozzle 390–410 °C; bed 200–220 °C; chamber 170–210 °C; 25–100 mm/s; current drying rule unconfirmed | all core thermal requirements exceed candidate limits | **Incompatible**. [M044] |
-| PEI/ULTEM in Prusa high-temperature guidance | nozzle 370–420 °C; bed 150–155 °C; specialized equipment | exceeds candidate limits | **Incompatible**. [M045] |
+| BASF Ultrafuse PPSU page recorded by M044 | nozzle 390–410 °C; bed 200–220 °C; chamber 170–210 °C; 25–100 mm/s; drying rule unconfirmed | all core thermal requirements exceed base-K2 limits | **Incompatible**. [M044] |
+| PEI/ULTEM in Prusa high-temperature guidance | nozzle 370–420 °C; bed 150–155 °C; specialized equipment | exceeds base-K2 limits | **Incompatible**. [M045] |
 
 ## Wood, metal, and other particles
 

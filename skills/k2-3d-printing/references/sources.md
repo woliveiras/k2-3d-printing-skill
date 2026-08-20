@@ -619,7 +619,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:51:02+02:00
 - Applies to: Polymaker PLA Pro under its stated product/test conditions
 - Supports: 210–230 °C nozzle; up to 300 mm/s; 55 °C for 6 h drying when moisture was absorbed
-- Limitations/conflicts: Differs from older PolyLite PLA Pro M010; identify exact spool/revision
+- Limitations/conflicts: Differs from PolyLite PLA Pro M010; identify exact spool/revision
 - Confidence: High
 - Review by: 2027-01-30
 
@@ -684,18 +684,18 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:51:02+02:00
 - Applies to: PolyLite PETG
 - Supports: 230–260 °C nozzle; 70–80 °C bed; fan 0–20%; 50–100 mm/s; maximum volumetric speed at or below 15 mm³/s; 65 °C for 6 h drying
-- Limitations/conflicts: Does not apply to Hyper PETG or newer Polymaker PETG
+- Limitations/conflicts: Does not apply to Hyper PETG or the formulation recorded by M015
 - Confidence: High
 - Review by: 2026-11-20
 
-## M015 — Polymaker PETG new formulation parameter page
+## M015 — Polymaker PETG formulation parameter page
 
 - Publisher: Polymaker
 - URL: https://wiki.polymaker.com/polymaker-products/polymaker-filaments/prime-materials/petg/polymaker-tm-petg-new
 - Source type: Official product parameter page
 - Published/revised: Not displayed
 - Accessed: 2026-08-20T18:51:02+02:00
-- Applies to: Newer named Polymaker PETG
+- Applies to: Polymaker PETG formulation represented by this page
 - Supports: 240–260 °C nozzle; 60–70 °C bed; fan 20–60%; up to 300 mm/s; hardware-specific 22/32 mm³/s examples; 60 °C for 6 h drying
 - Limitations/conflicts: High-flow examples are hardware-specific and not K2 defaults
 - Confidence: High for product data; low for cross-printer flow
@@ -853,7 +853,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:51:02+02:00
 - Applies to: Named Creality PPA-CF product
 - Supports: 280–300 °C nozzle; 90–105 °C bed; enclosure; 80 °C forced-air drying for 8–12 h
-- Limitations/conflicts: Not listed in K2 materials; reaches/exceeds candidate limits; standard CFS warns about PPA-CF brittleness
+- Limitations/conflicts: Not listed in K2 materials; reaches/exceeds base-K2 limits; standard CFS warns about PPA-CF brittleness
 - Confidence: Medium for material parameters; no K2 endorsement
 - Review by: 2026-11-20
 
@@ -866,8 +866,8 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T19:27:34+02:00
 - Applies to: Ultrafuse PAHT-CF15
 - Supports: 250–270 °C nozzle; 65–85 °C bed; no chamber temperature stated; 0.6 mm or larger ruby/hardened nozzle; 30–80 mm/s
-- Limitations/conflicts: The live page conflicts with a removed v3.4 TDS URL that had stated 260–280 °C nozzle and 100–120 °C bed; the removed document is not retained as current authority, drying is unconfirmed, and no K2 compatibility is stated
-- Confidence: High for the live page; Low for superseded values
+- Limitations/conflicts: The page accessed 2026-08-20 conflicts with a superseded v3.4 TDS URL that stated 260–280 °C nozzle and 100–120 °C bed; the superseded document is not retained as current authority, drying is unconfirmed, and no K2 compatibility is stated
+- Confidence: High for the page snapshot; Low for superseded values
 - Review by: 2026-11-20
 
 ## M043 — Fiberon PPS-CF10 parameter page
@@ -905,7 +905,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:51:02+02:00
 - Applies to: PEI/ULTEM high-temperature printing guidance
 - Supports: 370–420 °C nozzle; 150–155 °C bed; specialized high-temperature equipment
-- Limitations/conflicts: Not a K2 profile; establishes incompatibility against candidate limits
+- Limitations/conflicts: Not a K2 profile; establishes incompatibility against base-K2 limits
 - Confidence: High
 - Review by: 2027-02-20
 
