@@ -1,6 +1,6 @@
 # Prepare
 
-Use Prepare to import and arrange models, select printer/filament/process presets, apply object-specific configuration, and start slicing. The 7.2.1 UI was not launched during research; distinguish source-confirmed labels from the older official Wiki layout.
+Use Prepare to import and arrange models, select printer/filament/process presets, apply object-specific configuration, and start slicing. Distinguish 7.2.1 source-confirmed labels from the older official Wiki layout and from controls visible in the target UI.
 
 ## Entry and exit
 
@@ -10,7 +10,7 @@ Use Prepare to import and arrange models, select printer/filament/process preset
 
 ## Model import
 
-The 7.2.1 import filter includes 3MF, STL, OBJ, AMF, STEP/STP, and additional model formats. Preferences contains `Display Step Import Setting Dialog`. The macOS bundle registers Finder viewer associations for STL, OBJ, AMF, 3MF, CXPRJ, and G-code but not STEP; Finder association is not the import-support list. [C010] [C024] [C023]
+The 7.2.1 import filter includes 3MF, STL, OBJ, AMF, STEP/STP, and additional model formats. Preferences contains `Display Step Import Setting Dialog`. A listed filter does not guarantee that an individual file parses or is printable. [C010] [C024]
 
 | Control | Path | Mode/scope | Unit/default | Effect | Risk and validation |
 |---|---|---|---|---|---|
@@ -23,7 +23,7 @@ The 7.2.1 import filter includes 3MF, STL, OBJ, AMF, STEP/STP, and additional mo
 
 Creality's official interface page, created and updated 2024-06-01, documents the Prepare toolbar functions as import, add plate, move, rotate, scale, mirror, clone, support painting, and seam painting. It does not identify a 7.x version. Use these as older official functional labels, not as proof of 7.2.1 icon order or screen position. [C018]
 
-For a screenshot-based instruction, distinguish the selected object, plate, modifier, support painter, seam painter, and transform gizmo. Units, defaults, keyboard shortcuts, and context-menu paths for these controls were not confirmed in this research.
+For a screenshot-based instruction, distinguish the selected object, plate, modifier, support painter, seam painter, and transform gizmo. Do not invent units, defaults, shortcuts, or context-menu paths that are not visible or version-sourced.
 
 ## Preset areas
 
@@ -48,4 +48,4 @@ Before changing an object override:
 
 ## Source-versus-screen boundary
 
-The exact running layout, scroll position, selected profiles, default values, toolbar icon order, and disabled states were not observed. If a path fails, check version, `AI`/`Pro`, `Basic`/`Professional`, `Global`/`Objects`, selection, prerequisites, search, and scrolling before marking the control unavailable.
+Source evidence does not establish the target layout, scroll position, selected profiles, defaults, icon order, or disabled states. If a path fails, check version, `AI`/`Pro`, `Basic`/`Professional`, `Global`/`Objects`, selection, prerequisites, search, and scrolling before marking the control unavailable.

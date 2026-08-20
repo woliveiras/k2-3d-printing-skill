@@ -4,9 +4,9 @@
 
 Do not infer CFS compatibility from a Creality Print profile, `single_extruder_multi_material=1`, a CFS button, or localization strings. Confirm the physical printer model, firmware, CFS model, connection, and official compatibility before device-specific instructions.
 
-The installed 7.2.1 profile tree has no `K2C` profile. A `Creality K2` profile cannot prove that a printer described by the user as `K2C` supports CFS. [C023]
+The 7.2.1 bundle snapshot has no `K2C` profile. A `Creality K2` profile cannot prove that a printer described as `K2C` supports CFS. [C023]
 
-No connected device or CFS was observed in this research.
+The cited evidence contains no connected-device or CFS runtime state; confirm both before device-specific instructions.
 
 ## Device Details controls
 

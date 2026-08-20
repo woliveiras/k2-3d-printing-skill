@@ -1573,18 +1573,18 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Confidence: Medium-high, dependency-limited
 - Review by: 2026-09-20
 
-## C023 — Installed Creality Print 7.2.1.5476 bundle and resources
+## C023 — Creality Print 7.2.1.5476 bundled-resource snapshot
 
-- Publisher: Creality; locally observed signed application bundle
-- URL: N/A — local artifacts under `/Applications/Creality Print.app/Contents/`, including `Info.plist`, `Resources/printers/version.txt`, `Resources/profiles/Creality.json`, `Resources/profiles/Creality/`, and `Resources/images/process/ProcessConfig.json`
-- Source type: Read-only local artifact observation
-- Published/revised: Bundle signed 2026-08-04; local modification timestamp 2026-08-04T16:22:28+02:00
+- Publisher: Creality application bundle
+- URL: N/A — version-scoped local artifact; not distributed with the skill
+- Source type: Read-only bundled-resource observation
+- Published/revised: Build dated 2026-08-04
 - Accessed: 2026-08-20T18:52:48+02:00
-- Applies to: Installed macOS arm64 build `7.2.1.5476`
-- Supports: Version, identifier, architecture, valid Creality signature, catalog identifiers, K2-family profile counts, absence of `K2C`, raw K2 0.4 fields, process subgroup labels, Finder document associations
-- Limitations/conflicts: Application was not launched; bundle profiles are not hardware identity, compatibility, safety, or official physical-limit evidence
-- Confidence: High for local bundle facts
-- Review by: 2026-09-20, or immediately after the installed application changes
+- Applies to: Creality Print `7.2.1.5476` macOS arm64 bundled resources
+- Supports: Version-scoped K2-family model/nozzle catalog, absence of `K2C`, raw K2 0.4 fields, and process subgroup labels
+- Limitations/conflicts: Not a live UI observation or a distributed reproducible artifact; re-inspect the target installation. Bundle profiles are not hardware identity, compatibility, safety, or official physical-limit evidence
+- Confidence: High for the recorded snapshot; none for a different installation
+- Review by: Immediately when the target application or version differs
 
 ## C024 — GUI_App.cpp at v7.2.1
 

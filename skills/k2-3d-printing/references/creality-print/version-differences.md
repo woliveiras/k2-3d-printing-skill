@@ -33,21 +33,9 @@ The current source contains conditional controls:
 
 Do not classify a conditional control as removed merely because it is not visible.
 
-## Unobserved 7.2.1 screens
+## Screens not visually confirmed by the baseline
 
-The application was not launched during the 2026-08-20 research. These remain visually unconfirmed:
-
-- About and first-run edition chooser;
-- Online Models interactions;
-- selected printer, process, and filament panels;
-- actual Global/Objects state and modifiers;
-- support/seam painting canvas;
-- calibration dialogs and their values;
-- sliced Preview, legends, colors, and statistics;
-- send page and all Device/CFS/camera/history/timelapse screens;
-- firmware/update navigation.
-
-Source-defined labels may be used with `source-confirmed, visually unobserved`. Pixel paths, defaults, and disabled states require a screenshot or direct version-matched observation.
+The baseline contains no running UI or device session. Use source-defined labels as `source-confirmed, visually unconfirmed`; require a screenshot or direct version-matched observation for pixel paths, defaults, disabled states, selected presets, Preview state, and Device/CFS/camera behavior.
 
 ## Refresh procedure
 
@@ -58,5 +46,5 @@ For any version newer or older than 7.2.1:
 3. Read the exact release notes and tag/source when available.
 4. Compare top navigation, edition/user-role labels, Process categories, support visibility, calibration menu, Preview views/Lite Mode, send actions, Device, and CFS.
 5. Record renamed, moved, gated, added, and removed controls separately.
-6. Preserve conflicts and observation state in `sources.md`.
+6. Report conflicts and observation state with source IDs.
 7. Do not update the application without authorization merely to make the documentation match.

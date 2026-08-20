@@ -2,7 +2,7 @@
 
 ## Evidence boundary
 
-Current source contains the dialog labels `Filament settings` and `Edit Filament`. The official older interface page documents a multi-color filament preset area that can select, add, delete, and assign filaments. The running 7.2.1 panel, selected preset, field values, units, defaults, and CFS state were not observed. [C006] [C018] [C025]
+The 7.2.1 source contains `Filament settings` and `Edit Filament`; older official documentation describes a multi-color preset area that can select, add, delete, and assign filaments. These sources do not establish the target panel's selected preset, values, units, defaults, or CFS state. [C006] [C018] [C025]
 
 ## Locate and manage presets
 
@@ -12,7 +12,7 @@ Current source contains the dialog labels `Filament settings` and `Edit Filament
 | Edit a filament preset | `Prepare` → filament preset edit control → `Filament settings` / `Edit Filament` | Preset editor; not Process scope | Preset editability and user role | Exact dialog labels source-confirmed; icon/location unconfirmed |
 | Add a system filament preset | `Prepare` → `Add/Delete Materials` or filament gear → `System Consumable` → check material → `Confirm` | 6.2 `Expert` path; System selection may be omitted in Basic | Version and role | Official 6.2 Wiki only; verify labels in 7.2.1 [C021] |
 | Assign filament to a model | `Prepare` → multi-color filament panel / Object Management | Object assignment, distinct from process override | Multiple filament entries and selected object | Older official Wiki; exact 7.2.1 gesture unconfirmed [C018] |
-| Map connected CFS slots | Set CFS printer as current in `Device` → return to Prepare filament section → `Auto Mapping` | Device-backed mapping | Compatible connected device and CFS | Official CFS Wiki, updated 2025-04-29; not observed locally [C022] |
+| Map connected CFS slots | Set CFS printer as current in `Device` → return to Prepare filament section → `Auto Mapping` | Device-backed mapping | Compatible connected device and CFS | Official CFS Wiki, updated 2025-04-29; confirm in the target UI [C022] |
 
 Current source uses `Basic`/`Professional` under `Preferences` → `User Role`. Replace the 6.2 documentation's `Expert` label with `Professional` only after confirming the current screen; do not silently rewrite other 6.2 paths. [C010] [C021]
 

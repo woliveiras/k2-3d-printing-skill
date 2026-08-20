@@ -9,7 +9,7 @@ Current 7.2.1 source labels the process panel `Process` and its scope switch `Gl
 - Record inherited and overridden values separately. Do not assume that a value visible in Objects changed Global.
 - Re-slice after any change; do not inspect a stale Preview.
 
-The running panel was not visually observed, so the switch position, selected state, and scroll behavior remain unconfirmed.
+The cited source confirms the labels, not the target build's switch position, selected state, or scroll behavior.
 
 ## 7.2.1 category navigation
 
@@ -24,9 +24,9 @@ The running panel was not visually observed, so the switch position, selected st
 
 An internal `Frequent` toolbar item exists in source but is hidden by the observed setup code. Do not direct a stable 7.2.1 user to `Frequent` unless it is visible in their build. [C007]
 
-## Installed 7.2.1 subgroup labels
+## Bundled 7.2.1 subgroup labels
 
-The installed `ProcessConfig.json` records these English groups. They are observed bundled-resource labels, not proof that every group is visible under every profile, role, or object context. [C023]
+The 7.2.1 bundle snapshot records these English groups. They do not prove that every group is visible under every profile, role, or object context. [C023]
 
 | Category | Subgroups |
 |---|---|
@@ -35,7 +35,7 @@ The installed `ProcessConfig.json` records these English groups. They are observ
 | `Support` | `Support`, `Raft`, `Support filament`, `Advanced`, `Tree supports` |
 | `Others` | `Skirt`, `Brim`, `Prime tower`, `Flush options`, `Special mode` |
 
-The current Process toolbar also defines `Speed` and `Multimaterial`, but the inspected local `ProcessConfig.json` did not provide their subgroup list. Mark those subsection names unconfirmed until read from the user's screen or an exact 7.2.1 setting definition.
+The 7.2.1 Process toolbar also defines `Speed` and `Multimaterial`, but the bundle snapshot does not establish their subgroup list. Mark those subsection names unconfirmed until read from the user's screen or an exact version-matched setting definition.
 
 ## Objects, parts, modifiers, and layer ranges
 
@@ -50,24 +50,9 @@ It remains visible for the normal print tab. If Support disappears, first return
 
 ## Parameter evidence record
 
-For an individual setting, use this record before recommending a change:
+Apply the [control-record rule](INDEX.md#control-record-rule). For a Process setting, also record the selected object/part/layer context, inherited versus overridden state, and profile-default origin.
 
-```text
-Version/platform:
-Edition: AI / Pro
-User role: Basic / Professional
-Path: Prepare > Process > Global|Objects > category > subgroup > exact label
-Selected context:
-Current value and unit:
-Profile default and origin:
-Official or observed effect:
-Interactions:
-Risk/stop condition:
-Preview view and acceptance check:
-Evidence ID / screenshot:
-```
-
-No individual 7.2.1 process-field defaults were visually observed in this research. Do not manufacture a unit, default, enabled state, tooltip, or interaction from the category name. A bundled profile value must be labelled `observed bundled profile value` and tied to its exact printer/nozzle/process/filament preset; it is not a universal default.
+The cited evidence does not establish displayed defaults for individual 7.2.1 process fields. Do not manufacture a unit, default, enabled state, tooltip, or interaction from a category name. Label a bundled value `observed bundled profile value`, tie it to the exact printer/nozzle/process/filament preset, and never treat it as universal.
 
 The 7.2.1 notes include fixes for interdependent settings and a bed-temperature selection defect. Treat a change in one field as potentially affecting another, re-open dependent fields, and re-slice before validation. [C003]
 

@@ -2,11 +2,11 @@
 
 Use this section only after identifying the Creality Print version and separating the selected slicer profile from the physical printer identity.
 
-## Research boundary
+## Evidence boundary
 
-The verified local snapshot is Creality Print `7.2.1.5476` for macOS arm64. On 2026-08-20, it matched Creality's newest public stable release, `v7.2.1`, published 2026-08-04. The signed application bundle and official `v7.2.1` source were inspected without launching the application. No running screen, selected preset, printer, firmware, account, camera, network, or CFS state was observed. Recheck the official release before using `latest` in a later task. [C001] [C002] [C003] [C023]
+The baseline combines official `v7.2.1` source with a read-only Creality Print `7.2.1.5476` macOS arm64 bundle snapshot captured on 2026-08-20. It includes no running UI or connected-device state. Recheck the official release and identify the target installation before version-sensitive navigation. [C001] [C002] [C003] [C023]
 
-The installed profile catalog contains `Creality K2`, `Creality K2 SE`, `Creality K2 Pro`, and `Creality K2 Plus`. It contains no `K2C` string. Never use a profile to prove the physical model and never silently translate `K2C` into another K2-family name. [C023]
+The version-scoped profile catalog contains `Creality K2`, `Creality K2 SE`, `Creality K2 Pro`, and `Creality K2 Plus`, but no `K2C` string. Never use a profile to prove the physical model or silently translate `K2C` into another K2-family name. [C023]
 
 ## Route by task
 

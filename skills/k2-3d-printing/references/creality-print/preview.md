@@ -63,29 +63,8 @@ Creality's 6.2 Wiki says Lite Mode was introduced to reduce Preview memory use a
 
 Disable Lite Mode and re-slice for a complete inspection of internal walls/infill, support, travel, retractions, wipe/purge behavior, or any feature whose absence would change the decision.
 
-## Layer-by-layer inspection
+Run the complete [slicing Preview inspection](../slicing/preview-inspection.md) after disabling Lite Mode whenever hidden paths could change the decision. Report the completion states defined in [SKILL.md](../../SKILL.md#separate-completion-states); never convert `Preview reviewed` into a print or safety guarantee.
 
-1. Inspect the entire first layer for every model, support, brim/raft, and purge structure.
-2. Scrub to the first layer of every new island; reject unintended extrusion in air.
-3. Inspect thin walls, holes, bridges, overhangs, top/bottom closure, and geometry transitions.
-4. Inspect seams on visible, sealing, fitting, and high-stress surfaces.
-5. Inspect support/interface contact, branch continuity, trapped support, and removal access.
-6. Inspect speed, flow, acceleration, fan, and temperature through transitions and small layers.
-7. Inspect travel/retraction across visible faces and collision-sensitive tall features.
-8. Inspect every material change, CFS mapping, purge event, tower, and per-filament total.
-9. Inspect each plate separately and compare object overrides with `Global`.
+## Evidence boundary
 
-Use the complete checklist in [slicing Preview inspection](../slicing/preview-inspection.md).
-
-## Readiness language
-
-- `Sliced`: generation finished; Preview may be unreviewed.
-- `Preview reviewed`: named views and layers were inspected with no apparent anomaly; list omissions.
-- `Test print recommended`: fit, strength, support, material, surface, or calibration uncertainty remains.
-- `Physically validated`: the stated printer/material/profile or representative acceptance test actually succeeded.
-
-Never convert `Preview reviewed` into a guarantee of safety or print success.
-
-## Observation boundary
-
-No actual 7.2.1 Preview, sliced model, legend, colors, first layer, support interface, purge tower, or statistics panel was visually observed during research. All paths above are tagged-source or version-scoped Wiki evidence. If a screenshot lacks the version or active legend, report only the visible state and request more context only when necessary.
+The paths above are tagged-source or version-scoped Wiki evidence, not a visually observed target Preview. If a screenshot lacks the version or active legend, report only the visible state and request more context only when necessary.

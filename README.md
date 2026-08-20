@@ -66,9 +66,9 @@ git diff --check
 
 The 14-case deterministic response oracle is deliberately limited: it verifies explicit guardrails and rejects known unsafe or unauthorized response patterns, but it cannot establish factual accuracy or replace real printer/material tests. No provider or external-model evaluation runs by default.
 
-## Research snapshot
+## Evidence baseline
 
-The initial research date is 2026-08-20. The locally installed macOS application was observed read-only as Creality Print `7.2.1.5476`; the official GitHub release API also identified `v7.2.1` as the newest non-draft, non-prerelease release on that date. The user's physical printer remains unconfirmed: `K2C` was user-supplied wording, while the official and locally bundled evidence examined so far identifies K2, K2 Pro, K2 Plus, and K2 SE. See [printer identity](skills/k2-3d-printing/references/printer-identity.md) and the [source register](skills/k2-3d-printing/references/sources.md) before drawing a hardware conclusion.
+The reference library is dated 2026-08-20. Its Creality Print baseline combines official `v7.2.1` source with a read-only `7.2.1.5476` macOS bundle snapshot; neither establishes a future user's installed version or runtime state. The evidence identifies K2, K2 Pro, K2 Plus, K2 SE, and K2 SE 4C, but no distinct physical model named `K2C`. Recheck [printer identity](skills/k2-3d-printing/references/printer-identity.md) and the [source register](skills/k2-3d-printing/references/sources.md) before version- or model-specific guidance.
 
 ## Contributing
 

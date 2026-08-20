@@ -1,18 +1,14 @@
 # Version and modes
 
-## Verified software snapshot
+## Version-scoped reference baseline
 
 | Field | Verified value | Evidence class |
 |---|---|---|
-| Installed application | `/Applications/Creality Print.app` | Observed local bundle |
-| Installed version | `7.2.1.5476` | `CFBundleShortVersionString` |
-| Bundle identifier | `com.creality.crealityprint` | `Info.plist` |
-| Architecture | macOS arm64 | Mach-O executable inspection |
-| Signature | Shenzhen Creality 3D Technology Co., Ltd; valid on disk | Apple code-signing inspection |
+| Bundle snapshot | `7.2.1.5476`, macOS arm64 | Read-only version-scoped artifact |
 | Official stable release at 2026-08-20 | `v7.2.1`, build `7.2.1.5476` | Creality download and GitHub release data |
 | Release publication | 2026-08-04T13:23:29Z | Official GitHub release API |
 
-The installed build matched both official release channels at the research time. Do not reuse this as an undated `latest` claim. Query Creality's download page and the official GitHub releases API again for a version-sensitive request. Do not update or install the application without separate authorization. [C001] [C002] [C003] [C023]
+The bundle snapshot matched both official release channels on 2026-08-20. Do not reuse that as an undated `latest` claim. Query Creality's download page and official GitHub releases API for a version-sensitive request. Do not update or install the application without separate authorization. [C001] [C002] [C003] [C023]
 
 ## Determine the user's version
 
@@ -23,7 +19,7 @@ Use, in order:
 3. Read a visible version from a screenshot only when the complete version is legible.
 4. Treat a 3MF profile name or screenshot styling as a clue, not proof of software version.
 
-Record the platform because menu placement and native shortcuts can differ. This research did not open the About screen or the application UI.
+Record the platform because menu placement and native shortcuts can differ. The reference baseline contains no running `About` screen or UI observation.
 
 ## Keep the three mode systems separate
 
@@ -41,11 +37,11 @@ Current `v7.2.1` source defines these exact top-level labels:
 
 `Online Models` → `Prepare` → `Preview` → `Device`. [C005]
 
-This is source-confirmed but was not visually observed in the installed application. Treat pixel location, selected-state styling, and responsive layout as unconfirmed.
+These labels are source-confirmed; pixel location, selected-state styling, and responsive layout remain unconfirmed.
 
 ## Preferences
 
-On macOS, current source adds `Preferences` to the native application menu with Command-comma. The likely displayed path is `Creality Print` → `Preferences…`; the running menu was not visually inspected, so retain `source-confirmed, visually unobserved` in instructions. [C011]
+On macOS, 7.2.1 source adds `Preferences` to the native application menu with Command-comma. Use `Creality Print` → `Preferences…` only as a source-confirmed, visually unconfirmed path until it is visible in the target build. [C011]
 
 The 7.2.1 general Preferences source contains:
 
@@ -61,17 +57,9 @@ The 7.2.1 general Preferences source contains:
 - `Display Step Import Setting Dialog`;
 - controls to clear remembered choices for unsaved presets and projects. [C010]
 
-`Downloads`, `Default Page`, `Auto sync user presets(Printer/Filament/Process)`, and `User Experience Program` are conditional on the cloud build in source. Mark them unconfirmed until visible in the user's build. No default values for these controls were observed.
+`Downloads`, `Default Page`, `Auto sync user presets(Printer/Filament/Process)`, and `User Experience Program` are conditional on the cloud build in source. Mark them unconfirmed until visible in the user's build; the cited source does not establish their defaults.
 
-## Screenshot interpretation
-
-When a screenshot is supplied:
-
-1. Read only visible labels and state.
-2. Identify the page, version, edition, user role, `Global`/`Objects`, and selected context when shown.
-3. Do not infer that a field is absent because it is below the scroll area, filtered by role, or disabled by a dependency.
-4. Do not use colors without the active legend.
-5. Ask for one additional screenshot only if the missing context changes the instruction.
+Apply the screenshot and visibility rules in the [Creality Print index](INDEX.md#navigation-rule).
 
 ## 7.2.1 release relevance
 

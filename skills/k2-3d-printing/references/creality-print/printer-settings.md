@@ -4,20 +4,20 @@
 
 Treat the active printer preset as configuration evidence only. Confirm the physical model from its label or About screen before using build volume, hotend, nozzle, bed, chamber, CFS, firmware, maintenance, or repair claims.
 
-The installed 7.2.1 profile tree contains no `K2C` string. If the user says `K2C`, do not select `Creality K2` or another family profile as a substitute. Stop only the hardware-specific recommendation and ask for the physical model label or printer About screen. [C023]
+The 7.2.1 bundle snapshot contains no `K2C` profile. If the user says `K2C`, do not select `Creality K2` or another family profile as a substitute. Stop only the hardware-specific recommendation and ask for the physical model label or printer `About` screen. [C023]
 
-## Bundled K2-family inventory
+## Bundled K2-family catalog
 
-The counts below are observed local resource records, calculated by exact `printer_model` or `compatible_printers` match. Nozzle counts exclude the separate machine-model descriptor. [C023]
+The version-scoped bundle snapshot contains these model and nozzle presets. [C023]
 
-| Bundled model | Nozzle presets | Process presets | Filament presets |
-|---|---:|---:|---:|
-| `Creality K2` | 4: `0.2`, `0.4`, `0.6`, `0.8` | 10 | 54 |
-| `Creality K2 SE` | 1: `0.4` | 3 | 20 |
-| `Creality K2 Pro` | 4: `0.2`, `0.4`, `0.6`, `0.8` | 10 | 62 |
-| `Creality K2 Plus` | 4: `0.2`, `0.4`, `0.6`, `0.8` | 27 | 154 |
+| Bundled model | Nozzle presets |
+|---|---|
+| `Creality K2` | `0.2`, `0.4`, `0.6`, `0.8` |
+| `Creality K2 SE` | `0.4` |
+| `Creality K2 Pro` | `0.2`, `0.4`, `0.6`, `0.8` |
+| `Creality K2 Plus` | `0.2`, `0.4`, `0.6`, `0.8` |
 
-These counts show bundled slicer coverage, not official physical compatibility.
+Catalog coverage does not establish physical compatibility.
 
 ## Locate and edit a printer preset
 
@@ -33,7 +33,7 @@ Current 7.2.1 uses `Professional` instead of the older Wiki's `Expert`. Do not a
 
 ## Observed raw K2 0.4 profile fields
 
-The installed `Creality K2 0.4 nozzle` JSON declares the following. Preserve the raw field name and evidence class when mentioning a value. [C023]
+The version-scoped `Creality K2 0.4 nozzle` profile declares the following. Preserve the raw field name and evidence class when mentioning a value. [C023]
 
 | Raw field | Bundled value | What it does not prove |
 |---|---|---|

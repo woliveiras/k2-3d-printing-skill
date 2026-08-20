@@ -1,8 +1,8 @@
 # Device and printing
 
-## Observation and authority boundary
+## Evidence and authority boundary
 
-The installed application was not launched. No Device page, account, printer, device address, firmware, camera, file, history, timelapse, LAN/cloud state, CFS, or print control was opened. The labels below come from official 7.2.1 source/localization and official Wiki documentation. A localization string proves a potential label, not availability on a particular printer or firmware. [C017] [C023]
+The labels below come from official 7.2.1 source/localization and official Wiki documentation, not a connected Device session. A localization string proves a potential label, not availability on a particular printer, firmware, account, connection, or state. [C017]
 
 Do not send, start, pause, stop, continue, reprint, feed/retract filament, or otherwise control a printer without separate authorization for that exact device and action.
 
@@ -34,7 +34,7 @@ Current 7.2.1 source keeps these operations separate: [C011]
 | Print | post-slice → `Print plate` / `Print all` → send page → `Start Print` | Transfers and starts machine execution | Valid compatible device, mapping, connection, state | Separate explicit authorization required |
 | Multi-device | post-slice dropdown → `Send to Multi-device` | Targets multiple enabled devices | Multi-machine feature enabled | Separate explicit authorization for every target |
 
-The exact button placement was not visually observed. `Send` is suppressed in current source for third-party hosts that do not use the supported Creality network path; do not reuse a Creality path for a foreign printer/profile. [C011]
+The source confirms actions, not exact button placement. `Send` is suppressed for third-party hosts that do not use the supported Creality network path; do not reuse a Creality path for a foreign printer/profile. [C011]
 
 ## Send page
 

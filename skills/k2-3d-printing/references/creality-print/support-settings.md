@@ -9,7 +9,7 @@
 | Manual support painting | `Prepare` toolbar → support-painting control | Selected model surface | Model selection and tool context | Official 2024 interface documentation; 7.2.1 icon/path visually unconfirmed [C018] |
 | AI support analysis | AI workflow after model/slice analysis | AI Edition and AI Cloud Service | Service, login/network, supported model state | Introduced in 7.0; not a physical validation [C015] [C016] |
 
-The installed 7.2.1 resource groups under `Support` are `Support`, `Raft`, `Support filament`, `Advanced`, and `Tree supports`. Individual field labels, units, defaults, and enabled states were not observed. [C023]
+The 7.2.1 bundle snapshot groups `Support`, `Raft`, `Support filament`, `Advanced`, and `Tree supports`. It does not establish each field's label, unit, default, visibility, or enabled state. [C023]
 
 ## Why Support can disappear
 
