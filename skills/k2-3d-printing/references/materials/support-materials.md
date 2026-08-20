@@ -44,26 +44,11 @@ Before assigning a support material:
 
 ## Interface settings
 
-Treat these controls as a coupled system:
-
-- top and bottom Z distance;
-- XY separation;
-- interface layer count and spacing;
-- support pattern and density;
-- support/primary temperatures and cooling;
-- purge amount and contamination;
-- normal versus tree geometry;
-- support access and load during removal.
+Use the [canonical orientation and support workflow](../slicing/orientation-and-supports.md) for Z/XY separation, interface layers, pattern, normal/tree choice, access, and Preview checks. Add the material pair's temperature, cooling, purge, and contamination constraints.
 
 PolyDissolve S1 PIS v1.1 publishes Z gap 0 and XY distance 0.5 mm as its product/profile starting information. Preserve those as **Manufacturer starting points for that product**, not universal soluble-support defaults. [M031]
 
-For an unvalidated pair:
-
-- begin with a small stepped Z/XY/interface coupon;
-- inspect every contact in Preview;
-- use the minimum interface needed to support the surface without trapping material;
-- preserve the visible or sealing face from support when orientation/splitting can do so;
-- do not interpret Preview colors without the active legend.
+For an unvalidated pair, use a stepped Z/XY/interface coupon and preserve visible or sealing faces from contact.
 
 ## Family-specific operating rules
 
@@ -91,10 +76,7 @@ For HIPS or another non-water-soluble support, do not name a solvent, temperatur
 
 ## Geometry and surface strategy
 
-- Prefer orientation, chamfers, self-supporting geometry, model splitting, or removable sacrificial features before adding soluble support.
-- Avoid support on sealing, ergonomic, optical, mating, or primary visible faces.
-- Ensure every support volume has an exit/removal path. A soluble material can remain trapped or incompletely refreshed inside a narrow cavity.
-- For a curved shell, test a representative supported curve. Interface sag, purge contamination, and stair stepping can matter more than nominal layer height.
+Apply the [design guidance for removable supports](../design-for-fdm.md#removable-and-sacrificial-supports). Ensure every support volume has an exit path—a soluble material can remain trapped inside a narrow cavity—and test a representative supported curve for interface sag, purge contamination, and surface damage.
 
 ## Health, maintenance, and disposal
 
