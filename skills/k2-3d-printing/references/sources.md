@@ -188,7 +188,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:56:01+02:00
 - Applies to: K2 Plus only
 - Supports: Separate integrated K2 Plus 0.4/0.6/0.8 mm nozzle-replacement procedure
-- Limitations/conflicts: Explicitly not transferable to other K2 models; no torque captured
+- Limitations/conflicts: Explicitly not transferable to other K2 models; no torque stated
 - Confidence: High
 - Review by: 2026-11-20
 
@@ -201,7 +201,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:56:01+02:00
 - Applies to: K2 SE
 - Supports: 220 × 215 × 245 mm build volume, 300 °C nozzle, 100 °C bed, epoxy-resin plate, original-CFS and camera claims
-- Limitations/conflicts: The page's `0.4 mm filament diameter` field appears to confuse nozzle and filament diameter; no complete maintenance procedure captured
+- Limitations/conflicts: The page's `0.4 mm filament diameter` field appears to confuse nozzle and filament diameter; it provides no complete maintenance procedure
 - Confidence: Medium-high except erroneous field
 - Review by: 2026-11-20
 
@@ -396,7 +396,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:56:01+02:00
 - Applies to: K2 and K2 Pro manual belt tension; K2 Plus automatic belt tension
 - Supports: Model distinction, two-to-three clockwise turns for the named manual path, and post-adjustment input shaping
-- Limitations/conflicts: No torque; screw position must be taken from live official illustrations; no K2 SE procedure captured
+- Limitations/conflicts: No torque; screw position must be taken from live official illustrations; no K2 SE procedure provided
 - Confidence: High
 - Review by: 2026-11-20
 
@@ -762,7 +762,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:51:02+02:00
 - Applies to: Ultrafuse HIPS
 - Supports: 240–260 °C nozzle; 100–120 °C bed; 0.4 mm or larger; 40–80 mm/s; 60 °C for 4–16 h drying; ABS support use
-- Limitations/conflicts: Candidate K2 bed covers only the lowest point; pairing and removal need physical test
+- Limitations/conflicts: Base-K2 bed covers only the lowest point; pairing and removal need physical test
 - Confidence: High
 - Review by: 2027-08-20
 
@@ -840,7 +840,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:51:02+02:00
 - Applies to: Fiberon PET-GF15
 - Supports: 280–310 °C nozzle; 70–80 °C bed; fan off; 30–250 mm/s; hardened nozzle; 120 °C/16 h anneal
-- Limitations/conflicts: Upper nozzle range exceeds candidate K2; never command 310 °C
+- Limitations/conflicts: Upper nozzle range exceeds base K2; never command 310 °C
 - Confidence: High
 - Review by: 2026-11-20
 
@@ -892,7 +892,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T19:27:34+02:00
 - Applies to: Ultrafuse PPSU
 - Supports: 390–410 °C nozzle; 200–220 °C bed; 170–210 °C chamber; 0.4 mm or larger nozzle; 25–100 mm/s
-- Limitations/conflicts: Requirements are outside candidate K2 specifications; a removed v1.5 TDS URL had supplied different speed and drying details, which are not reused as current guidance
+- Limitations/conflicts: Requirements are outside base-K2 specifications; a removed v1.5 TDS URL supplied different speed and drying details, which are not reused as current guidance
 - Confidence: High
 - Review by: 2026-11-20
 

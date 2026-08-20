@@ -58,7 +58,7 @@ Base-K2 reference facts: 300 °C maximum nozzle, 100 °C maximum bed, all-metal 
 
 ## CFS-C matrix boundary
 
-The official CFS-C table is separate. In the researched snapshot it:
+The official CFS-C table recorded by M004:
 
 - marks named Hyper PLA, ABS, PLA-CF, PETG and several CR PLA/Silk/Matte products usable;
 - marks TPU unavailable;

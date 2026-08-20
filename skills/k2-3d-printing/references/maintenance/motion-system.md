@@ -6,19 +6,19 @@ Use this file for rails, shafts, lead screws, belts, pulleys, layer shifts, ring
 
 | Area | K2 | K2 Pro | K2 Plus | K2 SE / K2 SE 4C | Sources |
 |---|---|---|---|---|---|
-| XY belt tension | manual official procedure | manual official procedure | automatic belt tension | no procedure captured | [P030] |
-| X/Y/Z lubrication | base manual and maintenance page; schedule conflict with newer K2-series pages | model-specific X anti-rust oil versus Y/Z generic grease | separate maintenance page; do not import base schedule | no procedure captured | [P003] [P027] [P028] [P029] [P032] [P034] |
-| Calibration after motion work | input shaping and auto leveling documented for base K2; input shaping after manual belt adjustment | input shaping after manual belt adjustment | use model-specific automatic procedure | no model-specific evidence captured | [P003] [P030] |
+| XY belt tension | manual official procedure | manual official procedure | automatic belt tension | no cited procedure | [P030] |
+| X/Y/Z lubrication | base manual and maintenance page; schedule conflict with newer K2-series pages | model-specific X anti-rust oil versus Y/Z generic grease | separate maintenance page; do not import base schedule | no cited procedure | [P003] [P027] [P028] [P029] [P032] [P034] |
+| Calibration after motion work | input shaping and auto leveling documented for base K2; input shaping after manual belt adjustment | input shaping after manual belt adjustment | use model-specific automatic procedure | no model-specific cited evidence | [P003] [P030] |
 
 ## Rails, shafts, and lead screws
 
 For a confirmed applicable model, follow [cleaning and lubrication](cleaning-and-lubrication.md). The newer K2-series X-rail and Z-lead-screw pages require power-off service and name WD-40 Specialist Silicone, but their weekly/biweekly cadence conflicts with older base-K2 sources. [P028] [P029]
 
-Do not apply lubricant to belts or unspecified bearings/pulleys. Do not infer that a product named for one rail is valid for every motion surface. No official pulley-removal, alignment, bearing-replacement, belt-frequency, or fastener-torque procedure was captured.
+Do not apply lubricant to belts or unspecified bearings/pulleys. Do not infer that a product named for one rail is valid for every motion surface. The cited sources provide no pulley-removal, alignment, bearing-replacement, belt-frequency, or fastener-torque procedure.
 
 ## Conditional K2/K2 Pro belt tension
 
-The official family guide distinguishes K2/K2 Pro manual tension from K2 Plus automatic tension. For K2/K2 Pro it records two to three clockwise turns followed by input shaping, but the research did not capture torque or enough positional detail to identify the screws without the page images. [P030]
+The official family guide distinguishes K2/K2 Pro manual tension from K2 Plus automatic tension. For K2/K2 Pro it records two to three clockwise turns followed by input shaping, but it states no torque; use its illustrations to identify the screws. [P030]
 
 1. Confirm K2 or K2 Pro physically.
 2. Open P030 live and match the printer, access point, screw pair, starting state, and illustrated direction.
@@ -27,7 +27,7 @@ The official family guide distinguishes K2/K2 Pro manual tension from K2 Plus au
 5. Run the documented input-shaping calibration.
 6. Stop on binding, asymmetric motion, collision, repeated calibration failure, damaged belt/pulley, unclear screw identity, or any need to disassemble a pulley/motor.
 
-For K2 Plus, do not perform this manual adjustment; use its automatic model-specific function and official documentation. For K2 SE variants, the researched evidence is insufficient—do not guess. [P030]
+For K2 Plus, do not perform this manual adjustment; use its automatic model-specific function and official documentation. P030 provides no K2 SE procedure—do not guess.
 
 ## Symptom routes
 

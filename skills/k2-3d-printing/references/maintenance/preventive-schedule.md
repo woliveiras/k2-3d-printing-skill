@@ -32,7 +32,7 @@ Do not merge these into a false single interval. Record the model, source revisi
 
 - K2 Pro has a model-specific lubrication procedure that distinguishes thin metal anti-rust oil for the X rail from generic grease for Y/Z shafts and lead screws. It does not name an exact grease and must not be transferred to base K2. [P032]
 - K2 Plus has its own maintenance page, two cameras, an activated-carbon filter, and automatic belt tension. Load its live model-specific procedure rather than this base-K2 schedule. [P012] [P013] [P030] [P034]
-- No complete K2 SE or K2 SE 4C preventive schedule was captured in this research. Treat schedules, lubricants, parts, and disassembly as unconfirmed until a model-specific official manual is opened. [P015] [P016]
+- P015 and P016 provide no complete K2 SE or K2 SE 4C preventive schedule. Treat schedules, lubricants, parts, and disassembly as unconfirmed until a model-specific official manual is opened.
 
 ## Symptom override
 

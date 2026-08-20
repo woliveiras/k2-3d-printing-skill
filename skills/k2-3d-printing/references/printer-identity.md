@@ -4,7 +4,7 @@
 
 Treat `K2C` as an unconfirmed physical identity until the rating label or `About` screen resolves it. The evidence set identifies K2, K2 Pro, K2 Plus, K2 SE, and K2 SE 4C, but no distinct physical model named `K2C`. The official product page defines **K2 Combo** as a K2 printer bundled with one original CFS; the bundle name does not prove that a particular unit is a K2. [P001] [P004] [P017] [P018] [P019] [P020] [P035]
 
-Never use a Creality Print profile as physical identity proof. K2 and K2 Pro also share the public board identifier and firmware image in the researched listing, so firmware alone may not distinguish them. [P017] [P018] [P035] [P036]
+Never use a Creality Print profile as physical identity proof. K2 and K2 Pro also share the public board identifier and firmware image in the dated listing, so firmware alone may not distinguish them. [P017] [P018] [P035] [P036]
 
 ## Family comparison
 

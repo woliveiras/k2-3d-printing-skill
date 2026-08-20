@@ -18,8 +18,8 @@ The base-K2 manual/parts catalog identifies an AI monitoring camera, auto leveli
 | Fans | confirmed base K2 | Clean weekly with power off; inspect accessible blockage/damage | Exact tools/SKUs not captured | Controlled restart: fans turn without rubbing/noise/error | Blade/cable damage, seized fan, inaccessible debris, repeat error, unknown cover/fastener | [P027] |
 | Air filter | confirmed base K2 | Replace every 300 print hours per manual or around three months at eight hours/day; monthly under frequent use per maintenance page | Exact filter SKU/tool not captured | Correct seating, unobstructed path, normal controlled fan behavior | Unknown part/orientation/access, damaged housing, absent model-specific procedure | [P003] [P027] |
 | Camera | confirmed base K2 | Clean dirty/blurry lens with lint-free cloth and alcohol; inspect weekly with ABS | lint-free cloth; alcohol | Image becomes clear after controlled restart | Liquid ingress, loose/scratched lens, no image after cleaning, network/app-only fault | [P033] |
-| Leveling/strain gauge | confirmed base K2 component | Run normal auto leveling; inspect only visible obstruction while off/cool | No replacement tool/part captured | Calibration completes and supervised first layer passes | Repeat sensor/calibration error, nozzle/bed collision, loose/damaged component, wiring access | [P003] [P007] |
-| Filament-break detection | confirmed base K2 component | Observe error and accessible filament path; use normal load/unload | No replacement procedure/SKU captured | Correct state after supervised load/unload | Repeat false state, damaged sensor/cable, internal access | [P007] |
+| Leveling/strain gauge | confirmed base K2 component | Run normal auto leveling; inspect only visible obstruction while off/cool | No cited replacement tool/part | Calibration completes and supervised first layer passes | Repeat sensor/calibration error, nozzle/bed collision, loose/damaged component, wiring access | [P003] [P007] |
+| Filament-break detection | confirmed base K2 component | Observe error and accessible filament path; use normal load/unload | No cited replacement procedure/SKU | Correct state after supervised load/unload | Repeat false state, damaged sensor/cable, internal access | [P007] |
 | Firmware | exact confirmed model/board only | Read and record installed versions; compare to live official listing | No installation action authorized | If separately authorized, record before/after versions and complete official post-update calibrations | Model/board mismatch, unsigned/unofficial file, power instability, update error | [P017] [P018] [P019] [P020] [P021] [P035] [P036] |
 
 K2 Plus has two documented cameras and an activated-carbon filter on its model-specific maintenance page; do not use those facts to identify or service base K2. [P034]
@@ -41,7 +41,7 @@ Separate optical, application/network, and hardware failure:
 2. For a confirmed base K2 and only a dirty/blurry lens, use P033 while powered off and cool.
 3. After restart, observe the local/device status without changing firmware or network configuration.
 4. If the lens is clear but the image is absent/intermittent, record firmware, application/version, network context without exposing credentials, and exact error.
-5. No model-specific camera replacement, cable procedure, or network-reset sequence was captured. Do not invent one; use official support.
+5. The cited sources provide no model-specific camera replacement, cable procedure, or network-reset sequence. Do not invent one; use official support.
 
 ## Firmware observation, not update
 

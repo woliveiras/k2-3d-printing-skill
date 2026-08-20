@@ -103,7 +103,7 @@ When giving a material recommendation, fill every row below. Write **not stated 
 
 ## Drying and storage rules
 
-- Use the exact product document. The researched examples range from PLA products that need no drying as supplied to nylon products requiring long drying and dry feed.
+- Use the exact product document. Drying requirements vary from no drying as supplied to long drying with dry feed.
 - Obey the lowest safe temperature among filament TDS, spool/container, dryer, and official device limits.
 - Do not rely on an unverified household oven. Temperature overshoot can soften a spool or filament; use a controlled dryer and an independent thermometer where the manufacturer instructs it. [M046, M047]
 - Return hygroscopic filament to a sealed container with suitable desiccant. Record whether the material was printed from a dry box.

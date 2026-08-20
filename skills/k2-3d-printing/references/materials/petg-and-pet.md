@@ -27,7 +27,7 @@ Finish, toughness, layer adhesion, stringing, stiffness, and translucency vary b
 
 The three unfilled PETG rows conflict substantially. Preserve each range under its exact product identity; never combine them into “PETG: 190–260 °C, bed 45–100 °C.”
 
-No exact unfilled-PET TDS was established in this research. The K2/CFS family listing is not enough to supply PET temperatures, fan, speed, drying, surface, or retraction. Mark those fields **Unvalidated** until the spool is identified.
+The cited sources include no exact unfilled-PET TDS. The K2/CFS family listing cannot supply PET temperatures, fan, speed, drying, surface, or retraction; keep those fields **Unvalidated** until the spool is identified.
 
 ## Operational parameter card
 
@@ -45,7 +45,7 @@ Door/lid and chamber state remain **Unvalidated** unless the exact filament and 
 
 - Preserve the exact published fan range: PolyLite PETG 0–20%; newer Polymaker PETG 20–60%; Fiberon PET-CF17 fan off. These values conflict because the products differ. [M014, M015, M039]
 - If cooling is not published for the exact product, calibrate with an overhang/bridge coupon. More cooling may improve overhang shape while reducing interlayer bonding; label the chosen setting **Empirical adjustment**.
-- Bridge and overhang speeds are not supplied by the researched PETG product sources. Keep them **Unvalidated** until a feature-specific coupon.
+- The cited PETG product sources do not supply bridge or overhang speeds. Keep them **Unvalidated** until a feature-specific coupon.
 
 ### Speeds, acceleration, flow, and retraction
 
@@ -69,7 +69,7 @@ Door/lid and chamber state remain **Unvalidated** unless the exact filament and 
 - Verify spool temperature tolerance and dryer accuracy. Store sealed with suitable desiccant and record whether printing occurred from a dry box.
 - Standard CFS officially lists PETG and PET, but wetness, brittleness, spool geometry, and exact product restrictions remain separate.
 - PolyDissolve S1 rates PETG only partially compatible; UltiMaker PVA names PETG adhesion within its 2.85 mm ecosystem. These are pairing hypotheses, not guarantees for another brand or Creality profile. Test interface adhesion, purge, Z/XY gap, and dissolution on a coupon. [M030, M032]
-- HIPS and BVOH pairing with PETG was not confirmed in the researched primary sources. Mark it **Unvalidated**.
+- The cited primary sources do not establish HIPS or BVOH pairing with PETG. Mark it **Unvalidated**.
 
 ## Abrasion, health, post-processing, and care
 

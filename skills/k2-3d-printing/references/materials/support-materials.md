@@ -28,7 +28,7 @@ Do not merge these ranges. The PolyDissolve speed conflict remains unresolved un
 | UltiMaker PVA | names PLA, PETG, and Nylon; says its PVA is unsuitable with its ABS, CPE+, PC, and PP | 2.85 mm UltiMaker ecosystem; do not derive Creality temperatures. [M032] |
 | Ultrafuse BVOH | names PLA, PRO1, ABS, ABS Fusion+, PA, and PAHT-CF15 | Product-specific; confirm temperature overlap and removal. [M033] |
 | Ultrafuse HIPS | Forward AM identifies HIPS as an ABS support option | Exact ABS/HIPS pair and removal process still require a coupon. [M020] |
-| Any unlisted combination | no primary evidence in this research | **Unvalidated**; do not infer from “water soluble” or polymer family. |
+| Any unlisted combination | no applicable primary evidence | **Unvalidated**; do not infer from “water soluble” or polymer family. |
 
 ## Multi-material gate
 

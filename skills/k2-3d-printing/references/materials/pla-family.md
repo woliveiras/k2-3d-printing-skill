@@ -5,7 +5,7 @@ Use this file for plain PLA, Hyper/high-speed PLA, PLA+, Tough/Pro, Matte, Silk,
 ## Decision boundary
 
 - **Base-K2 evidence:** the official K2 page lists PLA and PLA-CF. Apply this only after physical K2 confirmation; it does not endorse every PLA derivative. [M001]
-- **Standard CFS official fact:** PLA is a supported medium-hardness example. Exact spool dimensions and physical condition still govern. No source found specifically approving real wood-filled, foaming, very brittle, or heavily filled PLA in standard CFS. [P024, M003]
+- **Standard CFS official fact:** PLA is a supported medium-hardness example. Exact spool dimensions and physical condition still govern. The cited CFS sources do not specifically approve real wood-filled, foaming, very brittle, or heavily filled PLA. [P024, M003]
 - **CFS-C:** use its separate matrix; never transfer a CFS-C result to standard CFS. [M004]
 - **K2C:** if this is the only identity supplied, stop model-specific limits until a rating label or `About` screen establishes the physical model.
 
@@ -53,12 +53,12 @@ When the spool label and an older web page disagree, pause the numeric recommend
 - The tables publish global speed ranges, not verified first-layer, outer-wall, inner-wall, infill, bridge, or overhang speeds.
 - Start below the exact product ceiling, calibrate maximum volumetric flow, then choose feature speeds that remain below measured flow. Label them **Starting point**.
 - Keep the first layer slow enough to observe continuous placement and adhesion, but do not invent a numeric value without an exact profile/test.
-- Preserve the only researched volumetric-flow fact: 15 mm³/s belongs to the older PolyLite PLA Pro page and cannot be assigned to Hyper PLA, v6 PLA Pro, Matte, Silk, or Wood. [M010]
+- The 15 mm³/s volumetric-flow value belongs only to the PolyLite PLA Pro source M010; do not assign it to Hyper PLA, v6 PLA Pro, Matte, Silk, or Wood.
 - Acceleration remains **Unvalidated** until a ringing/tall-feature coupon. A filament name does not establish motion limits.
 
 ### Retraction, layer geometry, walls, and infill
 
-- Calibrate retraction after temperature and flow on the actual direct-drive or Bowden path. No researched PLA source establishes one K2 retraction value.
+- Calibrate retraction after temperature and flow on the actual direct-drive or Bowden path. The cited PLA sources establish no universal K2 retraction value.
 - Choose layer height and line width from nozzle diameter and required detail; confirm every thin wall in Preview.
 - Use whole generated line widths for shells. Put walls along the load path; use infill for internal support and buckling resistance. Neither a wall count nor an infill percentage is universal.
 - For a visual part, test seam position, layer height, cooling, outer-wall speed, and orientation on a representative curve or corner rather than on an unrelated cube.

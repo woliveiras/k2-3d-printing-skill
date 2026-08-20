@@ -42,7 +42,7 @@ The intervals are official maintenance guidance, not a guarantee. Shorten inspec
 4. Power down and disconnect before touching the CFS path. Do not connect/disconnect cables while energized. [P023]
 5. Inspect only user-accessible spool rotation, deformation, loose filament, external 4 × 2.5 mm PTFE routing, visible pinch/wear, and correctly seated accessible connections. Do not pull against a powered motor or open protected covers.
 6. Separate CFS/path failure from printer-extruder/nozzle failure by observing where motion stops. Do not repeatedly command loads when grinding or resistance persists.
-7. Replace PTFE or desiccant only with an exact original-CFS procedure and compatible part. No internal feeder gear, sensor, motor, connector, or torque procedure was captured.
+7. Replace PTFE or desiccant only with an exact original-CFS procedure and compatible part. The cited sources provide no internal feeder-gear, sensor, motor, connector, or torque procedure.
 8. Validate with one supervised load, unload, and feed to the printer; then a small single-material test before multicolor operation.
 
 Stop and escalate for liquid/desiccant leakage, damaged cable/connector, rain or water exposure, burning odor, smoke, repeated motor grinding, inaccessible broken filament, internal sensor/electronics error, protected-cover access, or any part/procedure mismatch. The CFS manual directs qualified service for electrical/liquid/internal failures and states that covered internal parts are not user-serviceable. [P023]

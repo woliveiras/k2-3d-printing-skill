@@ -19,7 +19,7 @@ For confirmed base K2, inspect and clean the platform before every print. [P003]
 
 1. Let the plate reach a handling-safe temperature.
 2. Confirm plate type, orientation, seating, and absence of visible debris or coating damage.
-3. Use only a cleaner approved by the exact plate manufacturer. The researched K2 evidence did not capture a chemical cleaning recipe; do not invent alcohol concentration, detergent, abrasive, solvent, or adhesive guidance.
+3. Use only a cleaner approved by the exact plate manufacturer. The cited K2 sources provide no chemical cleaning recipe; do not invent alcohol concentration, detergent, abrasive, solvent, or adhesive guidance.
 4. Confirm that the selected printer, nozzle, plate, filament, and process profile match physical hardware.
 5. Inspect first-layer toolpaths in Preview, including islands, gaps, brim/raft, purge structures, and build-volume exclusions.
 6. Supervise the first layer. A completed calibration or slice does not prove adhesion.
@@ -36,7 +36,7 @@ Stop and replace/escalate only through a confirmed official part path if the pla
 | After an authorized firmware update | Retract filament before update; then run input shaping and automatic leveling | Update requires separate authorization and exact model/image verification | Record versions and calibration results; stop on error | [P021] |
 | First-layer failure, bed service, collision, or repeated dimensional shift | Inspect/clean plate and run only model-supported calibration after diagnosing visible cause | Do not use calibration to conceal damaged hardware or wrong profile | First-layer test and relevant dimension acceptance pass | [P003] |
 
-K2 Plus advertises active bed tilt, but no maintenance/repair sequence for it was captured. Do not transfer base-K2 leveling steps. No complete K2 SE/K2 SE 4C calibration procedure was captured. [P012] [P013] [P015] [P016]
+K2 Plus advertises active bed tilt, but the cited sources provide no maintenance/repair sequence for it. Do not transfer base-K2 leveling steps. They also provide no complete K2 SE/K2 SE 4C calibration procedure. [P012] [P013] [P015] [P016]
 
 ## First-layer diagnosis
 

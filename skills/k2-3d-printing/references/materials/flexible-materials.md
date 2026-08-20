@@ -49,7 +49,7 @@ These ranges demonstrate that “flexible” does not select one temperature or 
 ### Feature speed, acceleration, flow, and retraction
 
 - Begin within the exact global speed range, at its conservative end for initial feed validation. This is a **Starting point**, not a universal TPU speed.
-- Keep the first layer, outer wall, inner/infill, bridge, and overhang speeds **Unvalidated** until a representative coupon; the researched sources publish only global ranges.
+- Keep first-layer, outer-wall, inner/infill, bridge, and overhang speeds **Unvalidated** until a representative coupon; the cited sources publish only global ranges.
 - Measure maximum volumetric flow. None of the cited TPU sources gives a K2-specific volumetric limit.
 - Reduce acceleration only when a measured feed, ringing, corner, or tall-part result requires it. Avoid rapid pressure reversals on a very soft filament.
 - Start with minimal necessary retraction and tune only after drying, temperature, and flow. Large/frequent retractions can buckle or grind flexible filament; no universal direct-drive value was found.

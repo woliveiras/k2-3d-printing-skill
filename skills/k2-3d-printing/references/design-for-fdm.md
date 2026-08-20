@@ -63,7 +63,7 @@ For press, slip, sliding, rotating, snap, and print-in-place fits, define a dist
 
 ## Holes and bores
 
-Horizontal circular holes create unsupported upper arcs and can shrink or become polygonal. No primary source in the research established a universal K2 hole compensation.
+Horizontal circular holes create unsupported upper arcs and can shrink or become polygonal. The cited primary sources establish no universal K2 hole compensation.
 
 Use this order:
 

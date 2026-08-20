@@ -44,7 +44,7 @@ thermal error or unstable displayed temperature
       └─ use Creality support or qualified service
 ```
 
-No heater, thermistor, board, connector, electrical measurement, or torque procedure was captured. [P003] [P007] [P023]
+The cited sources provide no heater, thermistor, board, connector, electrical-measurement, or torque procedure. [P003] [P007] [P023]
 
 ### Sensor or calibration failure
 
@@ -58,7 +58,7 @@ sensor/calibration error
    └─ validate with a small supervised test; passing calibration is not physical validation
 ```
 
-Base-K2 component evidence includes strain-gauge leveling and filament-break detection, but no replacement procedure was captured. [P003] [P007]
+Base-K2 component evidence includes strain-gauge leveling and filament-break detection, but the cited sources provide no replacement procedure. [P003] [P007]
 
 ### Original-CFS jam
 
@@ -102,7 +102,7 @@ camera symptom
 
 1. Separate printer-local operation, camera image, Creality Print/Device view, and network reachability.
 2. Record exact printer firmware, software version/mode, on-device network status, error, and whether local printing/UI still works; protect credentials and private network data.
-3. The completed research did not capture a model-specific network-reset, camera-cable, or board procedure. Do not factory-reset, update firmware, open the printer, or change router/security settings as a maintenance guess.
+3. The cited sources provide no model-specific network-reset, camera-cable, or board procedure. Do not factory-reset, update firmware, open the printer, or change router/security settings as a maintenance guess.
 4. Use the live exact-model manual/support path. Escalate if the fault follows electrical damage, liquid, heat, repeated reboots, or inaccessible hardware.
 
 ## Exit states

@@ -4,8 +4,8 @@ Use this file for PA6, PA12, PA6/6,6 blends such as CoPA, other polyamides, and 
 
 ## Decision boundary
 
-- The researched official K2 material list does not name nylon/PA or PC. A temperature range that fits is only an inference, not official compatibility. [M001]
-- No exact unfilled PA6 or PA12 TDS was established in this research. Do not derive their profiles from PA6-CF, PA12-CF, glass-reinforced PA, or CoPA.
+- The official K2 material list cited by M001 does not name nylon/PA or PC. A temperature range that fits is only an inference, not official compatibility.
+- The cited sources include no exact unfilled PA6 or PA12 TDS. Do not derive their profiles from PA6-CF, PA12-CF, glass-reinforced PA, or CoPA.
 - Standard CFS marketing lists PA-CF broadly, while the more specific CFS wiki warns that hard/brittle PPA-CF and PPS-CF can break in its tube. Resolve the exact SKU and physical brittleness; do not infer all nylon or PA-CF is accepted. [P024, M003]
 - PC products in the evidence require radically different bed/chamber conditions. “PC” alone is insufficient to decide compatibility.
 
