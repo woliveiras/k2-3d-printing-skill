@@ -2,7 +2,7 @@
 
 `k2-3d-printing` is an agent-independent skill for evidence-bounded FDM work with Creality K2-family printers and Creality Print. It covers printer identity, filament and hardware compatibility, STL/STEP/3MF inspection, design for FDM, orientation, supports, slicing trade-offs, calibration, Preview review, failure diagnosis, preventive maintenance, and safe repair boundaries.
 
-The repository contains one self-contained skill under `skills/k2-3d-printing/`. This standard nested layout keeps the full payload—`SKILL.md`, references, scripts, and interface metadata—inside the directory selected by the skills CLI. At the pinned CLI revision inspected on 2026-08-20, a root-level remote skill could be filtered to `SKILL.md` alone, while a nested discovered skill retains its directory payload; see source records D002 and D003. The operational contract does not depend on Codex, another skill, a paid service, or a printer connection.
+The repository contains one self-contained skill under `skills/k2-3d-printing/`. This standard nested layout keeps `SKILL.md`, references, scripts, and interface metadata together as one skills CLI payload. The operational contract does not depend on Codex, another skill, a paid service, or a printer connection.
 
 ## Installation
 

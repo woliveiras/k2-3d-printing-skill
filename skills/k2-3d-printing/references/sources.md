@@ -5,64 +5,10 @@ Research cutoff: 2026-08-20 (Europe/Madrid). Recheck unstable claims before use.
 Use the source-family prefixes as routing aids:
 
 - `P`: printer, firmware, CFS hardware, maintenance, and model safety;
-- `C`: Creality Print software, tagged source, releases, and local bundle observations;
-- `M`: materials, CFS material path, FDM design, emissions, and material safety;
-- `A`: secondary article used only for organization ideas;
-- `D`: distribution/install documentation.
+- `C`: Creality Print software, tagged source, releases, and version-scoped bundle observations;
+- `M`: materials, CFS material path, FDM design, emissions, and material safety.
 
 When an official page exposes no reliable revision date, record `Not stated by publisher` and keep the source-freshness warning. Do not substitute access date for publication date. `Review by` is the repository's re-verification deadline, not a publisher date.
-
-## A001 — I Taught Claude to Design 3D-Printable Parts. Here's How
-
-- Publisher: Nicolas Chourrout / Towards AI; accessed through Freedium mirror
-- URL: https://freedium-mirror.cfd/https://pub.towardsai.net/i-taught-claude-to-design-3d-printable-parts-heres-how-675f644af78a
-- Source type: Secondary article
-- Published/revised: 2026-03-05
-- Accessed: 2026-08-20T19:05:00+02:00
-- Applies to: Skill organization and collaborative CAD workflow only
-- Supports: General ideas of staged requirement gathering, parametric source, multi-view review, early feedback, and slicer feedback before finalization
-- Limitations/conflicts: Original publisher returned HTTP 403 while the requested mirror returned HTTP 200 to a live curl request; no article value is authority for printer limits, parameters, compatibility, maintenance, or safety
-- Confidence: Low for technical claims; Medium for accurately identifying the described workflow pattern
-- Review by: 2027-02-20
-
-## D001 — skills CLI reference
-
-- Publisher: skills.sh / Vercel
-- URL: https://www.skills.sh/docs/cli
-- Source type: Official distribution documentation
-- Published/revised: Not stated by publisher
-- Accessed: 2026-08-20T18:52:00+02:00
-- Applies to: Repository installation command and CLI telemetry notice
-- Supports: `npx skills add owner/repo` installation form and `DISABLE_TELEMETRY=1` opt-out documented at access time
-- Limitations/conflicts: CLI behavior and telemetry policy are time-dependent; the command was documented but not executed, and publication of this repository was not performed
-- Confidence: High for the accessed documentation
-- Review by: 2026-11-20
-
-## D002 — skills CLI repository layout documentation at v1.5.23
-
-- Publisher: Vercel Labs on GitHub
-- URL: https://github.com/vercel-labs/skills/blob/435076e78988e1e6ec40d00b0b1d76bdbbc5419a/README.md
-- Source type: Official distribution repository documentation pinned to a commit
-- Published/revised: Commit `435076e78988e1e6ec40d00b0b1d76bdbbc5419a`; release `v1.5.23` published 2026-08-18
-- Accessed: 2026-08-20T19:24:00+02:00
-- Applies to: Repository discovery layout for the skills CLI
-- Supports: Repository root and `skills/<name>/SKILL.md` discovery conventions; use of the nested standard layout for a complete skill payload
-- Limitations/conflicts: Documentation describes discovery, while exact copied-file behavior is implementation-dependent and may change; recheck before publishing
-- Confidence: High
-- Review by: 2026-09-20
-
-## D003 — skills CLI remote repository file filtering at v1.5.23
-
-- Publisher: Vercel Labs on GitHub
-- URL: https://github.com/vercel-labs/skills/blob/435076e78988e1e6ec40d00b0b1d76bdbbc5419a/src/blob.ts
-- Source type: Official distribution implementation pinned to a commit
-- Published/revised: Commit `435076e78988e1e6ec40d00b0b1d76bdbbc5419a`; release `v1.5.23` published 2026-08-18
-- Accessed: 2026-08-20T19:24:00+02:00
-- Applies to: Remote repository discovery and downloaded payload selection in skills CLI v1.5.23
-- Supports: At the pinned revision, root-skill remote filtering selects `SKILL.md`, while a nested discovered skill retains files beneath its skill directory; this repository therefore keeps the complete payload under `skills/k2-3d-printing/`
-- Limitations/conflicts: This is an implementation observation, not a permanent CLI contract; future versions may differ, and the install command was intentionally not executed
-- Confidence: High for the pinned source
-- Review by: 2026-09-20
 
 ## P001 — K2 Flagship Series
 
