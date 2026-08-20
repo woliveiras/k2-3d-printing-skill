@@ -21,7 +21,7 @@ Review `SKILL.md`, scripts, and the source policy before installing any third-pa
 - Separate official limits, manufacturer ranges, recommended starting points, empirical adjustments, and unvalidated results.
 - Inspect Preview instead of treating successful slicing as proof of printability.
 - Preserve original 3MF projects and require explicit authorization for copies or edits.
-- Require separate authorization for software/firmware updates, printer control, print submission, purchases, dependency installation, publication, and external-model evaluation.
+- Require separate authorization for software/firmware updates, printer control, print submission, purchases, and dependency installation.
 - Stop repairs when model-specific parts, torque, wiring, heaters, sensors, or official procedures are not confirmed.
 
 ## Repository map
