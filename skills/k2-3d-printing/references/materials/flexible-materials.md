@@ -53,11 +53,10 @@ Apply the [shared material card](INDEX.md#required-material-parameter-card) and 
 - Validate primary/support adhesion, purge contamination, interface density, Z/XY gaps, support access, and removal on a small coupon.
 - Prefer orientation or a model split that avoids support on a flexible sealing or visible surface.
 
-## Drying, storage, health, and maintenance
+## Drying, storage, and maintenance
 
 - Apply 70 °C/8 h only to PolyFlex TPU95 and 70 °C/at least 5 h only to the cited Ultrafuse products. Confirm spool temperature limit and current TDS. [M021, M022, M023]
 - Store sealed with suitable desiccant and print from a dry path when the exact product requires it. Compare against a known-dry sample before increasing retraction for bubbles/stringing.
-- Consult the exact SDS and provide source ventilation. Material, additives, color, and temperature change particle/VOC emissions. [M056, M057, M059, M060]
 - After printing, unload without stretching or snapping filament into the path, inspect drive gears for chewed material, clean the plate by its manufacturer procedure, and reseal the spool. Do not invent extruder-tension settings.
 
 ## Failure signatures

@@ -69,13 +69,13 @@ Apply the [shared material card](INDEX.md#required-material-parameter-card) and 
 - PolyDissolve S1 rates nylon highly in its product matrix but rates PC poorly. UltiMaker PVA names Nylon compatible but says its product is unsuitable with its PC. Ultrafuse BVOH names PA/PAHT-CF15 pairings. Validate exact products, temperature overlap, interface, purge, and dissolution. [M030, M032, M033]
 - A chemical pairing does not establish a CFS path or an independent-tool workflow.
 
-## Abrasion, conditioning, health, and maintenance
+## Abrasion, conditioning, and maintenance
 
 - CoPA and Hyper/PolyMax PC are not automatically non-abrasive; check exact additives. The cited CF/GF products require hardened tooling. [M025, M026, M027]
 - Inspect nozzle and drive gears after filled products. Use applicable purge/cleaning procedures; never invent a hot-pull temperature.
 - Annealing cycles listed above apply only to the named product. Expect possible dimensional change and validate an identically oriented coupon before fit-critical use.
 - Some PA products specify post-print moisture conditioning. Follow only the exact TDS; do not soak or condition a part generically.
-- Use the exact SDS, effective ventilation, and dust control. NIOSH notes that material/color/additives affect emissions and nanomaterial-containing filament can emit nanomaterial particulate. [M056, M057, M059, M062]
+- For any filled PA, apply the [composite exposure and dust controls](composites.md#drying-storage-post-processing-and-health).
 
 ## Failure signatures
 

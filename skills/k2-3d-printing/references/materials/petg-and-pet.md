@@ -47,10 +47,9 @@ Apply the [shared material card](INDEX.md#required-material-parameter-card) and 
 - PolyDissolve S1 rates PETG only partially compatible; UltiMaker PVA names PETG adhesion within its 2.85 mm ecosystem. These are pairing hypotheses, not guarantees for another brand or Creality profile. Test interface adhesion, purge, Z/XY gap, and dissolution on a coupon. [M030, M032]
 - The cited primary sources do not establish HIPS or BVOH pairing with PETG. Mark it **Unvalidated**.
 
-## Abrasion, health, post-processing, and care
+## Abrasion, post-processing, and care
 
 - Plain PETG/PET nozzle wear is product-specific. Any CF/GF/mineral/metal fill triggers the [composite tooling](composites.md) gate.
-- Use the exact SDS. Material, color, additive, temperature, and printer alter UFP/VOC emissions; ventilate at source and keep post-processing dust out of occupied air. [M056, M057, M059, M060]
 - Annealing PET or PETG is not a family-wide recommendation. Fiberon PET-CF17's 120 °C/10 h cycle applies only to that product and can change dimensions. [M039]
 - After a filled grade, follow its documented purge and inspect nozzle/drive wear. After any PETG/PET, clean the plate by its manufacturer method and seal the spool.
 
