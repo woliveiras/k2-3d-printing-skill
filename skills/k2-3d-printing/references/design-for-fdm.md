@@ -1,19 +1,10 @@
 # Design for FDM
 
-Use these rules to make geometry testable and slicable. Every numeric value below is a manufacturer example or starting point that depends on material, nozzle, line width, layer height, orientation, cooling, calibration, printer, and purpose. It is not a universal law or a K2 capability claim.
+Treat cited numbers as source-specific examples or starting points, not universal rules or K2 capability claims. Validate the exact material, toolpath, orientation, printer, and purpose.
 
 ## Establish the design brief
 
-Record before changing geometry:
-
-- physical printer identity and build-volume evidence;
-- exact material and its mechanical/thermal/moisture state;
-- nozzle diameter/material, line width, layer height, plate, and enclosure/chamber;
-- part purpose, visible/contact faces, load magnitude/direction/cycles, temperature/chemicals/UV, dimensional datum, and time/material budget;
-- mating parts, fasteners/inserts, required clearances, acceptable support marks, and post-processing;
-- measurable acceptance criteria for fit, deflection, strength, finish, and removal.
-
-If physical hardware is still called only **K2C**, keep hardware-specific dimensions and limits unconfirmed. A slicer profile is not identity evidence.
+Use the [slicing decision workflow](slicing/decision-workflow.md) for purpose, material, hardware, visible faces, loads, accuracy, and time. Additionally record the CAD datum, mating parts and hardware, allowed support marks/post-processing, and measurable acceptance criteria for fit, deflection, strength, finish, and removal.
 
 ## Numeric evidence ledger
 
@@ -78,23 +69,7 @@ Do not hide a bad hole behind slicer XY compensation without measuring exterior 
 
 ## Overhangs and bridges
 
-### Overhang decision
-
-1. Inspect the actual angle relative to the build direction and identify the visible/contact face.
-2. Compare with a same-material overhang coupon, not a different printer's published maximum.
-3. Improve geometry before support: chamfer, gradual slope, local relief, reorientation, or split.
-4. If support remains necessary, position the contact on a noncritical face and ensure removal access.
-5. Inspect perimeter generation, cooling, speed, flow, and unsupported islands layer by layer.
-
-### Bridge decision
-
-1. Minimize span and give both bridge ends adequate anchoring.
-2. Avoid chaining a bridge from a weak or curling island.
-3. Test bridge flow, speed, and cooling together on the exact material; then vary one factor per repeat.
-4. Inspect sag, strand separation, anchor damage, and dimensions.
-5. Split or add self-supporting ribs/arches when the validated span is insufficient.
-
-A bridge setting that improves PLA can reduce layer adhesion or fail on TPU, ABS, nylon, or a filled product. Keep results material-specific.
+Use the [orientation and support workflow](slicing/orientation-and-supports.md#bridges-and-overhangs) for slicing and coupons. In CAD, replace abrupt overhangs with chamfers, gradual slopes, local relief, reorientation, or splits; shorten and anchor bridge spans; and add self-supporting ribs or arches when the validated span is insufficient. Keep every result material-specific.
 
 ## Chamfers, fillets, and stress transitions
 
@@ -156,20 +131,9 @@ Never invent insert temperature, pilot diameter, torque, wall thickness, or pull
 
 ## Deformation and large parts
 
-For a large flat part:
+For a large flat part, reduce abrupt thickness changes and long uninterrupted shrink paths; add relief or divide it into stable sections where the load and assembly permit. Validate the final footprint with the [large-and-flat workflow](slicing/decision-workflow.md#large-and-flat-part).
 
-1. Reduce abrupt thickness changes and long uninterrupted shrink paths.
-2. Test a representative footprint using the final surface, enclosure, cooling, and material state.
-3. Use brim or localized mouse ears as **Starting points** after first-layer calibration.
-4. Inspect edge lift, diagonal bow, layer splitting, and post-cooling dimensions.
-5. Use raft only when its surface/dimensional cost is accepted and validated.
-
-For a tall narrow part:
-
-1. Increase base/contact area or redesign into sections.
-2. Place mass and travel to minimize oscillation.
-3. Reduce acceleration only after a stability/ringing test.
-4. Inspect late isolated layers, seam accumulation, travel collision, and nozzle contact risk.
+For a tall narrow part, enlarge or mechanically anchor the base, lower concentrated mass, or redesign it into stable sections. Validate motion and collision risk with the [tall-and-narrow workflow](slicing/decision-workflow.md#tall-and-narrow-part).
 
 ## Split models intentionally
 
@@ -195,25 +159,16 @@ Design the joint around a datum, assembly access, adhesive/fastener limits, and 
 
 ## Curved and ergonomic shells
 
-For a mouse cover or similar curved shell:
+For a curved ergonomic shell:
 
-1. Mark the visible/hand-contact exterior, mating rim, switch/wheel openings, fastener points, and force regions.
-2. Test orientations for exterior stair stepping, support damage, rim flatness, shell toolpaths, and anisotropy.
-3. Prefer keeping the exterior free of support; consider a controlled split around a natural seam when it improves both faces.
-4. Express shell thickness as whole line widths and thicken locally around bosses/openings with gradual transitions.
-5. Use adaptive layers only after confirming that transitions do not create finish bands or missing thin walls.
-6. Print representative curve, opening, rim, and fit segments before the full shell.
-7. Inspect seam location, speed/flow changes, bridges, internal support access, center of mass, and bed contact in Preview.
-8. Evaluate surface by touch/light, mating fit, click/deflection, and required repeated use. A visually clean Preview is still not physical validation.
+1. Mark the visible/hand-contact exterior, mating rim, openings, bosses, fasteners, and force regions.
+2. Keep the exterior free of support when possible; use a natural-seam split when it improves both faces and assembly.
+3. Express shell thickness as whole generated line widths and thicken gradually around bosses and openings.
+4. Print representative curve, opening, rim, and fit segments before the full shell.
+5. Define measurable surface, fit, force, deflection, and cycle criteria.
+
+Use the [orientation workflow](slicing/orientation-and-supports.md) and [Preview inspection](slicing/preview-inspection.md) for stair stepping, seam, support, motion, and toolpath validation.
 
 ## Design review checklist
 
-- Units, scale, build volume, mesh/B-rep integrity, disconnected parts, and interferences checked.
-- Minimum walls/details compared with actual generated line width/layer height.
-- Load directions, anisotropy, stress transitions, fasteners/inserts, and contact surfaces reviewed.
-- Clearances, holes, fits, snaps, and joints tied to coupons and measurable criteria.
-- Overhangs/bridges minimized or tested; supports have removal paths and avoid critical faces.
-- Large-flat/tall-narrow deformation and stability assessed.
-- Material, nozzle, plate, drying, enclosure/chamber, and CFS compatibility confirmed separately.
-- Preview reviewed for first layer, missing walls, islands, seams, bridges, overhangs, support/interface, speeds, flow, fan, temperatures, travel/collision, purge, time, and material.
-- Status reported truthfully: sliced, Preview reviewed, test print recommended, or physically validated.
+Run [model inspection](model-inspection.md) and the [canonical Preview inspection](slicing/preview-inspection.md). Treat the design review as complete only when required walls generate, load paths and transitions are deliberate, fits have coupon evidence, and every support or split joint remains accessible and measurable.
