@@ -18,7 +18,7 @@ The official K2 page used in this research lists a 300 °C maximum nozzle, 100 �
 
 - **Official family only:** PLA-CF.
 - **Not validated:** PETG-CF, PET-CF, PA6-CF, PA12-CF, PA-GF, PP, PP-GF, PPA-CF, and PAHT-CF even when part of a range fits.
-- **Incompatible against candidate K2 limits:** PPS-CF requiring at least 310 °C, PPSU requiring at least 390 °C nozzle/220 °C bed/170 °C chamber, and PEI requiring at least 370 °C nozzle/150 °C bed. [M043, M044, M045]
+- **Incompatible against candidate K2 limits:** PPS-CF requiring at least 310 °C, PPSU requiring at least 390 °C nozzle/200 °C bed/170 °C chamber, and PEI requiring at least 370 °C nozzle/150 °C bed. [M043, M044, M045]
 
 Do not call a material “possible with modification” unless the user explicitly requests a separate modification assessment. This skill must not propose temperature-limit bypasses, heater/thermistor swaps, improvised chambers, alternate firmware, root access, or sensor bypass.
 
@@ -51,9 +51,9 @@ PP is a candidate for chemical/fatigue or living-hinge use only when the exact g
 | Exact product | Published minimum/full range | Candidate K2 comparison | Classification |
 |---|---|---|---|
 | Creality PPA-CF | nozzle 280–300 °C; bed 90–105 °C; enclosure; dry 80 °C/8–12 h forced air | reaches nozzle maximum; upper bed exceeds 100 °C; not on K2 material list | **Not validated**; standard CFS wiki warns hard/brittle PPA-CF may break. [M041, M002] |
-| BASF Ultrafuse PAHT-CF15 v3.4 | nozzle 260–280 °C; bed 100–120 °C; 0.6 mm or larger ruby/hardened nozzle; dry 70 °C/4–16 h or vacuum 80 °C/at least 40 h | bed requirement extends beyond candidate limit | **Not recommended without exact official printer validation**; full range cannot be reproduced. [M042] |
+| BASF Ultrafuse PAHT-CF15 live product page | nozzle 250–270 °C; bed 65–85 °C; 0.6 mm or larger ruby/hardened nozzle; no chamber temperature or drying rule stated | removed older TDS conflicted at 260–280 °C nozzle and 100–120 °C bed | **Not validated** for candidate K2; require the exact printer, nozzle, spool documentation, drying evidence, and a calibration coupon. [M042] |
 | Polymaker Fiberon PPS-CF10 | nozzle 310–350 °C; bed 80–90 °C; ambient 25–80 °C; hardened nozzle; brittle clear path | minimum nozzle exceeds 300 °C | **Incompatible** with candidate K2. Its page explicitly says its flame claim is not UL 94 certification. [M043] |
-| BASF Ultrafuse PPSU v1.5 | nozzle 390–410 °C; bed 220 °C; chamber 170–210 °C; vacuum dry 125 °C/8 h | all core thermal requirements exceed candidate limits | **Incompatible**. [M044] |
+| BASF Ultrafuse PPSU live product page | nozzle 390–410 °C; bed 200–220 °C; chamber 170–210 °C; 25–100 mm/s; current drying rule unconfirmed | all core thermal requirements exceed candidate limits | **Incompatible**. [M044] |
 | PEI/ULTEM in Prusa high-temperature guidance | nozzle 370–420 °C; bed 150–155 °C; specialized equipment | exceeds candidate limits | **Incompatible**. [M045] |
 
 ## Wood, metal, and other particles

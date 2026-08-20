@@ -926,18 +926,18 @@ These records cover the provisional M identifiers cited by the material and desi
 - Confidence: Medium for material parameters; no K2 endorsement
 - Review by: 2026-11-20
 
-## M042 — Ultrafuse PAHT-CF15 TDS v3.4
+## M042 — Ultrafuse PAHT-CF15 product page
 
 - Publisher: BASF Forward AM
-- URL: https://ultrafusefff.jp/basf3d/wp-content/uploads/2021/03/Ultrafuse_PAHT_CF15_TDS_EN_v3.4.pdf
-- Source type: Official TDS
-- Published/revised: v3.4; upload path 2021-03
-- Accessed: 2026-08-20T18:51:02+02:00
+- URL: https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/reinforced-filaments/ultrafuse-paht-cf15/
+- Source type: Official manufacturer product and printing-guideline page
+- Published/revised: Not stated by publisher
+- Accessed: 2026-08-20T19:27:34+02:00
 - Applies to: Ultrafuse PAHT-CF15
-- Supports: 260–280 °C nozzle; 100–120 °C bed; 0.6 mm or larger ruby/hardened nozzle; 30–80 mm/s; 70 °C/4–16 h or vacuum 80 °C/at least 40 h drying
-- Limitations/conflicts: Full bed range exceeds candidate K2; no official K2 compatibility
-- Confidence: High
-- Review by: 2027-08-20
+- Supports: 250–270 °C nozzle; 65–85 °C bed; no chamber temperature stated; 0.6 mm or larger ruby/hardened nozzle; 30–80 mm/s
+- Limitations/conflicts: The live page conflicts with a removed v3.4 TDS URL that had stated 260–280 °C nozzle and 100–120 °C bed; the removed document is not retained as current authority, drying is unconfirmed, and no K2 compatibility is stated
+- Confidence: High for the live page; Low for superseded values
+- Review by: 2026-11-20
 
 ## M043 — Fiberon PPS-CF10 parameter page
 
@@ -952,18 +952,18 @@ These records cover the provisional M identifiers cited by the material and desi
 - Confidence: High
 - Review by: 2026-11-20
 
-## M044 — Ultrafuse PPSU TDS v1.5
+## M044 — Ultrafuse PPSU product page
 
 - Publisher: BASF Forward AM
-- URL: https://ultrafusefff.jp/basf3d/wp-content/uploads/2021/03/Ultrafuse_PPSU_TDS_EN_v1.5.pdf
-- Source type: Official TDS
-- Published/revised: v1.5; upload path 2021-03
-- Accessed: 2026-08-20T18:51:02+02:00
+- URL: https://forward-am.com/material-portfolio/ultrafuse-filaments-for-fused-filaments-fabrication-fff/high-temperature-filaments/ultrafuse-ppsu/
+- Source type: Official manufacturer product and printing-guideline page
+- Published/revised: Not stated by publisher
+- Accessed: 2026-08-20T19:27:34+02:00
 - Applies to: Ultrafuse PPSU
-- Supports: 390–410 °C nozzle; 220 °C bed; 170–210 °C chamber; 0.4 mm or larger; 25–50 mm/s; vacuum 125 °C/8 h drying
-- Limitations/conflicts: Requirements are outside candidate K2 specifications
+- Supports: 390–410 °C nozzle; 200–220 °C bed; 170–210 °C chamber; 0.4 mm or larger nozzle; 25–100 mm/s
+- Limitations/conflicts: Requirements are outside candidate K2 specifications; a removed v1.5 TDS URL had supplied different speed and drying details, which are not reused as current guidance
 - Confidence: High
-- Review by: 2027-08-20
+- Review by: 2026-11-20
 
 ## M045 — PEI / ULTEM
 
@@ -1202,10 +1202,10 @@ These records cover the provisional M identifiers cited by the material and desi
 ## M065 — Ultrafuse PLA TDS v4.4
 
 - Publisher: BASF Forward AM
-- URL: https://ultrafusefff.jp/basf3d/wp-content/uploads/2021/03/Ultrafuse_PLA_TDS_EN_v4.4.pdf
+- URL: https://move.forward-am.com/hubfs/AES%20Documentation/Standard%20Filaments/PLA/TDS/Ultrafuse_PLA_TDS_EN_v4.4.pdf
 - Source type: Official TDS
-- Published/revised: v4.4; upload path 2021-03
-- Accessed: 2026-08-20T18:51:02+02:00
+- Published/revised: v4.4; publisher date not stated
+- Accessed: 2026-08-20T19:27:34+02:00
 - Applies to: Ultrafuse PLA
 - Supports: 210–230 °C nozzle; 50–70 °C bed; 0.4 mm or larger; 40–80 mm/s; drying not necessary as supplied under documented condition
 - Limitations/conflicts: Shows automatic drying is not universal; does not override another PLA TDS after moisture exposure
@@ -1229,26 +1229,26 @@ These records cover the provisional M identifiers cited by the material and desi
 ## M022 — Ultrafuse TPU 85A TDS
 
 - Publisher: BASF Forward AM
-- URL: https://ultrafusefff.jp/basf3d/wp-content/uploads/2024/11/Ultrafuse_TPU_85A_TDS_EN_v2.5.pdf
+- URL: https://move.forward-am.com/hubfs/AES%20Documentation/Flexible%20Filaments/TPU%2085A/TDS/Ultrafuse_TPU_85A_TDS_EN_v2.5.pdf
 - Source type: Official TDS
 - Published/revised: Document identifies v3.0; filename says v2.5
-- Accessed: 2026-08-20T18:51:02+02:00
+- Accessed: 2026-08-20T19:27:34+02:00
 - Applies to: Ultrafuse TPU 85A
 - Supports: Shore 85A; 200–220 °C nozzle; 40 °C bed; no chamber; 0.4 mm or larger; 15–40 mm/s; 70 °C for at least 5 h drying; BVOH/HIPS pairing
 - Limitations/conflicts: Filename/document version mismatch; support pairing still requires interface/purge validation
 - Confidence: High for contents; medium for version metadata
 - Review by: 2027-08-20
 
-## M023 — Ultrafuse TPU 64D TDS v1.1
+## M023 — Ultrafuse TPU 64D TDS (filename v1.1, document v2.0)
 
 - Publisher: BASF Forward AM
-- URL: https://ultrafusefff.jp/basf3d/wp-content/uploads/2024/11/Ultrafuse_TPU_64D_TDS_EN_v1.1.pdf
+- URL: https://move.forward-am.com/hubfs/AES%20Documentation/Flexible%20Filaments/TPU%2064D/TDS/Ultrafuse_TPU_64D_TDS_EN_v1.1.pdf
 - Source type: Official TDS
-- Published/revised: v1.1; upload path 2024-11
-- Accessed: 2026-08-20T18:51:02+02:00
+- Published/revised: Document says Version 2.0, revised 2022-08-08; filename says v1.1
+- Accessed: 2026-08-20T19:27:34+02:00
 - Applies to: Ultrafuse TPU 64D
 - Supports: Shore 64D; 230–255 °C nozzle; 40–60 °C bed; 0.4 mm or larger; 30–60 mm/s; 70 °C for at least 5 h drying; BVOH/HIPS pairing
-- Limitations/conflicts: Shore D is not numerically interchangeable with Shore A
+- Limitations/conflicts: Filename/document version mismatch; Shore D is not numerically interchangeable with Shore A
 - Confidence: High
 - Review by: 2027-08-20
 
@@ -1385,10 +1385,10 @@ These records cover the provisional M identifiers cited by the material and desi
 ## M034 — Ultrafuse PP TDS v4.0
 
 - Publisher: BASF Forward AM
-- URL: https://ultrafusefff.jp/basf3d/wp-content/uploads/2024/11/Ultrafuse_PP_TDS_EN_v4.0.pdf
+- URL: https://forward-am.com/wp-content/uploads/2021/07/Ultrafuse_PP_TDS_EN_v4.0.pdf
 - Source type: Official TDS
-- Published/revised: v4.0; upload path 2024-11
-- Accessed: 2026-08-20T18:51:02+02:00
+- Published/revised: v4.0; publisher date not stated
+- Accessed: 2026-08-20T19:27:34+02:00
 - Applies to: Ultrafuse PP
 - Supports: 220–240 °C nozzle; 60–80 °C bed; PP tape/adhesive; 0.4 mm or larger; 20–50 mm/s; 60 °C for 4–16 h drying
 - Limitations/conflicts: No K2 or CFS approval; surface system is product-specific

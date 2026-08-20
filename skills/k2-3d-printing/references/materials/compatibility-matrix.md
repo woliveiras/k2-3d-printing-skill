@@ -43,9 +43,9 @@ Candidate K2 evidence used only for comparison: 300 °C maximum nozzle, 100 °C 
 | Fiberon PET-GF15 | NR | hardened; 280–310 °C | 70–80 °C | NV | Published range extends above candidate nozzle maximum. Never command 310 °C. [M040] |
 | Fiberon PA6-CF20 / PA12-CF10 / PA6-GF25 | NV | hardened/all-metal; 280–300 °C; dry feed | product-specific 40–50 °C bed and conditioning | C only after exact standard-CFS evidence; CFS-C lists generic PA6-CF/PA12-CF | Standard CFS marketing broadly names PA-CF but wiki warns brittle grades; exact SKU required. [M025, M026, M038, M002, M003, M004] |
 | Creality PPA-CF | NR | 280–300 °C; exact nozzle/fill | bed 90–105 °C; enclosure; upper bed exceeds candidate | NR: standard CFS brittleness warning; CFS-C Not Suggested | Not K2-listed; reaches thermal limits and has feed-path warning. [M041, M002, M004] |
-| Ultrafuse PAHT-CF15 | NR | 260–280 °C; 0.6 mm or larger ruby/hardened | bed 100–120 °C; full range exceeds candidate | CFS-C Not Suggested; standard CFS NV | No official K2 support; complete bed condition unavailable. [M042, M004] |
+| Ultrafuse PAHT-CF15 | NV | 250–270 °C; 0.6 mm or larger ruby/hardened | bed 65–85 °C; no chamber temperature stated | CFS-C Not Suggested; standard CFS NV | Live product page conflicts with a removed older TDS; no official K2 support or confirmed drying rule. [M042, M004] |
 | Fiberon PPS-CF10 | I | minimum nozzle 310 °C exceeds 300 °C | 80–90 °C bed; 25–80 °C ambient | NR: standard CFS brittle warning; CFS-C Not Suggested | Thermal incompatibility plus feed-path warning. [M043, M002, M004] |
-| Ultrafuse PPSU | I | minimum nozzle 390 °C | bed 220 °C; chamber 170–210 °C | NV | All core thermal requirements exceed candidate K2. [M044] |
+| Ultrafuse PPSU | I | minimum nozzle 390 °C | bed 200–220 °C; chamber 170–210 °C | NV | All core thermal requirements exceed candidate K2. [M044] |
 | PEI/ULTEM | I | minimum nozzle 370 °C | bed 150–155 °C; specialized equipment | NV | Thermal requirements exceed candidate K2. [M045] |
 
 ## Standard CFS facts

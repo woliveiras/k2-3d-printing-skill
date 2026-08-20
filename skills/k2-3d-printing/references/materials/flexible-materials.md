@@ -24,7 +24,7 @@ Use this file for TPU and other TPE filaments. TPU is a TPE subtype; TPE is not 
 | Creality HP-TPU generic chart | not stated | 200–220 °C | unheated–60 °C; chamber not resolved | not resolved | 30–120 mm/s | exact path/drying requires product document. [M007] |
 | Polymaker PolyFlex TPU95 | Shore 95A | 210–230 °C | 25–60 °C; no enclosure | fan on | 30–50 mm/s | dry 70 °C for 8 h; direct drive recommended. [M021] |
 | BASF Ultrafuse TPU 85A, document content v3.0 | Shore 85A | 200–220 °C | 40 °C; no chamber | exact profile | 15–40 mm/s; 0.4 mm or larger | dry 70 °C for at least 5 h; filename/document revision mismatch. [M022] |
-| BASF Ultrafuse TPU 64D v1.1 | Shore 64D | 230–255 °C | 40–60 °C | exact profile | 30–60 mm/s; 0.4 mm or larger | dry 70 °C for at least 5 h. [M023] |
+| BASF Ultrafuse TPU 64D, filename v1.1/document v2.0 | Shore 64D | 230–255 °C | 40–60 °C | exact profile | 30–60 mm/s; 0.4 mm or larger | dry 70 °C for at least 5 h; preserve the filename/document revision mismatch. [M023] |
 
 These ranges demonstrate that “flexible” does not select one temperature or speed. Keep CR-TPU and HP-TPU generic-chart data below an exact TDS in authority.
 
