@@ -114,3 +114,7 @@ When giving a material recommendation, fill every row below. Write **not stated 
 No thermoplastic family is universally emission-free. Printer, polymer, additives, color, temperature, time, and post-processing change particle and VOC emissions. Use the exact SDS, keep the printer away from occupied breathing zones, and prefer source capture or appropriately ventilated enclosures. HEPA addresses particles; gas/vapor media must be selected for relevant VOCs. Filled-material sanding/cutting needs dust control. [M056, M057, M058, M059, M060, M061, M062]
 
 Do not guarantee unattended or overnight printing. A cooled finished part is a different state from active heating and motion. A camera does not provide ventilation or fire suppression. Read [safety](../safety.md) when available before making a domestic-use decision.
+
+## Release decision
+
+Complete the required material card, run the [canonical Preview inspection](../slicing/preview-inspection.md), and report the completion state defined in [SKILL.md](../../SKILL.md#separate-completion-states). Apply the selected family file's additional release gate; a completed slice is never physical validation.

@@ -93,11 +93,6 @@ For HP-ASA, request the actual spool label and current TDS before providing a nu
 | Fine cracks after cooling | residual stress, geometry, enclosure transition, material condition | smaller geometry/orientation coupon | crack path affects required load or containment |
 | High-speed under-extrusion | flow limit, temperature, partial obstruction | stepped flow test within range | clicking, grinding, thermal instability, or sustained flow loss |
 
-## Release checklist
+## Family-specific release gate
 
-- Exact product and current TDS/SDS identified; HP-ASA conflict resolved for the physical spool.
-- Exact printer, nozzle, plate, enclosure/chamber type, and CFS variant confirmed.
-- Site ventilation and occupancy controls established before printing.
-- First layer, flat-part warp, layer adhesion, temperature, flow, bridge/overhang, and fit tests completed proportionally.
-- Preview checked for bed/nozzle/chamber commands, fan transitions, volumetric flow, support interface, brim/raft, purge, and unsupported paths.
-- Recommendation states whether the result is sliced, Preview reviewed, a test print, or physically validated.
+Apply the [shared release decision](INDEX.md#release-decision). Also resolve the HP-ASA source conflict for the physical spool and confirm the exact enclosure/chamber, ventilation, occupancy, warp, and layer-adhesion conditions.

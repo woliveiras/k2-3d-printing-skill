@@ -87,11 +87,6 @@ These ranges demonstrate that “flexible” does not select one temperature or 
 | Poor bridges/overhangs | cooling, speed, flow, sag under self-weight | small feature coupon | critical geometry remains unsupported |
 | Weak repeated bend | layer orientation, strain concentration, material grade | cyclic coupon in intended orientation | failure could create a safety hazard without qualified testing |
 
-## Release checklist
+## Family-specific release gate
 
-- Exact product and Shore scale confirmed.
-- Physical printer's direct flexible-filament path officially confirmed; CFS bypassed.
-- TDS/SDS, nozzle, plate, drying, and storage recorded.
-- First layer, temperature, flow, retraction, bridge/overhang, dimensional fit, and finished-flex response tested proportionally.
-- Preview checked for speeds, flow, retractions, unsupported paths, support interface, and thin flexible walls.
-- Result labeled test print or physically validated for a measurable flex requirement; never guaranteed from Shore hardness alone.
+Apply the [shared release decision](INDEX.md#release-decision). Also confirm the Shore value and scale, officially supported direct path with CFS bypassed, and a measurable finished-part flex or deflection acceptance test.

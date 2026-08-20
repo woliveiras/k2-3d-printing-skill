@@ -99,11 +99,6 @@ For any real filled PLA:
 | Missing fine wall | feature below generated line, flow or mesh issue | inspect Preview and test larger whole-line-width wall | slicer still omits the required structural feature |
 | Wood/fill clogging | particle/nozzle mismatch, heat, contamination | stop; cool safely; confirm minimum nozzle and official cleaning procedure | torque, disassembly, or hot-pull method is unconfirmed |
 
-## Release checklist
+## Family-specific release gate
 
-- Exact PLA product and revision identified.
-- Physical printer, nozzle material/diameter, plate, and CFS variant confirmed.
-- Every number labeled manufacturer range, starting point, or empirical result.
-- First layer, temperature, flow, maximum volumetric flow, stringing, surface finish, bridge/overhang, and fit tests selected proportionally.
-- Preview inspected for thin walls, seam, volumetric flow, cooling, unsupported paths, support contact, and actual material assignment.
-- Final state reported as sliced, Preview reviewed, test print recommended, or physically validated.
+Apply the [shared release decision](INDEX.md#release-decision). Also confirm the exact PLA subtype/revision and, for wood-look material, whether it is foamed or particle-filled with suitable nozzle and CFS evidence.

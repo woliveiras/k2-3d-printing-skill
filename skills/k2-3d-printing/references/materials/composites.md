@@ -134,11 +134,6 @@ The base K2's steel-tipped trimetal 0.4 mm nozzle is official K2 evidence, not p
 | Temperature request exceeds limit | wrong product/printer/profile | reject profile and select compatible material | never bypass or modify limits |
 | Dust escapes during finishing | absent capture/unsafe method | stop work; implement SDS-based control | effective containment/PPE unavailable |
 
-## Release checklist
+## Family-specific release gate
 
-- Exact resin, filler type/content, TDS/SDS, and revision identified.
-- Physical printer, nozzle material/diameter, drive path, plate, enclosure/chamber, and CFS variant confirmed.
-- Compatibility classified separately for each subsystem.
-- Drying/dry feed, surface, first layer, temperature, flow, abrasion, warp, layer adhesion, and dimensional/post-process coupons completed as needed.
-- Preview checked for temperature limit, feature flow, retractions, fan, thin walls, support/purge, and material assignment.
-- No high-temperature incompatibility is reframed as “possible” without a separately authorized hardware engineering scope.
+Apply the [shared release decision](INDEX.md#release-decision). Also confirm filler and tooling requirements and reject any minimum thermal requirement above the confirmed printer limit; do not reframe hardware incompatibility as a slicer adjustment.

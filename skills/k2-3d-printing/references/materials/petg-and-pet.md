@@ -90,11 +90,6 @@ Door/lid and chamber state remain **Unvalidated** unless the exact filament and 
 | Plate damage or part will not release | incompatible surface or missing release layer | stop heating; allow cooling; follow plate maker removal procedure | force risks coating or glass damage |
 | High-speed under-extrusion | volumetric flow exceeds hotend/material result | stepped flow test | clicking, grinding, temperature instability, or sustained flow loss |
 
-## Release checklist
+## Family-specific release gate
 
-- Exact PETG/PET grade, TDS/SDS, and revision identified.
-- Physical printer/nozzle/plate and standard CFS versus CFS-C confirmed.
-- Surface and release-layer instruction verified for the exact plate.
-- First layer, temperature, flow, maximum volumetric flow, cooling, stringing, bridge/overhang, and fit coupons planned or completed.
-- Preview checked for actual temperature/fan transitions, volumetric flow, thin walls, bridges, supports, seams, and travels.
-- No statement upgrades a completed slice to physical validation.
+Apply the [shared release decision](INDEX.md#release-decision). Also confirm the exact PETG/PET grade and the exact plate's adhesion or release-layer procedure; do not release a PETG job while damage-free removal remains untested.

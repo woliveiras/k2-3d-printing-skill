@@ -120,11 +120,6 @@ For HIPS or another non-water-soluble support, do not name a solvent, temperatur
 | Nozzle clogs after material change | degraded support, contamination, purge, temperature mismatch | stop; follow exact recovery procedure | hot-pull/disassembly condition is unconfirmed |
 | Part dimensions change after water cycle | primary moisture uptake, residue, conditioning | measure before/after representative coupon | fit/structural requirement remains unmet |
 
-## Release checklist
+## Family-specific release gate
 
-- Primary and support products, TDS/SDS revisions, printer/tool path, CFS variant, and spool condition confirmed.
-- Temperature/cooling overlap and purge behavior verified without exceeding limits.
-- Interface coupon demonstrates attachment, surface result, removal/dissolution, residue, and dimensional acceptance.
-- Preview checked layer by layer for support access, interface, unsupported islands, purge, tool changes, and trapped material.
-- Removal medium, ventilation, handling, and disposal are documented.
-- Result remains a test recommendation until the exact final geometry is physically printed and inspected.
+Apply the [shared release decision](INDEX.md#release-decision). Also validate the exact primary/support pair, interface, purge, removal or dissolution, trapped residue, dimensional effect, ventilation, and disposal.

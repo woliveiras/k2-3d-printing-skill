@@ -106,11 +106,6 @@ The cited examples span 75 °C/6 h for PolyMax PC, 80 °C/at least 40 h for Ultr
 | Stringing | moisture, temperature, flow, retraction | dry first, then temperature, then retraction | repeated retraction causes grind/jam |
 | High-speed under-extrusion | measured flow ceiling, temperature, obstruction | stepped flow test | clicking, grinding, thermal error, or sustained flow loss |
 
-## Release checklist
+## Family-specific release gate
 
-- Exact PA/PC grade identified; no filled product is treated as unfilled.
-- Printer identity, hotend/nozzle, bed/surface, passive enclosure versus controlled chamber, and CFS variant confirmed.
-- Drying, dry-feed, storage, annealing, and conditioning states recorded.
-- First-layer, temperature, flow, warp, layer adhesion, bridge/overhang, and dimensional/functional coupons completed as required.
-- Preview inspected for temperatures, fan, volumetric flow, thin walls, support/purge, and material assignment.
-- Structural, thermal, wear, chemical, or certification claims remain bounded to the exact product and physical acceptance test.
+Apply the [shared release decision](INDEX.md#release-decision). Also distinguish filled from unfilled PA, confirm dry-feed and controlled-chamber requirements, and validate dimensions in the final annealed or moisture-conditioned state.
