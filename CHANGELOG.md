@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to this repository are documented here. The project has not been published or installed by this development work.
+All notable changes to this repository are documented here.
 
 ## Unreleased
 

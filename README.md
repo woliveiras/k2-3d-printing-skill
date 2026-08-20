@@ -6,13 +6,13 @@ The repository contains one self-contained skill under `skills/k2-3d-printing/`.
 
 ## Installation
 
-After this repository is public, install it with the [skills CLI](https://www.skills.sh/docs/cli):
+Install it from GitHub with the [skills CLI](https://www.skills.sh/docs/cli):
 
 ```bash
 npx skills add woliveiras/k2-3d-printing-skill
 ```
 
-The command is documented for review only; repository development and validation do not install the skill. Review `SKILL.md`, scripts, and source policy before installing any third-party skill. To disable skills.sh CLI telemetry during a later authorized install, follow the current CLI documentation.
+Review `SKILL.md`, scripts, and the source policy before installing any third-party skill. Follow the current CLI documentation to configure telemetry.
 
 ## What the skill enforces
 

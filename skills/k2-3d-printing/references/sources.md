@@ -584,9 +584,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Confidence: High
 - Review by: 2026-09-20, or immediately when documenting another version
 
-# Provisional material source records
-
-These records cover the provisional M identifiers cited by the material and design references. Merge them into the repository source registry without dropping product applicability or conflicts.
+# Material, design, and safety sources
 
 ## M001 — K2 Series 3D Printer support/specification page
 

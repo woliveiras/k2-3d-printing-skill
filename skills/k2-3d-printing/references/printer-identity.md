@@ -1,7 +1,5 @@
 # Printer identity and K2-family boundaries
 
-Research snapshot: 2026-08-20 18:56 CEST. Source IDs prefixed `P` are provisional and must resolve to the official-source records in `sources.md` before release.
-
 ## Current identity status
 
 Treat the user's printer as **user-claimed `K2C`; physical model unconfirmed**. The official Creality family index, product catalog, manuals, and firmware catalog inspected on the research date identify K2, K2 Pro, K2 Plus, K2 SE, and K2 SE 4C, but no distinct physical model named `K2C`. The official product page defines **K2 Combo** as a K2 printer bundled with one original CFS. That bundle name does not prove that a particular physical unit is a K2. [P001] [P004] [P017] [P018] [P019] [P020] [P035]
