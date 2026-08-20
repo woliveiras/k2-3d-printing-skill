@@ -1,0 +1,9 @@
+{
+  "name": "right fixture",
+  "printer_model": "Creality K2 Pro",
+  "nozzle_diameter": [0.4],
+  "layer_height": "0.20",
+  "wall_loops": 4,
+  "filament_type": ["PETG"],
+  "nozzle_temperature": [245]
+}

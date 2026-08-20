@@ -1,0 +1,9 @@
+{
+  "name": "left fixture",
+  "printer_model": "Creality K2",
+  "nozzle_diameter": [0.4],
+  "layer_height": 0.2,
+  "wall_loops": 3,
+  "filament_type": ["PLA"],
+  "nozzle_temperature": [220]
+}
