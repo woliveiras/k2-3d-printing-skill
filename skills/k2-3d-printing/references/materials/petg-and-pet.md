@@ -4,10 +4,10 @@ Treat PETG, high-flow PETG, PET, and PET-CF as separate grades. A PETG range doe
 
 ## Decision boundary
 
-- **Candidate K2 official fact:** the official K2 page lists PETG and PET. It does not confirm the user's physical printer or endorse every high-flow, copolyester, filled, or annealable grade. [M001]
+- **Base-K2 evidence:** the official K2 page lists PETG and PET. Apply this only after physical K2 confirmation; it does not endorse every high-flow, copolyester, filled, or annealable grade. [M001]
 - **Standard CFS official fact:** PETG and PET are supported medium-hardness examples when spool dimensions and condition comply. [P024, M003]
 - PET-CF is routed through [composites](composites.md); standard CFS suitability must be established for the exact brittle/abrasive grade.
-- If the physical label still says only “K2C,” stop model-specific claims and continue with product-level calibration guidance.
+- If `K2C` is the only identity evidence, stop model-specific claims and continue with product-level calibration guidance.
 
 ## Selection frame
 
@@ -39,7 +39,7 @@ No exact unfilled-PET TDS was established in this research. The K2/CFS family li
 4. Run a first-layer coupon before a temperature tower. Observe continuous lines, consistent squish, edge lift, and damage-free release after cooling.
 5. Do not increase bed or nozzle temperature past a confirmed limit to compensate for contamination, Z error, excessive speed, or wet filament.
 
-Door/lid and chamber state remain **Unvalidated** unless the exact filament and confirmed printer state them. Do not import the K2 Plus chamber recommendation into K2 or an unidentified K2C.
+Door/lid and chamber state remain **Unvalidated** unless the exact filament and confirmed printer state them. Do not import the K2 Plus chamber recommendation into K2 or an unresolved `K2C` identity.
 
 ### Cooling, bridges, and overhangs
 

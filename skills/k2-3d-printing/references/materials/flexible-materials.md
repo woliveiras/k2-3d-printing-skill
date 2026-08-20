@@ -4,7 +4,7 @@ Use this file for TPU and other TPE filaments. TPU is a TPE subtype; TPE is not 
 
 ## Decision boundary
 
-- **Candidate K2:** the researched official K2 material list does not name TPU/TPE. Temperature fit or a direct-drive extruder is not official compatibility. [M001]
+- **Base-K2 evidence:** the official K2 material list does not name TPU/TPE. Temperature fit or a direct-drive extruder is not official compatibility. [M001]
 - **Standard CFS:** the official compatibility page disallows TPU and other elastic filament. Do not route flexible filament through standard CFS. [P024, M003]
 - **CFS-C:** its separate table marks TPU unavailable. Do not transfer any future CFS-C result to standard CFS. [M004]
 - Keep printer compatibility **Not validated** until the exact physical model and an applicable official source are confirmed.

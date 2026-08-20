@@ -4,7 +4,7 @@ Use this file for PVA, BVOH, and HIPS support decisions. Chemical solubility doe
 
 ## Decision boundary
 
-- The candidate K2 official material list does not name PVA, BVOH, or HIPS. Treat print-process compatibility as **Not validated** until the physical printer and exact material are confirmed. [M001]
+- The base-K2 official material list does not name PVA, BVOH, or HIPS. Treat print-process compatibility as **Not validated** until the physical printer and exact material are confirmed. [M001]
 - Standard CFS officially lists dried PVA and BVOH, but rejects them when moisture has softened them. It also lists HIPS as a medium-hardness example. [P024]
 - CFS feed-path status does not validate the support/primary pair or an independent-tool workflow.
 - Do not promise “zero marks,” complete dissolution, a fixed removal time, or support-free cavities.
@@ -16,7 +16,7 @@ Use this file for PVA, BVOH, and HIPS support decisions. Chemical solubility doe
 | Polymaker PolyDissolve S1 | 215–225 °C | 25–60 °C | fan on; product page/PIS 30–40 mm/s | very hygroscopic; 80 °C for 12 h | Product/PIS conflict with a separate Polymaker wiki page that lists 50–150 mm/s. Use exact revision. [M030, M031] |
 | UltiMaker PVA v5.00 | use its exact 2.85 mm UltiMaker profile | exact UltiMaker ecosystem | exact profile | exact TDS/storage procedure | Pairing evidence only; not a 1.75 mm Creality profile. [M032] |
 | BASF Ultrafuse BVOH v1.3 | 190–210 °C | 60–100 °C | 30–60 mm/s; 0.4 mm or larger | dry 60 °C for 4–16 h; sealed storage at 15–25 °C | First-party German document; exact product pairing only. [M033] |
-| BASF Ultrafuse HIPS v2.2 | 240–260 °C | 100–120 °C | 40–80 mm/s; 0.4 mm or larger | dry 60 °C for 4–16 h | Candidate K2 bed reaches only the bottom point; no official K2 endorsement. [M020] |
+| BASF Ultrafuse HIPS v2.2 | 240–260 °C | 100–120 °C | 40–80 mm/s; 0.4 mm or larger | dry 60 °C for 4–16 h | Base-K2 bed reaches only the bottom point; no official K2 endorsement. [M020] |
 
 Do not merge these ranges. The PolyDissolve speed conflict remains unresolved until the physical spool/document revision is identified.
 

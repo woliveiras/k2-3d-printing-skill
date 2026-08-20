@@ -28,9 +28,9 @@ Treat gears, bearings, clips, enclosures, high-temperature parts, and structural
 | Polymaker CoPA | PA6/PA6,6 blend | 250–270 °C | bed 25–50 °C | fan off; 50–200 mm/s | dry 100 °C for 8 h; anneal 80 °C for 6 h under its procedure | All-metal hotend. Page table says closure needed while FAQ says no enclosure; unresolved conflict. [M024] |
 | Polymaker Fiberon PA6-CF20 | PA6, 20% CF | 280–300 °C | bed 40–50 °C; product-specific low ambient/bed condition | fan off; 30–300 mm/s | heated dry feed throughout; anneal 100 °C for 16 h | Hardened nozzle/all-metal hotend. Warp-Free behavior is product-specific. [M025] |
 | Polymaker Fiberon PA12-CF10 | PA12, 10% CF | 280–300 °C | bed 40–50 °C | fan off; 30–300 mm/s | dry feed throughout; anneal 100 °C for 16 h | Hardened nozzle/all-metal hotend. Lower moisture sensitivity relative to cited PA6-CF is not moisture immunity. [M026] |
-| BASF Ultrafuse PA v3.1 | glass-reinforced PA | 220–250 °C | bed 90–120 °C; passive closed chamber | 30–60 mm/s | dry 80 °C for at least 40 h | Abrasive; hardened nozzle/drive wheels advised. Candidate K2 cannot cover full bed range. [M027] |
+| BASF Ultrafuse PA v3.1 | glass-reinforced PA | 220–250 °C | bed 90–120 °C; passive closed chamber | 30–60 mm/s | dry 80 °C for at least 40 h | Abrasive; hardened nozzle/drive wheels advised. Base K2 cannot cover the full bed range. [M027] |
 | Creality Hyper PC | proprietary PC product | 240–260 °C | bed 50–80 °C; no chamber claim established | 30–300 mm/s | exact current product document required | PEI/carbon-crystal surface listed; no K2 endorsement. [M028] |
-| Polymaker PolyMax PC | proprietary PC product | 250–270 °C | bed 90–105 °C; chamber 70–100 °C | fan off; 50–200 mm/s; 12 mm³/s maximum volumetric speed | dry 75 °C for 6 h; anneal 90 °C for 2 h under its procedure | Requirements are much higher than Hyper PC and exceed candidate bed at upper end. [M029] |
+| Polymaker PolyMax PC | proprietary PC product | 250–270 °C | bed 90–105 °C; chamber 70–100 °C | fan off; 50–200 mm/s; 12 mm³/s maximum volumetric speed | dry 75 °C for 6 h; anneal 90 °C for 2 h under its procedure | Requirements are much higher than Hyper PC and exceed the base-K2 bed at the upper end. [M029] |
 
 Do not combine the Hyper PC and PolyMax PC rows. Do not transfer filled-PA settings to unfilled nylon.
 

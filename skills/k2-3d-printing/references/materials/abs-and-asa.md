@@ -4,7 +4,7 @@ Use this file for ABS and ASA model material. Use [support materials](support-ma
 
 ## Decision boundary
 
-- **Candidate K2 official fact:** the official K2 page lists ABS. It does not list ASA or HIPS and does not confirm the user's physical printer. [M001]
+- **Base-K2 evidence:** the official K2 page lists ABS but not ASA or HIPS. Apply this only after physical K2 confirmation. [M001]
 - **Standard CFS official fact:** ABS, ASA, and HIPS are named medium-hardness examples. That is feed-path evidence, not print-process endorsement. [P024]
 - **Enclosure is formulation-specific:** Creality's generic CR-ABS chart recommends enclosure/environment control, while the Hyper ABS product page advertises a reduced-shrink formulation that can print without one. Preserve the conflict. [M007, M016]
 - **K2 Plus chamber values apply only to K2 Plus.** Do not assign its 60 °C guidance to K2 or an unconfirmed K2C. [M006]
@@ -19,13 +19,13 @@ Do not claim heat resistance, UV life, impact strength, chemical resistance, low
 
 | Exact product/source | Nozzle | Bed / environment | Cooling | Published speed | Drying | Evidence boundary |
 |---|---:|---|---|---|---|---|
-| Creality CR-ABS generic chart | 220–260 °C | bed 90–110 °C; environment 50–80 °C | not resolved | 40–80 mm/s | not resolved | Enclosure recommended. Candidate K2 bed cannot cover the full range. [M007] |
+| Creality CR-ABS generic chart | 220–260 °C | bed 90–110 °C; environment 50–80 °C | not resolved | 40–80 mm/s | not resolved | Enclosure recommended. Base-K2 bed cannot cover the full range. [M007] |
 | Creality Hyper ABS | 230–270 °C | bed 75–95 °C | not resolved | product-specific | exact product document required | Product page advertises reduced shrinkage and no enclosure; do not transfer to other ABS. [M016] |
 | Polymaker PolyLite ABS | 245–265 °C | bed 90–100 °C; ambient enclosure | fan off | 50–200 mm/s | 70 °C for 6 h | Exact product page. [M018] |
 | Creality HP-ASA product page | 200–300 °C | bed 50–100 °C | not resolved | 40–300 mm/s | exact product document required | Product-page values conflict with Creality's generic chart. [M017] |
-| Creality HP-ASA generic chart | 240–260 °C | bed 80–110 °C; environment 60–90 °C | not resolved | 30–60 mm/s | not resolved | Cannot be silently merged with product page; upper bed range exceeds candidate K2. [M007] |
+| Creality HP-ASA generic chart | 240–260 °C | bed 80–110 °C; environment 60–90 °C | not resolved | 30–60 mm/s | not resolved | Cannot be silently merged with product page; upper bed range exceeds base K2. [M007] |
 | Polymaker PolyLite ASA | 230–260 °C | bed 75–95 °C; enclosure | fan off | 50–200 mm/s | 70 °C for 7 h | Exact product page. [M019] |
-| BASF Ultrafuse HIPS v2.2 | 240–260 °C | bed 100–120 °C | exact TDS/profile | 40–80 mm/s; 0.4 mm or larger nozzle | 60 °C for 4–16 h | Candidate K2 reaches only the bottom bed point; not an official K2 material. [M020] |
+| BASF Ultrafuse HIPS v2.2 | 240–260 °C | bed 100–120 °C | exact TDS/profile | 40–80 mm/s; 0.4 mm or larger nozzle | 60 °C for 4–16 h | Base K2 reaches only the bottom bed point; not an official K2 material. [M020] |
 
 ### Conflict rule
 

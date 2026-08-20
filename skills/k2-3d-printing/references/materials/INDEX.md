@@ -1,6 +1,6 @@
 # Materials index
 
-Use this directory to decide whether an exact filament can be fed, melted, deposited, adhered, cooled, and handled safely on the confirmed physical printer. Do not infer physical hardware from a Creality Print profile. The user-provided name **K2C** is unconfirmed: obtain the physical label or the printer's About screen before applying K2 limits.
+Use this directory to decide whether an exact filament can be fed, melted, deposited, adhered, cooled, and handled safely on the confirmed physical printer. Do not infer physical hardware from a Creality Print profile. If `K2C` is the only identity supplied, obtain the physical label or `About` screen before applying K2 limits.
 
 ## Load only what the task needs
 
@@ -13,7 +13,7 @@ Use this directory to decide whether an exact filament can be fed, melted, depos
 | PA6, PA12, CoPA, other nylon, or PC | [Nylon and polycarbonate](nylon-and-polycarbonate.md) |
 | PLA-CF, PETG-CF, PET-CF, PA-CF, PA-GF, wood/metal particles, PP/PP-GF, PPA, PAHT, PPS, PPSU, or PEI | [Composites and high-temperature materials](composites.md) |
 | PVA, BVOH, HIPS support, or main/support pairing | [Support materials](support-materials.md) |
-| Candidate-hardware or CFS classification | [Compatibility matrix](compatibility-matrix.md) |
+| Base-K2 comparison or CFS classification | [Compatibility matrix](compatibility-matrix.md) |
 | Walls, clearances, fits, holes, bridges, overhangs, inserts, splits, or curved shells | [Design for FDM](../design-for-fdm.md) |
 
 ## Evidence and classification
