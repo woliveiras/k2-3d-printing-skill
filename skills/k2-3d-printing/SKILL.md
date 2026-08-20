@@ -22,12 +22,9 @@ Resolve every relative reference and script path from the directory containing t
 
 ## Refresh unstable facts
 
-1. Browse live primary sources before using `latest`, `current`, `supported`, `compatible`, or `safe`, or before giving firmware, software, temperature, material, part, or maintenance facts.
-2. Prefer model-specific Creality manuals, Wiki pages, service instructions, firmware notes, official parts, the official Creality Print repository, and the exact filament manufacturer's TDS/SDS. Use occupational, electrical, and fire authorities for safety.
-3. Use community material only to discover a hypothesis. Do not promote it to a hardware, material, UI, or safety authority.
-4. Report every live material source with publisher, direct URL, source type, date, access timestamp, applicability, supported claims, limitations/conflicts, confidence, and review date. Cite an existing record in [sources](references/sources.md) when one applies.
-5. Explain conflicts. Prefer the most specific and recent primary source, but preserve unresolved uncertainty.
-6. Read [evidence and authority](references/evidence-and-authority.md) before researching, modifying a project, sending a print, or proposing a repair.
+1. Recheck model-, version-, and SKU-specific primary sources before using `latest`, `current`, `supported`, `compatible`, or `safe`, or before giving firmware, software, temperature, material, part, maintenance, or safety facts.
+2. Follow [evidence and authority](references/evidence-and-authority.md) for source priority, claim classes, conflicts, freshness, and action gates. Use community material only to form a testable hypothesis.
+3. For each new live source, report publisher, direct URL, source type, publication and access dates, applicability, supported claims, conflicts, confidence, and review date. Cite an existing record in [sources](references/sources.md) when one applies.
 
 ## Run the task workflow
 
@@ -41,12 +38,12 @@ Resolve every relative reference and script path from the directory containing t
 4. Choose the slicing objective and trade-offs from [slicing](references/slicing/INDEX.md). Classify consequential claims with the canonical [claim classes](references/evidence-and-authority.md#claim-classes).
 5. Give Creality Print navigation only for an observed or sourced version and mode. Read [Creality Print](references/creality-print/INDEX.md). If a control is hidden, check version, interface mode, `Global` versus `Objects`, selection, prerequisites, search, and scroll state before declaring it absent.
 6. Slice, then inspect Preview layer by layer using [Preview inspection](references/slicing/preview-inspection.md). Consult the active legend before interpreting color.
-7. Calibrate proportionally: first layer; temperature; flow; pressure advance only when officially applicable; maximum volumetric flow; retraction/stringing; bridges/overhangs; dimensional tolerance; then vibration/input shaping only when officially supported.
-8. Diagnose symptoms before changing multiple parameters. Use [failure diagnosis](references/slicing/failure-diagnosis.md) for print faults and [maintenance troubleshooting trees](references/maintenance/troubleshooting-trees.md) for hardware faults.
+7. Calibrate only applicable factors in the order and stop criteria defined by [calibration](references/slicing/calibration.md).
+8. Diagnose before changing multiple parameters. Use [failure diagnosis](references/slicing/failure-diagnosis.md) for print faults; for hardware or preventive work, load the [maintenance index](references/maintenance/INDEX.md), then the [troubleshooting trees](references/maintenance/troubleshooting-trees.md) when routing symptom-first.
 
 ## Separate completion states
 
-Report exactly one or more of these states without collapsing them:
+Report every reached completion state separately:
 
 - `Sliced`: toolpath generation completed.
 - `Preview reviewed`: no apparent anomaly was found in the inspected views and legends; list what was not inspected.
@@ -66,12 +63,7 @@ Never infer physical success from a completed slice or a structurally valid 3MF.
 
 ## Modify 3MF projects only when authorized
 
-1. Record the original path and SHA-256.
-2. Create a clearly named new file; never replace the original.
-3. Change only the authorized fields and preserve unrelated archive members, types, units, and origins.
-4. Re-run 3MF inspection and setting extraction; compare the original and copy.
-5. Report structural validity and the remaining physical-printability boundary.
-6. Do not send the resulting project to a printer without a separate authorization.
+Preserve and hash the original, write a clearly named copy, change only authorized fields, re-inspect and compare both files, and report structural and physical-validation states separately. Never send the copy without separate authorization. Follow [authorized 3MF mutation](references/model-inspection.md#authorized-3mf-mutation) and [authority gates](references/evidence-and-authority.md#authority-gates).
 
 ## Load only required references
 
@@ -79,8 +71,4 @@ Read [design for FDM](references/design-for-fdm.md) when the task changes geomet
 
 ## Format the answer
 
-1. Lead with the decision or blocker.
-2. State the confirmed physical model and evidence level, or state that hardware identity is unconfirmed.
-3. Cite source IDs from `references/sources.md` with applicability and access date for unstable claims.
-4. List Preview checks, stop criteria, validation test, and residual uncertainty.
-5. State which actions require separate authorization.
+Lead with the decision or blocker. Include only task-relevant identity evidence, claim classes, citations, Preview or stop checks, validation, residual uncertainty, and actions requiring separate authorization. For unstable claims, include source ID, applicability, and access date.
