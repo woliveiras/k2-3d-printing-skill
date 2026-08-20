@@ -150,11 +150,17 @@ class RepositoryContractTests(unittest.TestCase):
         self.assertGreaterEqual(len(entries), 20)
         source_ids = {entry["id"] for entry in entries}
         missing_fields = []
+        urls: dict[str, list[str]] = {}
         for entry in entries:
             missing = sorted(check_source_freshness.REQUIRED_FIELDS - set(entry["fields"]))
             if missing:
                 missing_fields.append((entry["id"], missing))
+            url = entry["fields"].get("URL")
+            if url:
+                urls.setdefault(url, []).append(entry["id"])
         self.assertEqual(missing_fields, [])
+        duplicate_urls = {url: ids for url, ids in urls.items() if len(ids) > 1}
+        self.assertEqual(duplicate_urls, {})
         cited = set()
         for path in all_markdown():
             if path == source_path:

@@ -5,7 +5,7 @@ Use this file for plain PLA, Hyper/high-speed PLA, PLA+, Tough/Pro, Matte, Silk,
 ## Decision boundary
 
 - **Candidate K2 official fact:** the official K2 page lists PLA and PLA-CF. This does not confirm that the user's physical printer is K2 or that every PLA derivative is endorsed. [M001]
-- **Standard CFS official fact:** PLA is a supported medium-hardness example. Exact spool dimensions and physical condition still govern. No source found specifically approving real wood-filled, foaming, very brittle, or heavily filled PLA in standard CFS. [M002, M003]
+- **Standard CFS official fact:** PLA is a supported medium-hardness example. Exact spool dimensions and physical condition still govern. No source found specifically approving real wood-filled, foaming, very brittle, or heavily filled PLA in standard CFS. [P024, M003]
 - **CFS-C:** use its separate matrix; never transfer a CFS-C result to standard CFS. [M004]
 - **K2C:** unconfirmed hardware name. Stop model-specific limits until a label or About screen establishes the physical model.
 

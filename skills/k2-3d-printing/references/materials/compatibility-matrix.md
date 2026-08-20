@@ -18,42 +18,42 @@ Candidate K2 evidence used only for comparison: 300 °C maximum nozzle, 100 °C 
 
 | Material or exact grade | Candidate K2 process status | Nozzle/hotend gate | Bed/chamber/surface gate | Standard CFS | Why |
 |---|---|---|---|---|---|
-| Plain PLA | OS at family level | exact SKU/profile | exact plate/product | OS example | Named by K2 and CFS; product calibration still required. [M001, M002] |
+| Plain PLA | OS at family level | exact SKU/profile | exact plate/product | OS example | Named by K2 and CFS; product calibration still required. [M001, P024] |
 | Hyper PLA | C under PLA family | flow-capable nozzle/hotend; 600 mm/s is not a default | 25–60 °C product range | OS as PLA family; exact spool still checked | Exact SKU range 190–230 °C; maximum speed requires flow test. [M008] |
 | PLA+, Tough/Pro, Matte, Silk | C under PLA family | exact formulation | exact product range/finish test | C; generic PLA path only | Names are not standardized; exact grade is not separately endorsed. [M007, M009, M010] |
 | Foamed wood-look PLA without particles | C under PLA family | exact foaming profile | exact product | NV for exact grade | PolyWood v2 has no wood powder; CFS evidence is generic PLA only. [M011] |
 | Real wood/metal-filled PLA | NV | product-specific; large particles may require at least 0.6 mm; metal requires hardened nozzle in cited guide | exact product/surface | NV | Filler changes clogging, wear, brittleness, and feed behavior. [M012] |
-| Plain PETG | OS at family level | exact SKU/flow | exact plate; release-layer decision | OS example | Named by K2 and CFS; product ranges conflict and must not be merged. [M001, M002, M013, M014, M015] |
-| Plain PET | OS at family level | exact PET TDS absent | exact PET TDS absent | OS example | Family is listed, but no exact unfilled-PET profile was established. [M001, M002] |
-| ABS | OS at family level | exact formulation/flow | exact enclosure and bed condition | OS example | Named by K2/CFS; Hyper ABS no-enclosure claim cannot generalize. [M001, M002, M007, M016] |
-| ASA | NV | exact grade | enclosure/bed required by exact grade | OS feed-path example | CFS acceptance does not prove printer process. Creality HP-ASA sources conflict. [M002, M007, M017] |
-| Ultrafuse HIPS v2.2 | NR pending exact validation | 240–260 °C; 0.4 mm or larger | published bed 100–120 °C; candidate reaches only lower boundary | OS feed-path example | Not on K2 list and complete bed range cannot be reproduced. [M020, M001, M002] |
-| TPU/TPE | NV for printer | direct constrained path; exact Shore grade | exact product | NR / disallowed | Standard CFS explicitly disallows elastic filament; candidate K2 list omits TPU. [M001, M002, M003] |
+| Plain PETG | OS at family level | exact SKU/flow | exact plate; release-layer decision | OS example | Named by K2 and CFS; product ranges conflict and must not be merged. [M001, P024, M013, M014, M015] |
+| Plain PET | OS at family level | exact PET TDS absent | exact PET TDS absent | OS example | Family is listed, but no exact unfilled-PET profile was established. [M001, P024] |
+| ABS | OS at family level | exact formulation/flow | exact enclosure and bed condition | OS example | Named by K2/CFS; Hyper ABS no-enclosure claim cannot generalize. [M001, P024, M007, M016] |
+| ASA | NV | exact grade | enclosure/bed required by exact grade | OS feed-path example | CFS acceptance does not prove printer process. Creality HP-ASA sources conflict. [P024, M007, M017] |
+| Ultrafuse HIPS v2.2 | NR pending exact validation | 240–260 °C; 0.4 mm or larger | published bed 100–120 °C; candidate reaches only lower boundary | OS feed-path example | Not on K2 list and complete bed range cannot be reproduced. [M020, M001, P024] |
+| TPU/TPE | NV for printer | direct constrained path; exact Shore grade | exact product | NR / disallowed | Standard CFS explicitly disallows elastic filament; candidate K2 list omits TPU. [M001, P024, M003] |
 | Unfilled PA6/PA12/other nylon | NV | exact TDS absent | moisture/chamber/surface unresolved | NV | Do not infer from filled PA or CoPA. |
 | Polymaker CoPA | NV | all-metal; 250–270 °C | bed 25–50 °C; enclosure source conflict | NV | Exact range fits thermally, but no K2 endorsement and enclosure evidence conflicts. [M024] |
 | Hyper PC | NV | 240–260 °C | bed 50–80 °C; chamber status not established | NV | Product page fits candidate temperatures but K2 compatibility is not stated. [M028] |
 | PolyMax PC | NR pending exact chamber evidence | 250–270 °C | bed 90–105 °C; controlled chamber 70–100 °C | NV | Candidate bed misses upper range and applicable chamber capability is unconfirmed. [M029] |
-| PVA | NV for printer | exact 1.75 mm product/profile | moisture/dry feed; support pair | C only when dried/not softened | CFS accepts dry PVA; UltiMaker TDS is 2.85 mm ecosystem and not a Creality profile. [M002, M032] |
-| BVOH | NV for printer | exact product 190–210 °C example | exact support pair; dry feed | C only when dried/not softened | CFS accepts dry BVOH; exact Ultrafuse conditions still govern. [M002, M033] |
+| PVA | NV for printer | exact 1.75 mm product/profile | moisture/dry feed; support pair | C only when dried/not softened | CFS accepts dry PVA; UltiMaker TDS is 2.85 mm ecosystem and not a Creality profile. [P024, M032] |
+| BVOH | NV for printer | exact product 190–210 °C example | exact support pair; dry feed | C only when dried/not softened | CFS accepts dry BVOH; exact Ultrafuse conditions still govern. [P024, M033] |
 | Unfilled PP | NV | exact product 220–240 °C example | exact PP tape/adhesive, 60–80 °C | NV | Not named by candidate K2/CFS. [M034] |
 | PP-GF30 | NV | 0.6 mm or larger; abrasion-aware tooling | two surface-specific bed ranges | NV | Exact surface system and filled-tooling condition required. [M035] |
-| PLA-CF | OS at family level | exact grade/nozzle confirmation; candidate supplied nozzle does not prove every grade | exact grade | OS example | Named by K2 and standard CFS. [M001, M002, M036] |
+| PLA-CF | OS at family level | exact grade/nozzle confirmation; candidate supplied nozzle does not prove every grade | exact grade | OS example | Named by K2 and standard CFS. [M001, P024, M036] |
 | Hyper PETG-CF | NV | hardened/wear-resistant nozzle; 240–260 °C | 70–90 °C | NV | Temperature fit is inference; not named on K2 list/CFS exact matrix. [M037] |
 | Fiberon PET-CF17 | NV | hardened/all-metal; 270–300 °C | 70–80 °C; manufacturer says no heated enclosure | NR for CFS-C; standard CFS NV | Exact composite not K2-listed; CFS-C says Not Suggested. [M039, M004] |
 | Fiberon PET-GF15 | NR | hardened; 280–310 °C | 70–80 °C | NV | Published range extends above candidate nozzle maximum. Never command 310 °C. [M040] |
-| Fiberon PA6-CF20 / PA12-CF10 / PA6-GF25 | NV | hardened/all-metal; 280–300 °C; dry feed | product-specific 40–50 °C bed and conditioning | C only after exact standard-CFS evidence; CFS-C lists generic PA6-CF/PA12-CF | Standard CFS marketing broadly names PA-CF but wiki warns brittle grades; exact SKU required. [M025, M026, M038, M002, M003, M004] |
-| Creality PPA-CF | NR | 280–300 °C; exact nozzle/fill | bed 90–105 °C; enclosure; upper bed exceeds candidate | NR: standard CFS brittleness warning; CFS-C Not Suggested | Not K2-listed; reaches thermal limits and has feed-path warning. [M041, M002, M004] |
+| Fiberon PA6-CF20 / PA12-CF10 / PA6-GF25 | NV | hardened/all-metal; 280–300 °C; dry feed | product-specific 40–50 °C bed and conditioning | C only after exact standard-CFS evidence; CFS-C lists generic PA6-CF/PA12-CF | Standard CFS marketing broadly names PA-CF but wiki warns brittle grades; exact SKU required. [M025, M026, M038, P024, M003, M004] |
+| Creality PPA-CF | NR | 280–300 °C; exact nozzle/fill | bed 90–105 °C; enclosure; upper bed exceeds candidate | NR: standard CFS brittleness warning; CFS-C Not Suggested | Not K2-listed; reaches thermal limits and has feed-path warning. [M041, P024, M004] |
 | Ultrafuse PAHT-CF15 | NV | 250–270 °C; 0.6 mm or larger ruby/hardened | bed 65–85 °C; no chamber temperature stated | CFS-C Not Suggested; standard CFS NV | Live product page conflicts with a removed older TDS; no official K2 support or confirmed drying rule. [M042, M004] |
-| Fiberon PPS-CF10 | I | minimum nozzle 310 °C exceeds 300 °C | 80–90 °C bed; 25–80 °C ambient | NR: standard CFS brittle warning; CFS-C Not Suggested | Thermal incompatibility plus feed-path warning. [M043, M002, M004] |
+| Fiberon PPS-CF10 | I | minimum nozzle 310 °C exceeds 300 °C | 80–90 °C bed; 25–80 °C ambient | NR: standard CFS brittle warning; CFS-C Not Suggested | Thermal incompatibility plus feed-path warning. [M043, P024, M004] |
 | Ultrafuse PPSU | I | minimum nozzle 390 °C | bed 200–220 °C; chamber 170–210 °C | NV | All core thermal requirements exceed candidate K2. [M044] |
 | PEI/ULTEM | I | minimum nozzle 370 °C | bed 150–155 °C; specialized equipment | NV | Thermal requirements exceed candidate K2. [M045] |
 
 ## Standard CFS facts
 
-- Spool diameter: 197–202 mm.
-- Spool width: 42–68 mm.
-- Supported medium-hardness examples: PLA, PETG, ABS, PLA-CF, PET, ASA, HIPS, dried PVA, and BVOH.
-- Disallowed/unsuitable examples: TPU and other elastic filament; PVA/BVOH softened by moisture; hard/brittle PPA-CF and PPS-CF that can break in the feed tube. [M002]
+- Spool diameter: 197–202 mm. [P022]
+- Spool width: 42–68 mm. [P022]
+- Supported medium-hardness examples: PLA, PETG, ABS, PLA-CF, PET, ASA, HIPS, dried PVA, and BVOH. [P024]
+- Disallowed/unsuitable examples: TPU and other elastic filament; PVA/BVOH softened by moisture; hard/brittle PPA-CF and PPS-CF that can break in the feed tube. [P024]
 - The CFS product page broadly lists PA-CF. Resolve that marketing claim with the more specific wiki warning and exact SKU behavior. [M003]
 
 ## CFS-C matrix boundary

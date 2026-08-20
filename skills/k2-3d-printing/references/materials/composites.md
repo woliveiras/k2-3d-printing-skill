@@ -50,7 +50,7 @@ PP is a candidate for chemical/fatigue or living-hinge use only when the exact g
 
 | Exact product | Published minimum/full range | Candidate K2 comparison | Classification |
 |---|---|---|---|
-| Creality PPA-CF | nozzle 280–300 °C; bed 90–105 °C; enclosure; dry 80 °C/8–12 h forced air | reaches nozzle maximum; upper bed exceeds 100 °C; not on K2 material list | **Not validated**; standard CFS wiki warns hard/brittle PPA-CF may break. [M041, M002] |
+| Creality PPA-CF | nozzle 280–300 °C; bed 90–105 °C; enclosure; dry 80 °C/8–12 h forced air | reaches nozzle maximum; upper bed exceeds 100 °C; not on K2 material list | **Not validated**; standard CFS wiki warns hard/brittle PPA-CF may break. [M041, P024] |
 | BASF Ultrafuse PAHT-CF15 live product page | nozzle 250–270 °C; bed 65–85 °C; 0.6 mm or larger ruby/hardened nozzle; no chamber temperature or drying rule stated | removed older TDS conflicted at 260–280 °C nozzle and 100–120 °C bed | **Not validated** for candidate K2; require the exact printer, nozzle, spool documentation, drying evidence, and a calibration coupon. [M042] |
 | Polymaker Fiberon PPS-CF10 | nozzle 310–350 °C; bed 80–90 °C; ambient 25–80 °C; hardened nozzle; brittle clear path | minimum nozzle exceeds 300 °C | **Incompatible** with candidate K2. Its page explicitly says its flame claim is not UL 94 certification. [M043] |
 | BASF Ultrafuse PPSU live product page | nozzle 390–410 °C; bed 200–220 °C; chamber 170–210 °C; 25–100 mm/s; current drying rule unconfirmed | all core thermal requirements exceed candidate limits | **Incompatible**. [M044] |
@@ -82,7 +82,7 @@ The candidate K2's steel-tipped trimetal 0.4 mm nozzle is official K2 evidence, 
 
 ## CFS decision
 
-- Standard CFS officially lists PLA-CF and its product page broadly lists PA-CF. The wiki warns hard/brittle PPA-CF/PPS-CF can break in the tube. Use the more specific material-behavior warning for those exact grades. [M002, M003]
+- Standard CFS officially lists PLA-CF and its product page broadly lists PA-CF. The wiki warns hard/brittle PPA-CF/PPS-CF can break in the tube. Use the more specific material-behavior warning for those exact grades. [P024, M003]
 - CFS-C separately marks PPA-CF, PAHT-CF, PET-CF, and PPS-CF **Not Suggested**, while listing generic PA6-CF/PA12-CF/PA612-CF as usable. This does not apply to standard CFS. [M004]
 - PP, PP-GF, PETG-CF, wood/metal fill, and other composites remain **Not validated** in standard CFS unless the exact SKU appears in its applicable official matrix.
 - Stop if filament cracks, sheds, kinks, or resists the path. Do not force it or dismantle the system without an official procedure.

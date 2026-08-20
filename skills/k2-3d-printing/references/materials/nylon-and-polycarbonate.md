@@ -6,7 +6,7 @@ Use this file for PA6, PA12, PA6/6,6 blends such as CoPA, other polyamides, and 
 
 - The researched official K2 material list does not name nylon/PA or PC. A temperature range that fits is only an inference, not official compatibility. [M001]
 - No exact unfilled PA6 or PA12 TDS was established in this research. Do not derive their profiles from PA6-CF, PA12-CF, glass-reinforced PA, or CoPA.
-- Standard CFS marketing lists PA-CF broadly, while the more specific CFS wiki warns that hard/brittle PPA-CF and PPS-CF can break in its tube. Resolve the exact SKU and physical brittleness; do not infer all nylon or PA-CF is accepted. [M002, M003]
+- Standard CFS marketing lists PA-CF broadly, while the more specific CFS wiki warns that hard/brittle PPA-CF and PPS-CF can break in its tube. Resolve the exact SKU and physical brittleness; do not infer all nylon or PA-CF is accepted. [P024, M003]
 - PC products in the evidence require radically different bed/chamber conditions. “PC” alone is insufficient to decide compatibility.
 
 ## Selection frame
@@ -81,8 +81,8 @@ The cited examples span 75 °C/6 h for PolyMax PC, 80 °C/at least 40 h for Ultr
 
 ## CFS and support pairing
 
-- Do not infer standard CFS compatibility from a PA-CF marketing family alone. Check exact spool geometry, stiffness/brittleness, dryness, and the applicable CFS matrix. [M002, M003]
-- The standard CFS wiki specifically warns about brittle PPA-CF/PPS-CF. CFS-C has a separate matrix for PA6-CF, PA12-CF, PA612-CF, PPA-CF, PAHT-CF, and PPS-CF. [M002, M004]
+- Do not infer standard CFS compatibility from a PA-CF marketing family alone. Check exact spool geometry, stiffness/brittleness, dryness, and the applicable CFS matrix. [P024, M003]
+- The standard CFS wiki specifically warns about brittle PPA-CF/PPS-CF. CFS-C has a separate matrix for PA6-CF, PA12-CF, PA612-CF, PPA-CF, PAHT-CF, and PPS-CF. [P024, M004]
 - PolyDissolve S1 rates nylon highly in its product matrix but rates PC poorly. UltiMaker PVA names Nylon compatible but says its product is unsuitable with its PC. Ultrafuse BVOH names PA/PAHT-CF15 pairings. Validate exact products, temperature overlap, interface, purge, and dissolution. [M030, M032, M033]
 - A chemical pairing does not establish a CFS path or an independent-tool workflow.
 

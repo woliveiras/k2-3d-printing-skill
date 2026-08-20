@@ -5,7 +5,7 @@ Treat PETG, high-flow PETG, PET, and PET-CF as separate grades. A PETG range doe
 ## Decision boundary
 
 - **Candidate K2 official fact:** the official K2 page lists PETG and PET. It does not confirm the user's physical printer or endorse every high-flow, copolyester, filled, or annealable grade. [M001]
-- **Standard CFS official fact:** PETG and PET are supported medium-hardness examples when spool dimensions and condition comply. [M002, M003]
+- **Standard CFS official fact:** PETG and PET are supported medium-hardness examples when spool dimensions and condition comply. [P024, M003]
 - PET-CF is routed through [composites](composites.md); standard CFS suitability must be established for the exact brittle/abrasive grade.
 - If the physical label still says only “K2C,” stop model-specific claims and continue with product-level calibration guidance.
 

@@ -601,19 +601,6 @@ These records cover the provisional M identifiers cited by the material and desi
 - Confidence: High for stated K2 specifications
 - Review by: 2026-11-20
 
-## M002 — CFS Filament Compatibility Description
-
-- Publisher: Creality Wiki
-- URL: https://wiki.creality.com/en/cfs/cfs-filament-compatibility
-- Source type: Official compatibility documentation
-- Published/revised: Not displayed
-- Accessed: 2026-08-20T18:51:02+02:00
-- Applies to: Standard CFS, not CFS-C
-- Supports: Spool diameter 197–202 mm and width 42–68 mm; named medium-hardness examples; TPU/elastic exclusion; moisture-softened PVA/BVOH exclusion; brittle PPA-CF/PPS-CF warning
-- Limitations/conflicts: Family examples are not exhaustive SKU certification; more specific than the broad PA-CF product-page claim
-- Confidence: High within standard-CFS scope
-- Review by: 2026-11-20
-
 ## M003 — CFS: Creality Filament System product page
 
 - Publisher: Creality Store
@@ -623,7 +610,7 @@ These records cover the provisional M identifiers cited by the material and desi
 - Accessed: 2026-08-20T18:51:02+02:00
 - Applies to: Standard CFS advertised material and spool envelope
 - Supports: Advertised PLA, ABS, PETG, ASA, PET, PA-CF, and PLA-CF families; rejection of damp and flexible/TPU 95A filament
-- Limitations/conflicts: Marketing family list lacks exact SKU matrix; constrain PA-CF with M002 brittle-material warning
+- Limitations/conflicts: Marketing family list lacks exact SKU matrix; constrain PA-CF with P024 brittle-material warning
 - Confidence: Medium
 - Review by: 2026-11-20
 

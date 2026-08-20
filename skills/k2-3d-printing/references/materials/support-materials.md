@@ -5,7 +5,7 @@ Use this file for PVA, BVOH, and HIPS support decisions. Chemical solubility doe
 ## Decision boundary
 
 - The candidate K2 official material list does not name PVA, BVOH, or HIPS. Treat print-process compatibility as **Not validated** until the physical printer and exact material are confirmed. [M001]
-- Standard CFS officially lists dried PVA and BVOH, but rejects them when moisture has softened them. It also lists HIPS as a medium-hardness example. [M002]
+- Standard CFS officially lists dried PVA and BVOH, but rejects them when moisture has softened them. It also lists HIPS as a medium-hardness example. [P024]
 - CFS feed-path status does not validate the support/primary pair or an independent-tool workflow.
 - Do not promise “zero marks,” complete dissolution, a fixed removal time, or support-free cavities.
 
@@ -78,7 +78,7 @@ For an unvalidated pair:
 
 - Soluble materials are moisture-sensitive. Use only the exact cycle, spool-safe temperature, and dryer method.
 - Move dried filament directly to sealed/dry feed and minimize room exposure. Record time outside dry storage.
-- Standard CFS accepts only PVA/BVOH that has not softened from moisture. Stop at buckling, flattening, grinding, or feed resistance. [M002]
+- Standard CFS accepts only PVA/BVOH that has not softened from moisture. Stop at buckling, flattening, grinding, or feed resistance. [P024]
 - Do not assume CFS itself maintains the TDS-required dryness.
 - HIPS dryness and CFS feedability remain separate from the solvent/removal plan.
 

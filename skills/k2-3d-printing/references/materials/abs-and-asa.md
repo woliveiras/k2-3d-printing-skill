@@ -5,7 +5,7 @@ Use this file for ABS and ASA model material. Use [support materials](support-ma
 ## Decision boundary
 
 - **Candidate K2 official fact:** the official K2 page lists ABS. It does not list ASA or HIPS and does not confirm the user's physical printer. [M001]
-- **Standard CFS official fact:** ABS, ASA, and HIPS are named medium-hardness examples. That is feed-path evidence, not print-process endorsement. [M002]
+- **Standard CFS official fact:** ABS, ASA, and HIPS are named medium-hardness examples. That is feed-path evidence, not print-process endorsement. [P024]
 - **Enclosure is formulation-specific:** Creality's generic CR-ABS chart recommends enclosure/environment control, while the Hyper ABS product page advertises a reduced-shrink formulation that can print without one. Preserve the conflict. [M007, M016]
 - **K2 Plus chamber values apply only to K2 Plus.** Do not assign its 60 °C guidance to K2 or an unconfirmed K2C. [M006]
 
@@ -67,7 +67,7 @@ For HP-ASA, request the actual spool label and current TDS before providing a nu
 
 ## CFS and support pairing
 
-- Standard CFS names ABS, ASA, and HIPS as supported medium-hardness examples, subject to spool dimensions and condition. [M002]
+- Standard CFS names ABS, ASA, and HIPS as supported medium-hardness examples, subject to spool dimensions and condition. [P024]
 - CFS status does not confirm the thermal process or the physical printer.
 - Forward AM identifies HIPS as an ABS support option, but the cited HIPS bed range is 100–120 °C and the exact ABS/HIPS pair still needs an interface and removal test. [M020]
 - PolyDissolve S1 rates ABS poorly and UltiMaker says its PVA is unsuitable with its ABS. Do not recommend those pairings as generic soluble support. [M030, M032]
