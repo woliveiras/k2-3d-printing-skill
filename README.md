@@ -43,7 +43,7 @@ The optional scripts require Python 3.10 or newer and use only the standard libr
 python3 skills/k2-3d-printing/scripts/inspect_3mf.py project.3mf
 python3 skills/k2-3d-printing/scripts/extract_creality_settings.py project.3mf
 python3 skills/k2-3d-printing/scripts/compare_profiles.py baseline.json candidate.3mf
-python3 skills/k2-3d-printing/scripts/check_source_freshness.py skills/k2-3d-printing/references/sources.md --as-of 2026-08-20
+python3 skills/k2-3d-printing/scripts/check_source_freshness.py skills/k2-3d-printing/references/sources.md
 ```
 
 Network link checks are opt-in and must be explicitly authorized:

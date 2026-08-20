@@ -46,7 +46,7 @@ The manual also lists 600 mm/s maximum advertised speed, 20,000 mm/s² maximum a
 
 ## Firmware identity record
 
-The public firmware catalog was examined live on 2026-08-20. These are the newest entries observed in that public listing, not installed versions and not authorization to update:
+The table is a 2026-08-20 public-listing snapshot, not an installed-version record or authorization to update:
 
 | Model and board in listing | Observed public entry | Listing evidence | Boundary | Sources |
 |---|---|---|---|---|

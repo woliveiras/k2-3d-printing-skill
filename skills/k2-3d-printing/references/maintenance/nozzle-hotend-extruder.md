@@ -37,7 +37,7 @@ Inspect for correct seating and no visible damage while off and cool. Then use n
 2. Record the confirmed printer, filament, CFS/direct path, nozzle, temperatures commanded by the existing job, error text, and whether the extruder moves or grinds.
 3. Use the manual's normal filament-load/output check. Keep hands clear of the hot nozzle and moving extruder. [P003]
 4. If output is absent or irregular, stop changing slicing variables until the path and hardware are inspected.
-5. For a confirmed base K2, open the model-specific extruder-jammed-filament procedure P008. Its captured evidence identifies the extruder front cover as SKU 4001020081; it does not authorize assuming any other part number or torque. [P008]
+5. For a confirmed base K2, open the model-specific extruder-jammed-filament procedure P008. It identifies the extruder front cover as SKU 4001020081; do not assume any other part number or torque.
 6. For another family member, use only that model's official procedure. Never transplant base-K2 or K2 Plus disassembly.
 7. If the fault involves heater/sensor errors, damaged wiring, smoke/odor, molten material in an inaccessible area, broken fasteners, or a step absent from the source, power off, unplug, cool, and escalate.
 8. After model-supported clearing, perform a supervised normal extrusion check and a small test print. Record whether output, temperature stability, feeding, and surface extrusion pass.
@@ -49,9 +49,9 @@ For confirmed base K2, the official maintenance page says to inspect the cutter 
 | Procedure field | Cutter | Wiper |
 |---|---|---|
 | Risk | sharp edge, pinch/motion, unsupported disassembly | pinch/motion, hot contamination area, loose part |
-| Tools/parts | not captured; do not invent | not captured; do not invent |
+| Tools/parts | not stated; do not invent | not stated; do not invent |
 | Safe state | off, unplugged, cool; unload only as exact source directs | off, unplugged, cool |
-| Allowed action from captured evidence | inspect; remove only safely accessible loose debris | inspect dome/tape; remove only safely accessible loose debris |
+| Source-supported action | inspect; remove only safely accessible loose debris | inspect dome/tape; remove only safely accessible loose debris |
 | Validation | supervised load/unload and feed-path check | normal wipe sequence during a controlled test, with no obstruction |
 | Stop | damaged/loose blade, uncertain position/SKU, unsupported cover removal | torn/loose wiper, unknown replacement, collision risk |
 

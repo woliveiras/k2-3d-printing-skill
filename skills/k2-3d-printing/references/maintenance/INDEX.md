@@ -31,7 +31,7 @@ Before giving or following a maintenance procedure:
 - `Official`: directly stated for the exact model/accessory in a cited Creality source.
 - `Conditional`: official for a named model but physical identity is not yet confirmed.
 - `Conflict`: official sources disagree or differ in scope/date; preserve both.
-- `Unconfirmed`: not captured in a model-specific official source; do not perform or fabricate.
+- `Unconfirmed`: not established by a model-specific official source; do not perform or fabricate.
 - `Physically validated`: the actual machine passed the stated post-maintenance test; documentation alone cannot establish this.
 
 ## Authority boundary

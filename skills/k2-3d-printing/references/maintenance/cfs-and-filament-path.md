@@ -27,9 +27,9 @@ Before loading:
 
 | Trigger | Original-CFS task | Tools/parts | Safe state | Validation | Sources |
 |---|---|---|---|---|---|
-| Every two weeks | Check desiccant effectiveness/condition | Exact replacement not captured | Power down and disconnect before service; keep water away | No liquid/leak; compartment dry; humidity trend recorded after restart | [P023] [P025] |
+| Every two weeks | Check desiccant effectiveness/condition | Exact replacement not stated | Power down and disconnect before service; keep water away | No liquid/leak; compartment dry; humidity trend recorded after restart | [P023] [P025] |
 | No later than three months when desiccant is ineffective/aged | Replace; official page warns aged material can leak water and damage electronics | Confirm exact desiccant from official procedure | Same | No leak or electrical symptom | [P025] |
-| About every two months | Inspect/replace documented 4 × 2.5 mm PTFE tube according to live official procedure | Correct officially compatible tube; tool not captured | Power down/disconnect; unload only as directed | Tube seated/routed without pinch; supervised load/unload succeeds | [P025] |
+| About every two months | Inspect/replace documented 4 × 2.5 mm PTFE tube according to the official procedure | Correct officially compatible tube; tool not stated | Power down/disconnect; unload only as directed | Tube seated/routed without pinch; supervised load/unload succeeds | [P025] |
 | Monthly with abrasive filament | Inspect PTFE sooner for wear | Same | Same | No visible wear/debris; feed succeeds without grinding/error | [P025] |
 
 The intervals are official maintenance guidance, not a guarantee. Shorten inspection based on visible wear, abrasive material, feed resistance, grinding, or repeated errors. Never assume external tube size proves compatibility with an internal path component.

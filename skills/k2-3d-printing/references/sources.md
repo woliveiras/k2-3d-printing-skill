@@ -331,7 +331,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:56:01+02:00
 - Applies to: Original CFS
 - Supports: 4 × 2.5 mm PTFE tubing, typical two-month replacement, monthly abrasive-material inspection, two-week desiccant checks, and three-month leak/damage warning
-- Limitations/conflicts: Intervals depend on use, abrasiveness, environment, wear, and symptoms; exact replacement tools/parts beyond tube size not captured
+- Limitations/conflicts: Intervals depend on use, abrasiveness, environment, wear, and symptoms; source does not specify exact replacement tools/parts beyond tube size
 - Confidence: High
 - Review by: 2026-11-20
 
@@ -370,7 +370,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:56:01+02:00
 - Applies to: K2-series scope named by page; exact variant applicability must be confirmed live
 - Supports: Power-off cleaning, lint-free cloth, WD-40 Specialist Silicone, and weekly/biweekly cadence
-- Limitations/conflicts: Page does not enumerate every variant in captured evidence; cadence conflicts with older base-K2 sources
+- Limitations/conflicts: Page does not enumerate every variant; cadence conflicts with older base-K2 sources
 - Confidence: High for procedure; medium for universal applicability
 - Review by: 2026-11-20
 
@@ -383,7 +383,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Accessed: 2026-08-20T18:56:01+02:00
 - Applies to: K2-series scope named by page; exact variant applicability must be confirmed live
 - Supports: Power-off cleaning/lubrication, WD-40 Specialist Silicone, and weekly/biweekly cadence
-- Limitations/conflicts: Page does not enumerate every variant in captured evidence; cadence conflicts with older base-K2 sources
+- Limitations/conflicts: Page does not enumerate every variant; cadence conflicts with older base-K2 sources
 - Confidence: High for procedure; medium for universal applicability
 - Review by: 2026-11-20
 
@@ -1096,7 +1096,7 @@ When an official page exposes no reliable revision date, record `Not stated by p
 - Publisher: U.S. Environmental Protection Agency
 - URL: https://www.epa.gov/chemical-research/3d-printing-research-epa
 - Source type: Official government research overview
-- Published/revised: Exact displayed revision not captured
+- Published/revised: Not displayed by publisher
 - Accessed: 2026-08-20T18:51:02+02:00
 - Applies to: Indoor emissions research including consumer and school contexts
 - Supports: VOC/gas and UFP emissions; 1–100 nm particle scale and deep respiratory deposition concern
