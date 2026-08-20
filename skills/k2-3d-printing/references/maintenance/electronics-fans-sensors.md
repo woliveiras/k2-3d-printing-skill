@@ -13,10 +13,10 @@ Treat internal electrical and thermal systems as a service boundary unless a cur
 
 The base-K2 manual/parts catalog identifies an AI monitoring camera, auto leveling/strain-gauge component, filament-break detection, cutter, hotend, heat-break fan, back/side/filter-exhaust fans, air filter, and accessible external power/communications context. Identification in a parts diagram does not authorize removal or electrical diagnosis. [P003] [P007]
 
-| Area | Applies to | Permitted from captured evidence | Tools/parts | Validation | Stop/escalate | Sources |
+| Area | Applies to | Permitted from cited evidence | Tools/parts | Validation | Stop/escalate | Sources |
 |---|---|---|---|---|---|---|
-| Fans | confirmed base K2 | Clean weekly with power off; inspect accessible blockage/damage | Exact tools/SKUs not captured | Controlled restart: fans turn without rubbing/noise/error | Blade/cable damage, seized fan, inaccessible debris, repeat error, unknown cover/fastener | [P027] |
-| Air filter | confirmed base K2 | Replace every 300 print hours per manual or around three months at eight hours/day; monthly under frequent use per maintenance page | Exact filter SKU/tool not captured | Correct seating, unobstructed path, normal controlled fan behavior | Unknown part/orientation/access, damaged housing, absent model-specific procedure | [P003] [P027] |
+| Fans | confirmed base K2 | Clean weekly with power off; inspect accessible blockage/damage | Exact tools/SKUs not stated | Controlled restart: fans turn without rubbing/noise/error | Blade/cable damage, seized fan, inaccessible debris, repeat error, unknown cover/fastener | [P027] |
+| Air filter | confirmed base K2 | Replace every 300 print hours per manual or around three months at eight hours/day; monthly under frequent use per maintenance page | Exact filter SKU/tool not stated | Correct seating, unobstructed path, normal controlled fan behavior | Unknown part/orientation/access, damaged housing, absent model-specific procedure | [P003] [P027] |
 | Camera | confirmed base K2 | Clean dirty/blurry lens with lint-free cloth and alcohol; inspect weekly with ABS | lint-free cloth; alcohol | Image becomes clear after controlled restart | Liquid ingress, loose/scratched lens, no image after cleaning, network/app-only fault | [P033] |
 | Leveling/strain gauge | confirmed base K2 component | Run normal auto leveling; inspect only visible obstruction while off/cool | No cited replacement tool/part | Calibration completes and supervised first layer passes | Repeat sensor/calibration error, nozzle/bed collision, loose/damaged component, wiring access | [P003] [P007] |
 | Filament-break detection | confirmed base K2 component | Observe error and accessible filament path; use normal load/unload | No cited replacement procedure/SKU | Correct state after supervised load/unload | Repeat false state, damaged sensor/cable, internal access | [P007] |
@@ -43,8 +43,8 @@ Separate optical, application/network, and hardware failure:
 4. If the lens is clear but the image is absent/intermittent, record firmware, application/version, network context without exposing credentials, and exact error.
 5. The cited sources provide no model-specific camera replacement, cable procedure, or network-reset sequence. Do not invent one; use official support.
 
-## Firmware observation, not update
+## Firmware boundary
 
-On 2026-08-20 the public listing showed K2/K2 Pro V1.1.6.7 for CR0CN200400C10, K2 Plus V1.1.6.4 for CR0CN240110C10, and K2 SE V2.3.6.77 for CR4CU220812S12K1. These values are dated observations, not proof of the installed version, not a stability guarantee, and not an instruction to update. The K2/K2 Pro API subtype mapping was inconsistent, making the physical label and board/filename combination essential. [P017] [P018] [P019] [P020] [P035] [P036]
+Refresh the public firmware listing and compare it with the installed version; use the dated [firmware identity record](../printer-identity.md#firmware-identity-record) only as historical evidence. K2 and K2 Pro shared a board/image while API subtype mapping conflicted, so preserve physical label, board, and filename together. [P017] [P018] [P035] [P036]
 
-Any firmware update requires separate authorization, exact-model/board/image verification, filament retraction as directed, uninterrupted suitable power, and post-update input shaping and automatic leveling. No update was performed during research. [P021]
+Any firmware update requires separate authorization, exact-model/board/image verification, filament retraction as directed, uninterrupted suitable power, and post-update input shaping and automatic leveling. [P021]
