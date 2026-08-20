@@ -6,12 +6,12 @@ Use this directory to decide whether an exact filament can be fed, melted, depos
 
 | Material or question | Read |
 |---|---|
-| PLA, Hyper/high-speed PLA, PLA+, Tough/Pro, Matte, Silk, foamed or wood-filled PLA | [PLA family](pla-family.md) |
+| PLA, Hyper/high-speed PLA, PLA+, Tough/Pro, Matte, Silk, or foamed wood-look PLA | [PLA family](pla-family.md) |
 | PETG, high-flow PETG, PET | [PETG and PET](petg-and-pet.md) |
 | ABS, ASA, or HIPS used as a model material | [ABS and ASA](abs-and-asa.md); for HIPS pairing also read [support materials](support-materials.md) |
 | TPU, TPE, or Shore hardness | [Flexible materials](flexible-materials.md) |
 | PA6, PA12, CoPA, other nylon, or PC | [Nylon and polycarbonate](nylon-and-polycarbonate.md) |
-| PLA-CF, PETG-CF, PET-CF, PA-CF, PA-GF, wood/metal particles, PP/PP-GF, PPA, PAHT, PPS, PPSU, or PEI | [Composites and high-temperature materials](composites.md) |
+| PLA-CF, PETG-CF, PET-CF, PA-CF, PA-GF, particle-filled wood/metal PLA, PP/PP-GF, PPA, PAHT, PPS, PPSU, or PEI | [Composites and high-temperature materials](composites.md) |
 | PVA, BVOH, HIPS support, or main/support pairing | [Support materials](support-materials.md) |
 | Base-K2 comparison or CFS classification | [Compatibility matrix](compatibility-matrix.md) |
 | Walls, clearances, fits, holes, bridges, overhangs, inserts, splits, or curved shells | [Design for FDM](../design-for-fdm.md) |

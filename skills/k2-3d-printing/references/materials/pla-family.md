@@ -47,7 +47,7 @@ Apply the [shared material card](INDEX.md#required-material-parameter-card) and 
 - The cited PLA sources establish no universal K2 retraction value.
 - For a visual part, test seam, layer height, cooling, outer-wall speed, and orientation on a representative curve or corner rather than an unrelated cube.
 
-## Wood and filled-PLA gate
+## Wood-look classification
 
 First determine whether “wood” is:
 
@@ -55,15 +55,7 @@ First determine whether “wood” is:
 - a foamed PLA without particles, such as cited PolyWood v2; or
 - a genuinely particle-filled composite.
 
-Prusa's manufacturer guidance says real wood/metal particle-filled products can clog more easily, may have weaker layer adhesion, and can be brittle in multi-material paths. It suggests at least a 0.6 mm nozzle and 0.2 mm layer height for wood products with large particles; metal-filled material is abrasive and requires hardened tooling. These are source-specific starting points, not universal requirements. [M012]
-
-For any real filled PLA:
-
-1. Require filler type, particle-size/nozzle statement, and current TDS/SDS.
-2. Confirm nozzle material and minimum diameter.
-3. Keep standard CFS status **Not validated** unless the exact product is approved.
-4. Control dust during sanding, cutting, or drilling.
-5. Purge according to an applicable manufacturer procedure and inspect nozzle/drive wear after use; do not invent a purge temperature or amount.
+For the third case, stop using plain-PLA assumptions and apply the [composite abrasion, nozzle, CFS, dust, and maintenance gates](composites.md#wood-metal-and-other-particles).
 
 ## Surface, supports, storage, and post-processing
 
@@ -85,4 +77,4 @@ For any real filled PLA:
 
 ## Family-specific release gate
 
-Apply the [shared release decision](INDEX.md#release-decision). Also confirm the exact PLA subtype/revision and, for wood-look material, whether it is foamed or particle-filled with suitable nozzle and CFS evidence.
+Apply the [shared release decision](INDEX.md#release-decision). Also confirm the exact PLA subtype/revision and, for wood-look material, whether it is foamed or particle-filled; apply the composite gate to any real filler.
