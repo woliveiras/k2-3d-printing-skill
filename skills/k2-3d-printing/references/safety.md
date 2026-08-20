@@ -72,7 +72,7 @@ NIOSH identifies ultrafine particles, VOCs/SVOCs, heat, motion, electrical energ
 
 ## Overnight and unattended printing
 
-No primary source reviewed for the candidate K2 grants a general unattended/overnight guarantee. Manufacturer declarations elsewhere are narrow to a named model, professional-use conditions, materials, tests, and manual [M063]; they do not transfer to Creality equipment.
+No cited K2-family primary source grants a general unattended/overnight guarantee. Manufacturer declarations elsewhere are narrow to a named model, professional-use conditions, materials, tests, and manual [M063]; they do not transfer to Creality equipment.
 
 1. Never answer that unattended or overnight printing is generally safe.
 2. Identify the physical printer and condition, material, site, electrical circuit, nonflammable placement, ventilation, detection/suppression plan, and manufacturer supervision statement.

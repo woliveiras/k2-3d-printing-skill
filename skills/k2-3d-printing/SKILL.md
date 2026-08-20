@@ -25,7 +25,7 @@ Resolve every relative reference and script path from the directory containing t
 1. Browse live primary sources before using `latest`, `current`, `supported`, `compatible`, or `safe`, or before giving firmware, software, temperature, material, part, or maintenance facts.
 2. Prefer model-specific Creality manuals, Wiki pages, service instructions, firmware notes, official parts, the official Creality Print repository, and the exact filament manufacturer's TDS/SDS. Use occupational, electrical, and fire authorities for safety.
 3. Use community material only to discover a hypothesis. Do not promote it to a hardware, material, UI, or safety authority.
-4. Record every material source in [sources](references/sources.md) with publisher, direct URL, source type, date, access timestamp, applicability, supported claims, limitations/conflicts, confidence, and review date.
+4. Report every live material source with publisher, direct URL, source type, date, access timestamp, applicability, supported claims, limitations/conflicts, confidence, and review date. Cite an existing record in [sources](references/sources.md) when one applies.
 5. Explain conflicts. Prefer the most specific and recent primary source, but preserve unresolved uncertainty.
 6. Read [evidence and authority](references/evidence-and-authority.md) before researching, modifying a project, sending a print, or proposing a repair.
 
@@ -61,7 +61,7 @@ Never infer physical success from a completed slice or a structurally valid 3MF.
 2. Do not guarantee unattended printing. Distinguish active heating/motion from a completed print cooling in the machine.
 3. Before maintenance, identify the model and procedure, stop motion, remove filament only as directed, power off, unplug, and cool unless an official step explicitly requires a controlled energized or heated state.
 4. Do not invent torque, lubricant, part number, fastener position, connector, or service procedure. Stop at wiring, mains power, heaters, unknown sensors, inaccessible assemblies, or evidence conflicts and direct the user to official support.
-5. Do not install or update Creality Print, update firmware, control the printer, send or start a print, buy a part, install dependencies, run paid/external-model evaluations, publish, push, or globally install the skill without separate authorization.
+5. Do not install or update Creality Print, update firmware, control the printer, send or start a print, or buy a part without separate authorization.
 6. Keep scripts read-only by default. Never overwrite an input.
 
 ## Modify 3MF projects only when authorized
@@ -73,14 +73,9 @@ Never infer physical success from a completed slice or a structurally valid 3MF.
 5. Report structural validity and the remaining physical-printability boundary.
 6. Do not send the resulting project to a printer without a separate authorization.
 
-## Route reference loading
+## Load only required references
 
-- Start at the [reference index](references/INDEX.md).
-- Read [design for FDM](references/design-for-fdm.md) for walls, clearances, fits, holes, bridges, stress, splits, inserts, and curved ergonomic parts.
-- Read [materials](references/materials/INDEX.md) only for the relevant family and then the [compatibility matrix](references/materials/compatibility-matrix.md).
-- Read [slicing](references/slicing/INDEX.md) for decision profiles, orientation, supports, calibration, Preview, and failure diagnosis.
-- Read [Creality Print](references/creality-print/INDEX.md) for version-scoped UI evidence.
-- Read [maintenance](references/maintenance/INDEX.md) for preventive schedules, safe-state procedures, and symptom trees.
+Read [design for FDM](references/design-for-fdm.md) when the task changes geometry, fit, joinery, support access, or ergonomic surfaces. For a domain not already routed above, start at the [reference index](references/INDEX.md) and load only the relevant file.
 
 ## Format the answer
 

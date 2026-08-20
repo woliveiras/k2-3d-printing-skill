@@ -6,23 +6,6 @@ Treat `K2C` as an unconfirmed physical identity until the rating label or `About
 
 Never use a Creality Print profile as physical identity proof. K2 and K2 Pro also share the public board identifier and firmware image in the researched listing, so firmware alone may not distinguish them. [P017] [P018] [P035] [P036]
 
-## Confirm the physical model
-
-Use evidence in this order:
-
-1. Read the model on the physical rating label.
-2. Read the model on the printer's `About` screen.
-3. Match an official purchase document, invoice, or product page tied to that unit.
-4. Record the firmware version and board/hardware identifier shown by the unit.
-5. Treat the selected Creality Print profile only as configuration evidence.
-6. Use user photographs or screenshots as supporting evidence.
-
-Record the exact text, evidence type, observation date, and any conflict. If steps 1–4 do not establish a unique model, stop only model-specific limits, compatibility, maintenance, and repair. Continue generic FDM analysis and ask one question:
-
-> What exact model name is printed on the printer's physical rating label? Please provide a photo if possible.
-
-Do not ask several identity questions at once.
-
 ## Family comparison
 
 | Physical printer | Build volume | Official thermal limits | Enclosure and chamber | Supplied/advertised plate | CFS boundary | Sources |
@@ -57,7 +40,7 @@ Apply this section only after the physical label or `About` screen confirms **K2
 | Original CFS | compatible; up to four documented | Original CFS is not CFS-C; verify exact connected unit | [P004] [P022] [P026] |
 | Sensors/features | automatic leveling, strain-gauge leveling component, filament-break detection, AI monitoring camera, input shaping/vibration optimization, power-loss recovery | Feature presence is model evidence only after K2 is confirmed | [P003] [P007] |
 | Supported-material list in manual | PLA, PETG, ABS, PLA-CF, PET | Printer support does not prove CFS compatibility or provide a slicing profile | [P003] [P024] |
-| Manual researched | K2 User Manual V1.0_EN; PDF created 2025-04-14 and modified 2025-07-08 | Recheck before a repair or limit-sensitive answer | [P002] [P003] |
+| Manual evidence | K2 User Manual V1.0_EN; PDF created 2025-04-14 and modified 2025-07-08 | Recheck before a repair or limit-sensitive answer | [P002] [P003] |
 
 The manual also lists 600 mm/s maximum advertised speed, 20,000 mm/s² maximum advertised acceleration, 2.4 GHz Wi-Fi, USB/Wi-Fi transfer, 8 GB eMMC, and G-code/3MF input. Treat these as advertised capabilities, never as recommended slicing values. [P003]
 

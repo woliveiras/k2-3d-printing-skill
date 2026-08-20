@@ -26,7 +26,7 @@
 1. Confirm that the sources discuss the same model, regional variant, hardware revision, firmware, Creality Print version, material product, nozzle, plate, and environment.
 2. Prefer the primary source that is more specific and more recently revised.
 3. Do not silently merge ranges or select the more convenient value.
-4. Record both claims in `sources.md`, explain the conflict, and set confidence accordingly.
+4. Report both claims with their source IDs, explain the conflict, and state confidence.
 5. Stop hardware-specific or safety-critical guidance if the conflict could exceed a limit or change a repair.
 
 ## Freshness
@@ -44,23 +44,7 @@
 | Read files, inspect screenshots, compare profiles, research public sources | Allowed | Protect secrets, serials, private network details, and unrelated files |
 | Create a recommendation or calibration plan | Allowed | Stay inside confirmed limits and identify validation |
 | Copy and edit a 3MF | Denied | Explicit scope; preserve original; name copy; hash, inspect, compare, and report |
-| Install/update Creality Print or dependencies | Denied | Separate explicit authorization and version/source confirmation |
+| Install/update Creality Print | Denied | Separate explicit authorization and version/source confirmation |
 | Update firmware, root a printer, bypass a sensor, or perform an electrical modification | Denied | Do not proceed from this skill; require an explicit new scope and official safety evidence |
 | Send/start/cancel a print or control a printer | Denied | Separate explicit authorization for the exact job/device/action |
 | Buy parts or consumables | Denied | Separate explicit authorization after exact part/material confirmation |
-| Publish, push, release, or install the skill | Denied | Separate explicit authorization |
-| Run a paid provider/model evaluation | Denied | Separate budget and execution authorization |
-
-## Response evidence block
-
-Include, when material:
-
-```text
-Physical model: confirmed / unconfirmed — evidence
-Software: version and observation method
-Claim class: official / manufacturer range / starting point / empirical / unvalidated
-Sources: IDs, applicability, access dates
-Decision: proceed / test first / stop
-Validation: Preview checks and physical acceptance test
-Authority: actions not performed and approvals still required
-```
