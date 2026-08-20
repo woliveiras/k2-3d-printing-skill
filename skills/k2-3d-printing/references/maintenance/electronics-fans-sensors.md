@@ -5,7 +5,7 @@ Treat internal electrical and thermal systems as a service boundary unless a cur
 ## Safe boundary
 
 - Use the supplied power cable and a grounded three-prong outlet for confirmed base K2. Install on a stable, cool, dust-free, well-ventilated surface away from heat sources and flammable/explosive material. [P003]
-- Power off before cleaning and never connect or disconnect wiring while energized. Wait at least 30 minutes after switch-off before touching hot parts. [P003]
+- Power off before cleaning and never connect or disconnect wiring while energized. For confirmed base K2, wait at least 30 minutes after switch-off before touching hot parts. [P003]
 - Disconnect original CFS before servicing; keep it dry. Damaged cable, liquid/rain exposure, and internal/electrical failures require qualified service. Covered internal parts are not user-serviceable. [P023]
 - Do not open a power supply, probe mains/heater circuits, bypass a sensor, root the printer, install alternative firmware, or invent a connector/pinout/test point.
 
