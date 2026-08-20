@@ -65,14 +65,9 @@ For an unvalidated pair:
 - preserve the visible or sealing face from support when orientation/splitting can do so;
 - do not interpret Preview colors without the active legend.
 
-## Temperature, speed, flow, cooling, and retraction
+## Family-specific operating rules
 
-- Keep both materials inside exact ranges at every tool change, standby, purge, and active-extrusion state.
-- Published speeds are global; first-layer, outer/interface, infill, bridge, and overhang values remain **Unvalidated**.
-- Measure maximum volumetric flow separately for primary and support. The slower/drier feed may govern the job.
-- Acceleration remains **Unvalidated** until feed and interface tests.
-- Tune retraction after drying and temperature; hygroscopic soluble materials can imitate retraction/stringing problems.
-- Preserve “fan on” only for PolyDissolve S1. Obtain exact cooling for BVOH/PVA/HIPS.
+Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md). Keep both materials inside their exact ranges during active extrusion, standby, and purge; measure flow separately and let the slower or more feed-sensitive material govern. Preserve `fan on` only for PolyDissolve S1, and keep BVOH/PVA/HIPS cooling **Unvalidated** until exact evidence or a coupon.
 
 ## Drying, storage, and CFS
 

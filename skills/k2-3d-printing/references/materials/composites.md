@@ -87,30 +87,16 @@ The base K2's steel-tipped trimetal 0.4 mm nozzle is official K2 evidence, not p
 - PP, PP-GF, PETG-CF, wood/metal fill, and other composites remain **Not validated** in standard CFS unless the exact SKU appears in its applicable official matrix.
 - Stop if filament cracks, sheds, kinks, or resists the path. Do not force it or dismantle the system without an official procedure.
 
-## Operational parameter card
+## Family-specific operating rules
 
-### Speeds, flow, acceleration, bridges, and retraction
+Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these composite-specific constraints:
 
-- Every listed speed is a global product range. First-layer, outer-wall, inner/infill, bridge, and overhang values remain **Unvalidated**.
-- Run temperature and flow tests only after exact drying and tooling confirmation. Reduce speed before exceeding a temperature limit.
-- Determine maximum volumetric flow for the exact abrasive nozzle; a different bore/material changes flow.
-- Select acceleration from ringing, corner, tall-part, feed, and adhesion tests. Filled stiffness/brittleness can affect the feed path but does not define one acceleration.
-- Tune retraction after temperature/flow. Avoid repeated large retractions that can grind or fracture brittle filament.
-- Calibrate bridges/overhangs with the exact fan state. Fan off or 80% applies only to the named rows.
-
-### Layer geometry, walls, infill, and anisotropy
-
-- Obey the exact minimum nozzle and keep layer geometry inside its applicable TDS/profile.
-- Confirm every thin wall and particle-sensitive extrusion in Preview.
-- Short fibers can change stiffness and dimensional behavior but do not eliminate FDM layer anisotropy. Orient load paths and test representative coupons.
-- Put walls around fasteners/load entry; use infill for core support and buckling. Do not replace load testing with a high infill percentage.
-
-### First layer, surface, enclosure, and deformation
-
-- Use the exact named surface/tape/adhesive. PP GF30's two bed ranges depend on two different surface systems. [M035]
-- Calibrate first layer after drying, using the final environment.
-- Test large/flat geometry for warp and post-anneal dimensions. A small flow tower cannot validate a large structural part.
-- Never transfer “no heated enclosure” from Fiberon PET-CF17 or “low bed” from PA6-CF20 to another composite.
+- Determine maximum volumetric flow with the exact abrasive nozzle; bore and material change flow.
+- Avoid repeated large retractions that can grind or fracture brittle filament.
+- Apply fan off or 80% only to the named products in the table.
+- Obey the exact minimum nozzle and confirm particle-sensitive walls in Preview. Short fibers do not eliminate FDM layer anisotropy; test representative load coupons.
+- Use the exact named surface system. PP-GF30's two bed ranges belong to different surface systems. [M035]
+- Never transfer `no heated enclosure` from Fiberon PET-CF17 or `low bed` from PA6-CF20 to another composite.
 
 ## Drying, storage, post-processing, and health
 

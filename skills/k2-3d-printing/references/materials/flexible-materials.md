@@ -36,30 +36,15 @@ These ranges demonstrate that “flexible” does not select one temperature or 
 4. Feed slowly and stop at buckling, folding, grinding, repeated slip, or unexpected resistance.
 5. Do not force filament through a blocked path or dismantle CFS/extruder without the applicable maintenance procedure.
 
-## Operational parameter card
+## Family-specific operating rules
 
-### Temperature, first layer, bed, and cooling
+Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these flexible-material constraints:
 
-- Select a temperature inside the exact product range and validate flow at low speed before increasing throughput.
-- Calibrate the first layer on the exact plate; a flexible filament can deform under excessive squish, so assess line continuity and final part dimensions rather than copying a PLA Z setting.
-- Use the named bed range and surface instructions from the exact product/plate. Do not prescribe a universal adhesive or release layer.
-- Preserve “no enclosure” only for PolyFlex TPU95 and Ultrafuse TPU 85A. Door/lid state for K2 or unconfirmed K2C remains **Unvalidated**. [M021, M022]
-- “Fan on” for PolyFlex TPU95 does not establish a percentage. Tune bridge/overhang cooling on a coupon.
-
-### Feature speed, acceleration, flow, and retraction
-
-- Begin within the exact global speed range, at its conservative end for initial feed validation. This is a **Starting point**, not a universal TPU speed.
-- Keep first-layer, outer-wall, inner/infill, bridge, and overhang speeds **Unvalidated** until a representative coupon; the cited sources publish only global ranges.
-- Measure maximum volumetric flow. None of the cited TPU sources gives a K2-specific volumetric limit.
-- Reduce acceleration only when a measured feed, ringing, corner, or tall-part result requires it. Avoid rapid pressure reversals on a very soft filament.
-- Start with minimal necessary retraction and tune only after drying, temperature, and flow. Large/frequent retractions can buckle or grind flexible filament; no universal direct-drive value was found.
-
-### Layer geometry, walls, infill, and part stiffness
-
-- Choose layer height and line width from nozzle/profile capability and confirm thin walls in Preview.
-- Use wall count and geometry as intentional spring elements. More walls, thicker sections, short spans, and dense infill generally reduce flexibility, but quantify the finished part with a deflection or fit test.
-- Orient layers so repeated bending does not peel them apart. Test at the intended strain, temperature, and cycle count.
-- For a seal, grip, foot, wearable, or snap feature, validate contact pressure, compression set, surface texture, and skin/chemical requirements from the exact grade; do not infer them from Shore hardness.
+- Excessive first-layer squish deforms flexible filament; validate line continuity and final dimensions instead of copying a PLA Z setting.
+- Preserve `no enclosure` only for PolyFlex TPU95 and Ultrafuse TPU 85A; `fan on` for TPU95 establishes no percentage. [M021, M022]
+- Begin at the conservative end of the exact product's global speed range and validate feed before raising throughput.
+- Use the minimum necessary retraction. Large or frequent retractions can buckle or grind flexible filament; the cited sources establish no universal direct-drive value.
+- Treat wall count and geometry as spring elements and validate deflection, fit, strain, temperature, and cycle count. Shore hardness alone does not predict the finished response.
 
 ## Supports and multi-material
 

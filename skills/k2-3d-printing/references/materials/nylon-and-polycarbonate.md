@@ -53,31 +53,14 @@ The cited examples span 75 °C/6 h for PolyMax PC, 80 °C/at least 40 h for Ultr
 - Confirm the exact plate and adhesive/release-layer procedure. “PEI” in one product page does not define surface preparation for every PA/PC grade.
 - Stop if the minimum required condition exceeds confirmed hardware. Never bypass temperature limits or improvise a heated chamber.
 
-## Operational parameter card
+## Family-specific operating rules
 
-### First layer, shrinkage, and delamination
+Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these PA/PC-specific constraints:
 
-- Calibrate the first layer after drying, using the final plate and environmental state.
-- Use a representative large/flat coupon to test warp; use an oriented mechanical coupon to test layer adhesion.
-- Brim/mouse ears, surface system, orientation, and geometry changes are controlled variables. A raft does not prove dimensional or layer integrity.
-- Cool/remove only by the plate/material procedure. Do not force a highly adhered PC/PA part from an unknown surface.
-
-### Speeds, flow, acceleration, fan, and retraction
-
-- The published speed ranges are global. Feature speeds remain **Unvalidated** until tested.
-- Preserve fan off only for the cited CoPA, PA6-CF20, PA12-CF10, and PolyMax PC products. Do not generalize.
-- Respect 12 mm³/s only for PolyMax PC. All other PA/PC K2 maximum volumetric flow values remain **Unvalidated**. [M029]
-- Tune maximum flow after drying and temperature. Reduce speed before exceeding a temperature limit.
-- Choose acceleration from ringing, corner, tall-part, flow, and adhesion tests.
-- Tune retraction last; moisture, chamber state, and temperature can imitate stringing.
-
-### Layer geometry, walls, infill, and loads
-
-- Use whole generated line widths and confirm small features in Preview.
-- Align major tensile and bending loads in XY where possible; inspect bolt bosses, snap roots, and thin transitions for interlayer peel.
-- Put shell material around load entry/fasteners; choose infill for shear transfer and surface support.
-- Print fit and hole coupons after the material has reached the same drying, chamber, cooling, and conditioning state as the final part.
-- Treat annealed and moisture-conditioned dimensions as a different state from as-printed dimensions.
+- Calibrate and remove the part only with the final dry, plate, and chamber state; do not force highly adhered PA/PC from an unknown surface.
+- Preserve fan off only for the cited CoPA, PA6-CF20, PA12-CF10, and PolyMax PC products.
+- Apply 12 mm³/s only to PolyMax PC; other PA/PC target-printer maximum volumetric flow values remain **Unvalidated**. [M029]
+- Print fit and hole coupons in the final drying, chamber, cooling, annealing, and conditioning state; treat conditioned dimensions as distinct from as-printed dimensions.
 
 ## CFS and support pairing
 

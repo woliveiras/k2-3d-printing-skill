@@ -39,31 +39,14 @@ For HP-ASA, request the actual spool label and current TDS before providing a nu
 4. Never improvise a heated chamber, block ventilation, or relocate electronics to achieve a material target.
 5. Keep environmental control stable across calibration and final part. Record ambient/chamber observation method rather than assuming a setpoint equals actual temperature.
 
-## Operational parameter card
+## Family-specific operating rules
 
-### First layer, surface, shrinkage, and delamination
+Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these ABS/ASA-specific constraints:
 
-- Verify the exact plate and adhesive/release-layer instruction from the plate and filament manufacturers.
-- Calibrate first layer before raising bed temperature. Observe edge contact, line continuity, and release after full cooling.
-- Use a representative flat/long coupon to evaluate shrinkage and edge lift. A small cube cannot validate a large enclosure.
-- For layer adhesion, use a coupon loaded in the intended orientation. More enclosure heat or nozzle temperature is not automatically permissible.
-- Brim, mouse ears, orientation, and geometry relief are **Starting point** tools; raft is not a guaranteed warp cure and changes the bottom surface.
-
-### Speeds, acceleration, flow, cooling, and retraction
-
-- The published ranges are global. First-layer, outer-wall, inner-wall, infill, bridge, and overhang speeds remain **Unvalidated** unless the exact profile supplies them.
-- Determine maximum volumetric flow empirically. None of the cited ABS/ASA/HIPS sources establishes a K2 flow limit.
-- Keep fan off only for the cited PolyLite ABS/ASA products; do not generalize to bridges or other formulations. [M018, M019]
-- Tune bridge cooling/flow/speed on a coupon while monitoring layer bonding and enclosure stability.
-- Set acceleration from measured ringing, corner accuracy, tall-part stability, and adhesion—not the polymer acronym.
-- Calibrate retraction after exact drying, temperature, and flow; do not compensate fumes, warping, or moisture by copying a generic retraction value.
-
-### Layer geometry, walls, infill, and orientation
-
-- Choose whole generated line widths and verify all walls in Preview.
-- Orient primary tension/bending in XY where feasible; ABS/ASA still remain anisotropic FDM parts.
-- Use wall count for the load path and infill for internal support/buckling. Validate with a representative mechanical coupon.
-- Preserve the visible face from support. For large enclosed parts, consider a controlled split that improves layer direction and surface access.
+- Use a representative flat/long coupon for shrinkage and edge lift and an intended-orientation coupon for layer adhesion; a small cube cannot validate a large enclosed part.
+- Treat brim, mouse ears, orientation, and geometry relief as starting tools, not a warp guarantee; raft changes the bottom surface.
+- The cited sources establish no K2-specific volumetric-flow limit.
+- Keep fan off only for the cited PolyLite ABS and PolyLite ASA products; do not generalize it to bridges or other formulations. [M018, M019]
 
 ## CFS and support pairing
 

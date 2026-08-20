@@ -29,39 +29,15 @@ The three unfilled PETG rows conflict substantially. Preserve each range under i
 
 The cited sources include no exact unfilled-PET TDS. The K2/CFS family listing cannot supply PET temperatures, fan, speed, drying, surface, or retraction; keep those fields **Unvalidated** until the spool is identified.
 
-## Operational parameter card
+## Family-specific operating rules
 
-### Temperature, first layer, bed, and surface
+Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these PETG/PET-specific constraints:
 
-1. Use only the exact product's range.
-2. Clean the exact plate by its manufacturer procedure.
-3. Confirm whether the surface maker requires an adhesive as adhesion aid, release layer, or both. PETG can adhere aggressively to some surfaces; this is a plate/product inference, not a universal glue rule.
-4. Run a first-layer coupon before a temperature tower. Observe continuous lines, consistent squish, edge lift, and damage-free release after cooling.
-5. Do not increase bed or nozzle temperature past a confirmed limit to compensate for contamination, Z error, excessive speed, or wet filament.
-
-Door/lid and chamber state remain **Unvalidated** unless the exact filament and confirmed printer state them. Do not import the K2 Plus chamber recommendation into K2 or an unresolved `K2C` identity.
-
-### Cooling, bridges, and overhangs
-
-- Preserve the exact published fan range: PolyLite PETG 0–20%; newer Polymaker PETG 20–60%; Fiberon PET-CF17 fan off. These values conflict because the products differ. [M014, M015, M039]
-- If cooling is not published for the exact product, calibrate with an overhang/bridge coupon. More cooling may improve overhang shape while reducing interlayer bonding; label the chosen setting **Empirical adjustment**.
-- The cited PETG product sources do not supply bridge or overhang speeds. Keep them **Unvalidated** until a feature-specific coupon.
-
-### Speeds, acceleration, flow, and retraction
-
-- A 300 mm/s product ceiling is not a first-layer, outer-wall, bridge, or small-feature recommendation.
-- For PolyLite PETG only, respect the published maximum volumetric speed at or below 15 mm³/s. The newer formulation's 22/32 mm³/s examples are tied to named hardware contexts and require an independent K2 flow test. [M014, M015]
-- For products without a published flow limit, run a measured maximum-volumetric-flow calibration and stay below the first loss of stable extrusion/finish.
-- Select outer-wall speed for finish, inner/infill speed for verified flow, and first-layer speed for observable placement. Numeric values remain **Starting point** or **Empirical adjustment**, never manufacturer defaults unless the exact profile states them.
-- Do not infer acceleration from the polymer. Validate ringing, corner accuracy, layer bonding, and tall-part stability.
-- Calibrate retraction only after dryness, temperature, and flow. Excessive retraction can mask moisture or temperature and can increase feed instability.
-
-### Layer height, line width, walls, and infill
-
-- Use nozzle-relative whole line widths and confirm thin features in Preview.
-- Orient walls so the primary load is carried in XY when possible; use more shell material where the load enters the part.
-- Choose infill topology/percentage from load transfer, top-surface support, and buckling—not from a generic “functional PETG” profile.
-- For fit-critical parts, print a clearance/hole coupon using the final orientation, cooling, and wall order.
+- Confirm whether the exact plate requires adhesive as adhesion aid, release layer, or both; PETG can adhere aggressively, so validate damage-free release on a first-layer coupon.
+- Preserve the product-specific fan conflict: PolyLite PETG 0–20%, the M015 Polymaker PETG formulation 20–60%, and Fiberon PET-CF17 fan off. [M014, M015, M039]
+- The cited sources provide no bridge/overhang speeds. Keep them **Unvalidated** until a feature coupon.
+- Apply 15 mm³/s only to PolyLite PETG. The 22/32 mm³/s examples in M015 are hardware-specific and require an independent target-printer flow test. [M014, M015]
+- For fit-critical parts, use a clearance/hole coupon in the final orientation, cooling, and wall-order state.
 
 ## Moisture, storage, CFS, and supports
 

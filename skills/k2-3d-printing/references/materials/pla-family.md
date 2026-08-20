@@ -38,30 +38,14 @@ Treat each row as a selection hypothesis until the exact TDS and an application-
 
 When the spool label and an older web page disagree, pause the numeric recommendation and obtain the current exact TDS. Do not average or union the ranges.
 
-## Build the operational parameter card
+## Family-specific operating rules
 
-### Temperature, bed, enclosure, and cooling
+Apply the [shared material card](INDEX.md#required-material-parameter-card) and [calibration workflow](../slicing/calibration.md), with these PLA-specific constraints:
 
-1. Intersect the exact product range with confirmed hardware limits.
-2. Select a small temperature-tower range inside that intersection. Record the selected values as **Starting point**.
-3. Calibrate the first layer on the exact plate before changing bed temperature to solve later-layer defects.
-4. Use the exact cooling instruction when published. If only “fan on” is known, fan percentage and bridge behavior remain **Unvalidated** until a cooling/overhang coupon.
-5. Do not infer a K2 door/lid position from the K2 Plus chamber page. Door state is **Unvalidated** unless the confirmed printer and exact material source specify it.
-
-### Feature speeds, acceleration, and volumetric flow
-
-- The tables publish global speed ranges, not verified first-layer, outer-wall, inner-wall, infill, bridge, or overhang speeds.
-- Start below the exact product ceiling, calibrate maximum volumetric flow, then choose feature speeds that remain below measured flow. Label them **Starting point**.
-- Keep the first layer slow enough to observe continuous placement and adhesion, but do not invent a numeric value without an exact profile/test.
-- The 15 mm³/s volumetric-flow value belongs only to the PolyLite PLA Pro source M010; do not assign it to Hyper PLA, v6 PLA Pro, Matte, Silk, or Wood.
-- Acceleration remains **Unvalidated** until a ringing/tall-feature coupon. A filament name does not establish motion limits.
-
-### Retraction, layer geometry, walls, and infill
-
-- Calibrate retraction after temperature and flow on the actual direct-drive or Bowden path. The cited PLA sources establish no universal K2 retraction value.
-- Choose layer height and line width from nozzle diameter and required detail; confirm every thin wall in Preview.
-- Use whole generated line widths for shells. Put walls along the load path; use infill for internal support and buckling resistance. Neither a wall count nor an infill percentage is universal.
-- For a visual part, test seam position, layer height, cooling, outer-wall speed, and orientation on a representative curve or corner rather than on an unrelated cube.
+- If a source says only `fan on`, keep percentage and bridge behavior **Unvalidated** until a cooling/overhang coupon.
+- The 15 mm³/s volumetric-flow value belongs only to PolyLite PLA Pro source M010; do not assign it to Hyper PLA, v6 PLA Pro, Matte, Silk, or Wood.
+- The cited PLA sources establish no universal K2 retraction value.
+- For a visual part, test seam, layer height, cooling, outer-wall speed, and orientation on a representative curve or corner rather than an unrelated cube.
 
 ## Wood and filled-PLA gate
 
