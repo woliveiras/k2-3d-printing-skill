@@ -1,3 +1,11 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/k2-3d-printing-logo-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/k2-3d-printing-logo-light.svg">
+    <img src="assets/k2-3d-printing-logo-light.svg" alt="K2 3D Printing logo" width="220">
+  </picture>
+</p>
+
 # K2 3D Printing
 
 `k2-3d-printing` is an installable Agent Skill for Creality K2-family printers, Creality Print, and FDM printing.

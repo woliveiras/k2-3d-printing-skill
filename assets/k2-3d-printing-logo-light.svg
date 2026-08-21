@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">K2 3D Printing logo, light variant</title>
+  <desc id="desc">A dark extruder and nozzle laying a green gradient filament pile on a light background.</desc>
+  <defs>
+    <linearGradient id="filament" x1="256" y1="315" x2="145" y2="499" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DDEB39"/>
+      <stop offset="0.48" stop-color="#72D446"/>
+      <stop offset="1" stop-color="#00BE78"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="52" fill="#F4F7F5"/>
+  <rect x="195" y="184" width="122" height="76" rx="18" fill="#D8E0DC"/>
+
+  <path fill="#111715" d="M154 58h46v53c0 21 15 36 36 36h40c21 0 36-15 36-36V58h46c11 0 20 9 20 20v107c0 11-9 20-20 20h-55v14c0 10-8 18-18 18h-58c-10 0-18-8-18-18v-14h-55c-11 0-20-9-20-20V78c0-11 9-20 20-20Z"/>
+  <g fill="#F4F7F5">
+    <rect x="134" y="91" width="48" height="12" rx="6"/>
+    <rect x="134" y="119" width="48" height="12" rx="6"/>
+    <rect x="134" y="147" width="48" height="12" rx="6"/>
+    <rect x="330" y="91" width="48" height="12" rx="6"/>
+    <rect x="330" y="119" width="48" height="12" rx="6"/>
+    <rect x="330" y="147" width="48" height="12" rx="6"/>
+  </g>
+
+  <rect x="225" y="238" width="62" height="18" rx="3" fill="#252E2A"/>
+  <path fill="#303A35" d="M233 256h46l-11 45c-2 7-6 10-13 10s-11-3-13-10l-9-45Z"/>
+  <path fill="#59645F" d="M256 256h23l-11 45c-2 7-6 10-12 10v-55Z"/>
+
+  <path d="M256 315v23c0 16 13 29 29 29h40c12 0 22 10 22 22s-10 22-22 22H187c-12 0-22 10-22 22s10 22 22 22h161c12 0 22 10 22 22s-10 22-22 22H145" fill="none" stroke="url(#filament)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

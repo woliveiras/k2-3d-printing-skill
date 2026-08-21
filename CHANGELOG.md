@@ -10,3 +10,4 @@ All notable changes to this repository are documented here.
 - Read-only tools for inspecting 3MF files, extracting settings, comparing profiles, and checking source freshness.
 - Deterministic checks for hardware identity, material compatibility, physical-validation, safety, and authorization boundaries.
 - MIT license.
+- Original light and dark SVG logo variants for the repository and skill documentation.

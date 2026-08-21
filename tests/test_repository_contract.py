@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 import sys
 import unittest
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -15,6 +16,8 @@ REQUIRED_REPO_FILES = {
     "README.md",
     "CHANGELOG.md",
     "LICENSE",
+    "assets/k2-3d-printing-logo-dark.svg",
+    "assets/k2-3d-printing-logo-light.svg",
     "tests/evals/cases.json",
     "tests/response_oracle.py",
 }
@@ -78,6 +81,21 @@ def all_markdown() -> list[Path]:
 
 
 class RepositoryContractTests(unittest.TestCase):
+    def test_public_logo_has_native_light_and_dark_svg_variants(self) -> None:
+        for theme in ("light", "dark"):
+            logo_path = REPO_ROOT / "assets" / f"k2-3d-printing-logo-{theme}.svg"
+            text = logo_path.read_text(encoding="utf-8")
+            root = ET.fromstring(text)
+            self.assertEqual(root.tag, "{http://www.w3.org/2000/svg}svg")
+            self.assertEqual(root.attrib.get("viewBox"), "0 0 512 512")
+            self.assertNotIn("<image", text)
+            self.assertNotIn("data:image", text)
+        readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn('media="(prefers-color-scheme: light)"', readme)
+        self.assertIn('media="(prefers-color-scheme: dark)"', readme)
+        self.assertIn("assets/k2-3d-printing-logo-light.svg", readme)
+        self.assertIn("assets/k2-3d-printing-logo-dark.svg", readme)
+
     def test_repository_uses_mit_license(self) -> None:
         text = (REPO_ROOT / "LICENSE").read_text(encoding="utf-8")
         self.assertTrue(text.startswith("MIT License\n"))
