@@ -34,3 +34,7 @@ The K2 family contains different machines with different hardware limits. If all
 - [Reference library](skills/k2-3d-printing/references/INDEX.md)
 - [Source register](skills/k2-3d-printing/references/sources.md)
 - [Changelog](CHANGELOG.md)
+
+## License
+
+[MIT](LICENSE) © 2026 William Oliveira.

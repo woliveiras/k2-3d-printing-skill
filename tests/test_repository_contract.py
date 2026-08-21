@@ -14,6 +14,7 @@ import check_source_freshness  # noqa: E402
 REQUIRED_REPO_FILES = {
     "README.md",
     "CHANGELOG.md",
+    "LICENSE",
     "tests/evals/cases.json",
     "tests/response_oracle.py",
 }
@@ -77,6 +78,13 @@ def all_markdown() -> list[Path]:
 
 
 class RepositoryContractTests(unittest.TestCase):
+    def test_repository_uses_mit_license(self) -> None:
+        text = (REPO_ROOT / "LICENSE").read_text(encoding="utf-8")
+        self.assertTrue(text.startswith("MIT License\n"))
+        self.assertIn("Copyright 2026 William Oliveira", text)
+        self.assertIn("Permission is hereby granted, free of charge", text)
+        self.assertIn('THE SOFTWARE IS PROVIDED "AS IS"', text)
+
     def test_required_skill_surface_exists(self) -> None:
         missing_repo = sorted(path for path in REQUIRED_REPO_FILES if not (REPO_ROOT / path).is_file())
         missing_skill = sorted(path for path in REQUIRED_SKILL_FILES if not (SKILL_ROOT / path).is_file())
