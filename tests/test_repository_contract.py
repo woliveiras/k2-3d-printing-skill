@@ -212,6 +212,7 @@ class RepositoryContractTests(unittest.TestCase):
     def test_distribution_command_and_independent_layout(self) -> None:
         readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("npx skills add woliveiras/k2-3d-printing-skill", readme)
+        self.assertIn("npx skills update k2-3d-printing", readme)
         self.assertFalse((REPO_ROOT / "SKILL.md").exists())
         self.assertTrue((SKILL_ROOT / "SKILL.md").is_file())
         self.assertNotIn("requires another skill", readme.lower())

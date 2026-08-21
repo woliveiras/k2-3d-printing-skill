@@ -32,6 +32,16 @@ The skill is self-contained: no other skill, paid service, or printer connection
 
 It does not edit projects, update software or firmware, control a printer, send a print, or buy parts without separate approval.
 
+## Update
+
+Installed skills are not updated automatically. Fetch the latest available version with:
+
+```bash
+npx skills update k2-3d-printing
+```
+
+Use `-g` to update a global installation or `-p` to update a project installation.
+
 ## Why it asks which K2 you own
 
 The K2 family contains different machines with different hardware limits. If all you have is the name `K2C`, the skill will ask you to check the printer's physical label or `About` screen. It will not guess the hardware from a slicer profile.
