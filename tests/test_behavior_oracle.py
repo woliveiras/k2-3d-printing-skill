@@ -15,7 +15,7 @@ class BehaviorOracleTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.contract = json.loads(CONTRACT_PATH.read_text(encoding="utf-8"))
 
-    def test_has_all_fourteen_required_scenarios(self) -> None:
+    def test_has_all_seventeen_required_scenarios(self) -> None:
         expected = {
             "mouse-shell-pla-finish",
             "functional-petg",
@@ -31,6 +31,9 @@ class BehaviorOracleTests(unittest.TestCase):
             "foreign-3mf",
             "exceeds-official-limit",
             "unknown-torque-or-part",
+            "memory-permanent-nozzle-update",
+            "memory-physical-conflict",
+            "memory-multiple-printers",
         }
         actual = {case["id"] for case in self.contract["cases"]}
         self.assertEqual(actual, expected)

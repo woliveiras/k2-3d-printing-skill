@@ -7,7 +7,7 @@ This repository distributes `k2-3d-printing`, a self-contained Agent Skill for e
 - `skills/k2-3d-printing/` is the independently installable skill. Keep its relative links and script paths resolvable from `SKILL.md`.
 - `skills/k2-3d-printing/SKILL.md` owns runtime routing, safety, evidence, authority, and completion-state behavior.
 - `skills/k2-3d-printing/references/` owns progressively disclosed domain guidance and the source register. Load only the task-relevant references.
-- `skills/k2-3d-printing/scripts/` contains optional read-only inspectors. They must not overwrite inputs, execute G-code, control a printer, or send a print.
+- `skills/k2-3d-printing/scripts/` contains optional read-only inspectors plus `printer_memory.py`, the only state writer. Inspectors must not overwrite inputs. The memory manager may write only its resolved user-owned JSON, lock, same-directory atomic temporary file, and single recovery backup after an explicit approved proposal. No script may execute G-code, control a printer, or send a print.
 - `tests/` owns deterministic repository, script, and response-oracle checks. Fixtures are test data, not verified printer artifacts.
 - Keep the skill standalone. Do not introduce another skill, paid service, printer connection, or dependency as a requirement without explicit approval and evidence of necessity, provenance, maintenance, license, and security.
 
@@ -76,6 +76,7 @@ Run these from the repository root. No dependency installation is required for t
 - Focused repository contract: `python3 -m unittest discover -s tests -p 'test_repository_contract.py'`
 - Focused read-only script checks: `python3 -m unittest discover -s tests -p 'test_scripts.py'`
 - Focused behavior-oracle checks: `python3 -m unittest discover -s tests -p 'test_behavior_oracle.py'`
+- Focused printer-memory checks: `python3 -m unittest discover -s tests -p 'test_printer_memory.py'`
 - Full deterministic suite: `python3 -m unittest discover -s tests -p 'test_*.py'`
 - Offline source metadata audit: `python3 skills/k2-3d-printing/scripts/check_source_freshness.py skills/k2-3d-printing/references/sources.md`
 
@@ -83,4 +84,4 @@ Add `--check-links` to the source audit only with network authorization. The rep
 
 ## Completion
 
-Re-read changed instructions as one contract. Check conflicts, relative links, command provenance, sensitive values, scope, documentation synchronization, and the complete diff. Run fresh checks proportional to the change and report exact commands and results, unavailable checks, preserved unrelated changes, residual risks, and operations not performed for lack of authority. Passing deterministic tests does not establish factual accuracy, source quality, hardware identity, UI behavior, physical printability, or safety.
+Re-read changed instructions as one contract. Check conflicts, relative links, command provenance, sensitive values, scope, documentation synchronization, and the complete diff. Run fresh checks proportional to the change and report exact commands and results, unavailable checks, preserved unrelated changes, residual risks, and operations not performed for lack of authority. Passing deterministic tests does not establish factual accuracy, source quality, hardware identity, installed-component state, UI behavior, physical printability, or safety.
