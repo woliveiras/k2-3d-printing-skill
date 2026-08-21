@@ -4,6 +4,8 @@ All notable changes to this repository are documented here.
 
 ## Unreleased
 
+## 1.0.0 - 2026-08-21
+
 ### Added
 
 - Initial `k2-3d-printing` Agent Skill with source-backed guidance for materials, slicing, Creality Print, calibration, troubleshooting, maintenance, safety, and FDM design.
