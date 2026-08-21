@@ -28,18 +28,19 @@ Resolve every relative reference and script path from the directory containing t
 
 ## Run the task workflow
 
-1. Determine or infer the part's purpose, material, visible faces, desired finish, load and load direction, dimensional accuracy, time budget, installed nozzle, plate, support tolerance, and user experience. Ask only for missing facts that change the decision.
-2. Inspect the source artifact before changing slicing parameters:
+1. Read [portable printer memory](references/printer-memory.md) when a request may reuse a printer alias, physical identity, installed setup, software version, or preference. Use stored facts only with their evidence and confirmation date. A newer physical observation overrides memory; memory never upgrades slicer configuration into physical proof.
+2. When multiple printers are stored and the request is ambiguous, ask only which alias applies. Determine or infer the part's purpose, material, visible faces, desired finish, load and load direction, dimensional accuracy, time budget, installed nozzle, plate, support tolerance, and user experience. Ask only for missing facts that change the decision.
+3. Inspect the source artifact before changing slicing parameters:
    - read [model inspection](references/model-inspection.md) for STL, STEP, 3MF, and G-code boundaries;
    - run `python3 scripts/inspect_3mf.py FILE.3mf` for a read-only 3MF structural and limited topology report;
    - run `python3 scripts/extract_creality_settings.py FILE` to inventory known embedded settings;
    - run `python3 scripts/compare_profiles.py LEFT RIGHT` to preserve typed differences and origins.
-3. Check physical compatibility in this order: confirmed printer limits, installed hotend and nozzle, plate, enclosure/chamber behavior, CFS path, then the exact material TDS/SDS. Read the relevant file under [materials](references/materials/INDEX.md).
-4. Choose the slicing objective and trade-offs from [slicing](references/slicing/INDEX.md). Classify consequential claims with the canonical [claim classes](references/evidence-and-authority.md#claim-classes).
-5. Give Creality Print navigation only for an observed or sourced version and mode. Read [Creality Print](references/creality-print/INDEX.md). If a control is hidden, check version, interface mode, `Global` versus `Objects`, selection, prerequisites, search, and scroll state before declaring it absent.
-6. Slice, then inspect Preview layer by layer using [Preview inspection](references/slicing/preview-inspection.md). Consult the active legend before interpreting color.
-7. Calibrate only applicable factors in the order and stop criteria defined by [calibration](references/slicing/calibration.md).
-8. Diagnose before changing multiple parameters. Use [failure diagnosis](references/slicing/failure-diagnosis.md) for print faults; for hardware or preventive work, load the [maintenance index](references/maintenance/INDEX.md), then the [troubleshooting trees](references/maintenance/troubleshooting-trees.md) when routing symptom-first.
+4. Check physical compatibility in this order: confirmed printer limits, installed hotend and nozzle, plate, enclosure/chamber behavior, CFS path, then the exact material TDS/SDS. Read the relevant file under [materials](references/materials/INDEX.md).
+5. Choose the slicing objective and trade-offs from [slicing](references/slicing/INDEX.md). Classify consequential claims with the canonical [claim classes](references/evidence-and-authority.md#claim-classes).
+6. Give Creality Print navigation only for an observed or sourced version and mode. Read [Creality Print](references/creality-print/INDEX.md). If a control is hidden, check version, interface mode, `Global` versus `Objects`, selection, prerequisites, search, and scroll state before declaring it absent.
+7. Slice, then inspect Preview layer by layer using [Preview inspection](references/slicing/preview-inspection.md). Consult the active legend before interpreting color.
+8. Calibrate only applicable factors in the order and stop criteria defined by [calibration](references/slicing/calibration.md).
+9. Diagnose before changing multiple parameters. Use [failure diagnosis](references/slicing/failure-diagnosis.md) for print faults; for hardware or preventive work, load the [maintenance index](references/maintenance/INDEX.md), then the [troubleshooting trees](references/maintenance/troubleshooting-trees.md) when routing symptom-first.
 
 ## Separate completion states
 
@@ -59,7 +60,7 @@ Never infer physical success from a completed slice or a structurally valid 3MF.
 3. Before maintenance, identify the model and procedure, stop motion, remove filament only as directed, power off, unplug, and cool unless an official step explicitly requires a controlled energized or heated state.
 4. Do not invent torque, lubricant, part number, fastener position, connector, or service procedure. Stop at wiring, mains power, heaters, unknown sensors, inaccessible assemblies, or evidence conflicts and direct the user to official support.
 5. Do not install or update Creality Print, update firmware, control the printer, send or start a print, or buy a part without separate authorization.
-6. Keep scripts read-only by default. Never overwrite an input.
+6. Keep inspection scripts read-only and never overwrite an input. `scripts/printer_memory.py` is the only state writer: read memory automatically when relevant, create proposals without writing, ask whether a component change is temporary or permanent, wait for confirmed physical completion, show the exact diff, and apply it only after separate explicit approval. Never persist installation intent as installed state.
 
 ## Modify 3MF projects only when authorized
 

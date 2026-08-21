@@ -42,6 +42,8 @@
 | Action | Default | Required authorization and controls |
 |---|---|---|
 | Read files, inspect screenshots, compare profiles, research public sources | Allowed | Protect secrets, serials, private network details, and unrelated files |
+| Read/validate printer memory or create a write-free proposal | Allowed | Use only relevant aliases/fields; keep evidence, date, conflict, and physical-proof limits explicit |
+| Apply a printer-memory proposal | Denied | Separate explicit approval after showing target, revision, diff, evidence, and physical-completion status |
 | Create a recommendation or calibration plan | Allowed | Stay inside confirmed limits and identify validation |
 | Copy and edit a 3MF | Denied | Explicit scope; preserve original; name copy; hash, inspect, compare, and report |
 | Install/update Creality Print | Denied | Separate explicit authorization and version/source confirmation |

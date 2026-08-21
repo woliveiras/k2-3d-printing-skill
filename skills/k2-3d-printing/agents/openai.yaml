@@ -1,4 +1,4 @@
 interface:
   display_name: "K2 3D Printing"
-  short_description: "Creality K2 and FDM printing guidance"
-  default_prompt: "Use $k2-3d-printing to inspect my model, verify printer identity, and prepare a safe Creality Print workflow."
+  short_description: "Creality K2, FDM, and portable printer memory"
+  default_prompt: "Use $k2-3d-printing to recall or verify my printer, inspect the model, and prepare a safe Creality Print workflow."

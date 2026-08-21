@@ -1,16 +1,30 @@
 from __future__ import annotations
 
+import importlib.util
 import re
 import sys
 import unittest
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from types import ModuleType
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SKILL_ROOT = REPO_ROOT / "skills" / "k2-3d-printing"
 sys.path.insert(0, str(SKILL_ROOT / "scripts"))
 
-import check_source_freshness  # noqa: E402
+
+def load_check_source_freshness() -> ModuleType:
+    module_path = SKILL_ROOT / "scripts" / "check_source_freshness.py"
+    spec = importlib.util.spec_from_file_location("check_source_freshness", module_path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Unable to load {module_path}")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+check_source_freshness = load_check_source_freshness()
 
 REQUIRED_REPO_FILES = {
     "README.md",
@@ -31,6 +45,7 @@ REQUIRED_SKILL_FILES = {
     "references/safety.md",
     "references/design-for-fdm.md",
     "references/model-inspection.md",
+    "references/printer-memory.md",
     "references/materials/INDEX.md",
     "references/materials/pla-family.md",
     "references/materials/petg-and-pet.md",
@@ -73,6 +88,7 @@ REQUIRED_SKILL_FILES = {
     "scripts/extract_creality_settings.py",
     "scripts/compare_profiles.py",
     "scripts/check_source_freshness.py",
+    "scripts/printer_memory.py",
 }
 
 
@@ -81,11 +97,13 @@ def all_markdown() -> list[Path]:
 
 
 class RepositoryContractTests(unittest.TestCase):
-    def test_changelog_records_initial_release(self) -> None:
+    def test_changelog_records_releases(self) -> None:
         text = (REPO_ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
         unreleased = text.index("## Unreleased")
+        current_release = text.index("## 1.1.0 - 2026-08-21")
         initial_release = text.index("## 1.0.0 - 2026-08-21")
-        self.assertLess(unreleased, initial_release)
+        self.assertLess(unreleased, current_release)
+        self.assertLess(current_release, initial_release)
 
     def test_public_logo_has_native_light_and_dark_svg_variants(self) -> None:
         for theme in ("light", "dark"):
@@ -223,7 +241,7 @@ class RepositoryContractTests(unittest.TestCase):
         self.assertTrue((SKILL_ROOT / "SKILL.md").is_file())
         self.assertNotIn("requires another skill", readme.lower())
 
-    def test_runtime_scripts_do_not_contain_input_write_paths(self) -> None:
+    def test_inspectors_are_read_only_and_memory_is_the_only_writer(self) -> None:
         failures = []
         forbidden = [
             re.compile(r"\.write_(?:text|bytes)\s*\("),
@@ -231,12 +249,30 @@ class RepositoryContractTests(unittest.TestCase):
             re.compile(r"ZipFile\s*\([^\n]*,\s*['\"](?:w|a|x)", re.IGNORECASE),
             re.compile(r"\b(?:requests\.(?:post|put|patch|delete)|urlopen\([^\n]*(?:print|device))", re.IGNORECASE),
         ]
-        for path in sorted((SKILL_ROOT / "scripts").glob("*.py")):
+        scripts = sorted((SKILL_ROOT / "scripts").glob("*.py"))
+        for path in scripts:
+            if path.name == "printer_memory.py":
+                continue
             text = path.read_text(encoding="utf-8")
             for pattern in forbidden:
                 if pattern.search(text):
                     failures.append(f"{path.name}: {pattern.pattern}")
         self.assertEqual(failures, [])
+
+        writers = {
+            path.name
+            for path in scripts
+            if "os.replace(" in path.read_text(encoding="utf-8")
+        }
+        self.assertEqual(writers, {"printer_memory.py"})
+        memory_text = (SKILL_ROOT / "scripts" / "printer_memory.py").read_text(
+            encoding="utf-8"
+        )
+        self.assertNotRegex(
+            memory_text,
+            r"\b(?:requests|urllib|socket|subprocess|serial\.Serial)\b",
+        )
+        self.assertNotRegex(memory_text, r"\b(?:send|start|cancel)_print\b")
 
 
 if __name__ == "__main__":
