@@ -81,6 +81,12 @@ def all_markdown() -> list[Path]:
 
 
 class RepositoryContractTests(unittest.TestCase):
+    def test_changelog_records_initial_release(self) -> None:
+        text = (REPO_ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
+        unreleased = text.index("## Unreleased")
+        initial_release = text.index("## 1.0.0 - 2026-08-21")
+        self.assertLess(unreleased, initial_release)
+
     def test_public_logo_has_native_light_and_dark_svg_variants(self) -> None:
         for theme in ("light", "dark"):
             logo_path = REPO_ROOT / "assets" / f"k2-3d-printing-logo-{theme}.svg"
